@@ -1,0 +1,749 @@
+[
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Buddha",
+    "filename": "RPS_MKW110181_Pendidikan Agama Buddha.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 260.1,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Buddha.pdf"
+  },
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Hindu",
+    "filename": "RPS_MKW110181_Pendidikan Agama Hindu.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 418.9,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Hindu.pdf"
+  },
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Islam",
+    "filename": "RPS_MKW110181_Pendidikan Agama Islam.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 447.1,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Islam.pdf"
+  },
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Katolik",
+    "filename": "RPS_MKW110181_Pendidikan Agama Katolik.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 452.3,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Katolik.pdf"
+  },
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Khonghucu",
+    "filename": "RPS_MKW110181_Pendidikan Agama Khonghucu.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 254.3,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Khonghucu.pdf"
+  },
+  {
+    "code": "MKW110181",
+    "name": "Pendidikan Agama Kristen",
+    "filename": "RPS_MKW110181_Pendidikan Agama Kristen.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 1369.6,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110181_Pendidikan Agama Kristen.pdf"
+  },
+  {
+    "code": "MKW110182",
+    "name": "Pendidikan Pancasila dan PAK",
+    "filename": "RPS_MKW110182_Pendidikan Pancasila dan PAK.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 1343.0,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110182_Pendidikan Pancasila dan PAK.pdf"
+  },
+  {
+    "code": "MKW110183",
+    "name": "Pendidikan Kewarganegaraan",
+    "filename": "RPS_MKW110183_Pendidikan Kewarganegaraan.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 428.8,
+    "semester": 2,
+    "download_url": "/rps/RPS_MKW110183_Pendidikan Kewarganegaraan.pdf"
+  },
+  {
+    "code": "MKW110184",
+    "name": "Bahasa Inggris",
+    "filename": "RPS_MKW110184_Bahasa Inggris.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 418.8,
+    "semester": 1,
+    "download_url": "/rps/RPS_MKW110184_Bahasa Inggris.pdf"
+  },
+  {
+    "code": "MKW110185",
+    "name": "Bahasa Indonesia",
+    "filename": "RPS_MKW110185_Bahasa Indonesia.pdf",
+    "category": "A. MATA KULIAH WAJIB UNIVERSITAS",
+    "size_kb": 412.9,
+    "semester": 4,
+    "download_url": "/rps/RPS_MKW110185_Bahasa Indonesia.pdf"
+  },
+  {
+    "code": "SIFC8B01",
+    "name": "Skripsi",
+    "filename": "RPS_SIFC8B01_Skripsi.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 450.8,
+    "semester": 8,
+    "download_url": "/rps/RPS_SIFC8B01_Skripsi.pdf"
+  },
+  {
+    "code": "SIFT1J01",
+    "name": "Matematika",
+    "filename": "RPS_SIFT1J01_Matematika.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 444.4,
+    "semester": 1,
+    "download_url": "/rps/RPS_SIFT1J01_Matematika.pdf"
+  },
+  {
+    "code": "SIFT1J02",
+    "name": "Struktur Data dan Kompleksitas Algoritma",
+    "filename": "RPS_SIFT1J02_Struktur Data dan Kompleksitas Algoritma.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 474.2,
+    "semester": 1,
+    "download_url": "/rps/RPS_SIFT1J02_Struktur Data dan Kompleksitas Algoritma.pdf"
+  },
+  {
+    "code": "SIFT2G03",
+    "name": "Statistika",
+    "filename": "RPS_SIFT2G03_Statistika.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 496.8,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIFT2G03_Statistika.pdf"
+  },
+  {
+    "code": "SIFT2G04",
+    "name": "Basis Data",
+    "filename": "RPS_SIFT2G04_Basis Data.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 445.6,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIFT2G04_Basis Data.pdf"
+  },
+  {
+    "code": "SIFT2G05",
+    "name": "Bahasa Pemrograman",
+    "filename": "RPS_SIFT2G05_Bahasa Pemrograman.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 474.7,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIFT2G05_Bahasa Pemrograman.pdf"
+  },
+  {
+    "code": "SIFT3J06",
+    "name": "Jaringan Komputer",
+    "filename": "RPS_SIFT3J06_Jaringan Komputer.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 454.2,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIFT3J06_Jaringan Komputer.pdf"
+  },
+  {
+    "code": "SIFT5B07",
+    "name": "Metodologi Penelitian",
+    "filename": "RPS_SIFT5B07_Metodologi Penelitian.pdf",
+    "category": "B. MATA KULIAH WAJIB FAKULTAS",
+    "size_kb": 459.2,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIFT5B07_Metodologi Penelitian.pdf"
+  },
+  {
+    "code": "SIPT1J01",
+    "name": "Konsep Sistem Informasi",
+    "filename": "RPS_SIPT1J01_Konsep Sistem Informasi.pdf",
+    "category": "C.1. MATA KULIAH PONDASI RUMPUN KEILMUAN SISTEM INFORMASI",
+    "size_kb": 385.3,
+    "semester": 1,
+    "download_url": "/rps/RPS_SIPT1J01_Konsep Sistem Informasi.pdf"
+  },
+  {
+    "code": "SIPT1J02",
+    "name": "Etika Profesi dan Isu Sosial",
+    "filename": "RPS_SIPT1J02_Etika Profesi dan Isu Sosial.pdf",
+    "category": "C.1. MATA KULIAH PONDASI RUMPUN KEILMUAN SISTEM INFORMASI",
+    "size_kb": 387.9,
+    "semester": 1,
+    "download_url": "/rps/RPS_SIPT1J02_Etika Profesi dan Isu Sosial.pdf"
+  },
+  {
+    "code": "SIPT2G03",
+    "name": "Analisis dan Manajemen Proses Bisnis",
+    "filename": "RPS_SIPT2G03_Analisis_dan_Manajemen_Proses_Bisnis.pdf",
+    "category": "C.1. MATA KULIAH PONDASI RUMPUN KEILMUAN SISTEM INFORMASI",
+    "size_kb": 378.8,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIPT2G03_Analisis_dan_Manajemen_Proses_Bisnis.pdf"
+  },
+  {
+    "code": "SIPT3J04",
+    "name": "Analisis dan Perancangan Sistem Informasi",
+    "filename": "RPS_SIPT3J04_Analisis dan Perancangan Sistem Informasi.pdf",
+    "category": "C.1. MATA KULIAH PONDASI RUMPUN KEILMUAN SISTEM INFORMASI",
+    "size_kb": 387.0,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIPT3J04_Analisis dan Perancangan Sistem Informasi.pdf"
+  },
+  {
+    "code": "SIPT4G05",
+    "name": "Keamanan Sistem Informasi",
+    "filename": "RPS_SIPT4G05_Keamanan Sistem Informasi.pdf",
+    "category": "C.1. MATA KULIAH PONDASI RUMPUN KEILMUAN SISTEM INFORMASI",
+    "size_kb": 390.9,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPT4G05_Keamanan Sistem Informasi.pdf"
+  },
+  {
+    "code": "SIPT2G06",
+    "name": "Kecerdasan Buatan",
+    "filename": "RPS_SIPT2G06_Kecerdasan_Buatan.pdf",
+    "category": "C.2. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL1 (ASSOCIATE DATA SCIENTIST, DL ENGINEER, AI ENGINEER)",
+    "size_kb": 423.3,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIPT2G06_Kecerdasan_Buatan.pdf"
+  },
+  {
+    "code": "SIPT3J07",
+    "name": "Sains Data",
+    "filename": "RPS_SIPT3J07_Sains Data.pdf",
+    "category": "C.2. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL1 (ASSOCIATE DATA SCIENTIST, DL ENGINEER, AI ENGINEER)",
+    "size_kb": 372.3,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIPT3J07_Sains Data.pdf"
+  },
+  {
+    "code": "SIPT4G08",
+    "name": "Pembelajaran Mendalam",
+    "filename": "RPS_SIPT4G08_Pembelajaran Mendalam.pdf",
+    "category": "C.2. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL1 (ASSOCIATE DATA SCIENTIST, DL ENGINEER, AI ENGINEER)",
+    "size_kb": 387.5,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPT4G08_Pembelajaran Mendalam.pdf"
+  },
+  {
+    "code": "SIPT5J09",
+    "name": "Visi Komputer",
+    "filename": "RPS_SIPT5J09_Visi Komputer.pdf",
+    "category": "C.2. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL1 (ASSOCIATE DATA SCIENTIST, DL ENGINEER, AI ENGINEER)",
+    "size_kb": 389.1,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIPT5J09_Visi Komputer.pdf"
+  },
+  {
+    "code": "SIPT8G10",
+    "name": "Teknologi Mutakhir (Emerging Technology)",
+    "filename": "RPS_SIPT8G10_Teknologi Mutakhir (Emerging Technology).pdf",
+    "category": "C.2. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL1 (ASSOCIATE DATA SCIENTIST, DL ENGINEER, AI ENGINEER)",
+    "size_kb": 411.8,
+    "semester": 8,
+    "download_url": "/rps/RPS_SIPT8G10_Teknologi Mutakhir (Emerging Technology).pdf"
+  },
+  {
+    "code": "SIPL4G01",
+    "name": "Pemrograman Mobile",
+    "filename": "RPS_SIPL4G01_Pemrograman Mobile.pdf",
+    "category": "C.3. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL2 (Digital Media Support Specialist, Multimedia Content Creator, dan UI／UX Designer)",
+    "size_kb": 414.6,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPL4G01_Pemrograman Mobile.pdf"
+  },
+  {
+    "code": "SIPL4G02",
+    "name": "Pengembangan Konten Digital Revisi",
+    "filename": "RPS_SIPL4G02_Pengembangan_Konten_Digital_Revisi.pdf",
+    "category": "C.3. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL2 (Digital Media Support Specialist, Multimedia Content Creator, dan UI／UX Designer)",
+    "size_kb": 465.5,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPL4G02_Pengembangan_Konten_Digital_Revisi.pdf"
+  },
+  {
+    "code": "SIPT3J11",
+    "name": "Multimedia",
+    "filename": "RPS_SIPT3J11_Multimedia.pdf",
+    "category": "C.3. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL2 (Digital Media Support Specialist, Multimedia Content Creator, dan UI／UX Designer)",
+    "size_kb": 428.5,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIPT3J11_Multimedia.pdf"
+  },
+  {
+    "code": "SIPT3J12",
+    "name": "Desain Antarmuka dan Pengalaman Pengguna",
+    "filename": "RPS_SIPT3J12_Desain Antarmuka dan Pengalaman Pengguna.pdf",
+    "category": "C.3. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL2 (Digital Media Support Specialist, Multimedia Content Creator, dan UI／UX Designer)",
+    "size_kb": 430.2,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIPT3J12_Desain Antarmuka dan Pengalaman Pengguna.pdf"
+  },
+  {
+    "code": "SIPT5J13",
+    "name": "Teknologi Kewirausahaan (Technopreneur)",
+    "filename": "RPS_SIPT5J13_Teknologi Kewirausahaan (Technopreneur).pdf",
+    "category": "C.3. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL2 (Digital Media Support Specialist, Multimedia Content Creator, dan UI／UX Designer)",
+    "size_kb": 395.6,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIPT5J13_Teknologi Kewirausahaan (Technopreneur).pdf"
+  },
+  {
+    "code": "SIPC5J01",
+    "name": "Manajemen Proyek (Capstone)",
+    "filename": "RPS_SIPC5J01_Manajemen Proyek (Capstone).pdf",
+    "category": "C.4. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL3 (ASSOCIATE ICT PM, IT PROJECT ADMINISTRATOR, SYSTEM ANALYST)",
+    "size_kb": 423.7,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIPC5J01_Manajemen Proyek (Capstone).pdf"
+  },
+  {
+    "code": "SIPT2G14",
+    "name": "Tata Kelola Teknologi Informasi",
+    "filename": "RPS_SIPT2G14_Tata Kelola Teknologi Informasi.pdf",
+    "category": "C.4. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL3 (ASSOCIATE ICT PM, IT PROJECT ADMINISTRATOR, SYSTEM ANALYST)",
+    "size_kb": 390.5,
+    "semester": 2,
+    "download_url": "/rps/RPS_SIPT2G14_Tata Kelola Teknologi Informasi.pdf"
+  },
+  {
+    "code": "SIPT3J15",
+    "name": "Sistem Enterprise",
+    "filename": "RPS_SIPT3J15_Sistem Enterprise.pdf",
+    "category": "C.4. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL3 (ASSOCIATE ICT PM, IT PROJECT ADMINISTRATOR, SYSTEM ANALYST)",
+    "size_kb": 378.9,
+    "semester": 3,
+    "download_url": "/rps/RPS_SIPT3J15_Sistem Enterprise.pdf"
+  },
+  {
+    "code": "SIPT4G16",
+    "name": "Audit Sistem Informasi",
+    "filename": "RPS_SIPT4G16_Audit Sistem Informasi.pdf",
+    "category": "C.4. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL3 (ASSOCIATE ICT PM, IT PROJECT ADMINISTRATOR, SYSTEM ANALYST)",
+    "size_kb": 390.3,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPT4G16_Audit Sistem Informasi.pdf"
+  },
+  {
+    "code": "SIPT4G17",
+    "name": "Perencanaan Strategis dan Rekayasa Sistem",
+    "filename": "RPS_SIPT4G17_Perencanaan Strategis dan Rekayasa Sistem.pdf",
+    "category": "C.4. MATA KULIAH KONSENTRASI YANG MENDUKUNG PL3 (ASSOCIATE ICT PM, IT PROJECT ADMINISTRATOR, SYSTEM ANALYST)",
+    "size_kb": 385.3,
+    "semester": 4,
+    "download_url": "/rps/RPS_SIPT4G17_Perencanaan Strategis dan Rekayasa Sistem.pdf"
+  },
+  {
+    "code": "SIM16G01",
+    "name": "Eksplorasi Perangkat Sains Data",
+    "filename": "RPS_SIM16G01_Eksplorasi Perangkat Sains Data.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 436.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G01_Eksplorasi Perangkat Sains Data.pdf"
+  },
+  {
+    "code": "SIM16G02",
+    "name": "Konstruksi Algoritma Data",
+    "filename": "RPS_SIM16G02_Konstruksi Algoritma Data.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 432.2,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G02_Konstruksi Algoritma Data.pdf"
+  },
+  {
+    "code": "SIM16G03",
+    "name": "Sintesis Informasi Visual",
+    "filename": "RPS_SIM16G03_Sintesis_Informasi_Visual.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 424.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G03_Sintesis_Informasi_Visual.pdf"
+  },
+  {
+    "code": "SIM16G04",
+    "name": "Penalaran Kritis & Solusi Data",
+    "filename": "RPS_SIM16G04_Penalaran Kritis & Solusi Data.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 439.8,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G04_Penalaran Kritis & Solusi Data.pdf"
+  },
+  {
+    "code": "SIM16G05",
+    "name": "Infrastruktur Basis Data Modern",
+    "filename": "RPS_SIM16G05_Infrastruktur Basis Data Modern.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 442.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G05_Infrastruktur Basis Data Modern.pdf"
+  },
+  {
+    "code": "SIM16G06",
+    "name": "Produksi Konten Digital Kreatif",
+    "filename": "RPS_SIM16G06_Produksi_Konten_Digital_Kreatif.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 433.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G06_Produksi_Konten_Digital_Kreatif.pdf"
+  },
+  {
+    "code": "SIM16G07",
+    "name": "Riset Interaksi Antarmuka",
+    "filename": "RPS_SIM16G07_Riset Interaksi Antarmuka.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 408.7,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G07_Riset Interaksi Antarmuka.pdf"
+  },
+  {
+    "code": "SIM16G08",
+    "name": "Eksperimentasi Teknologi Media",
+    "filename": "RPS_SIM16G08_Eksperimentasi Teknologi Media.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 414.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G08_Eksperimentasi Teknologi Media.pdf"
+  },
+  {
+    "code": "SIM16G09",
+    "name": "Logika Desain & Estetika",
+    "filename": "RPS_SIM16G09_Logika Desain & Estetika.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 401.9,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G09_Logika Desain & Estetika.pdf"
+  },
+  {
+    "code": "SIM16G10",
+    "name": "Prototipe Media Interaktif",
+    "filename": "RPS_SIM16G10_Prototipe Media Interaktif.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 410.6,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G10_Prototipe Media Interaktif.pdf"
+  },
+  {
+    "code": "SIM16G11",
+    "name": "Arsitektur Perangkat Lunak Terapan",
+    "filename": "RPS_SIM16G11_Arsitektur_Perangkat_Lunak_Terapan.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 376.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G11_Arsitektur_Perangkat_Lunak_Terapan.pdf"
+  },
+  {
+    "code": "SIM16G12",
+    "name": "Rekayasa Sistem & Basis Data",
+    "filename": "RPS_SIM16G12_Rekayasa Sistem & Basis Data.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 373.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G12_Rekayasa Sistem & Basis Data.pdf"
+  },
+  {
+    "code": "SIM16G13",
+    "name": "Administrasi  Operasional Proyek TI",
+    "filename": "RPS_SIM16G13_Administrasi__Operasional_Proyek_TI.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 373.9,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G13_Administrasi__Operasional_Proyek_TI.pdf"
+  },
+  {
+    "code": "SIM16G14",
+    "name": "Strategi Ekonomi Digital & E-Bisnis",
+    "filename": "RPS_SIM16G14_Strategi Ekonomi Digital & E-Bisnis.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 396.7,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G14_Strategi Ekonomi Digital & E-Bisnis.pdf"
+  },
+  {
+    "code": "SIM16G15",
+    "name": "Rancang Bangun Solusi Korporasi",
+    "filename": "RPS_SIM16G15_Rancang Bangun Solusi Korporasi.pdf",
+    "category": "D.1. MBKM Studi Independen",
+    "size_kb": 399.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM16G15_Rancang Bangun Solusi Korporasi.pdf"
+  },
+  {
+    "code": "SIM26G01",
+    "name": "Validasi Masalah & Model Bisnis",
+    "filename": "RPS_SIM26G01_Validasi Masalah & Model Bisnis.pdf",
+    "category": "D.2. MBKM Kewirausahaan",
+    "size_kb": 461.4,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM26G01_Validasi Masalah & Model Bisnis.pdf"
+  },
+  {
+    "code": "SIM26G02",
+    "name": "Pengembangan Produk Digital",
+    "filename": "RPS_SIM26G02_Pengembangan Produk Digital.pdf",
+    "category": "D.2. MBKM Kewirausahaan",
+    "size_kb": 460.7,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM26G02_Pengembangan Produk Digital.pdf"
+  },
+  {
+    "code": "SIM26G03",
+    "name": "Komunikasi Bisnis & Persuasi",
+    "filename": "RPS_SIM26G03_Komunikasi Bisnis & Persuasi.pdf",
+    "category": "D.2. MBKM Kewirausahaan",
+    "size_kb": 432.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM26G03_Komunikasi Bisnis & Persuasi.pdf"
+  },
+  {
+    "code": "SIM26G04",
+    "name": "Manajemen Operasional & Tim",
+    "filename": "RPS_SIM26G04_Manajemen Operasional & Tim.pdf",
+    "category": "D.2. MBKM Kewirausahaan",
+    "size_kb": 458.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM26G04_Manajemen Operasional & Tim.pdf"
+  },
+  {
+    "code": "SIM26G05",
+    "name": "Etika Bisnis & Inovasi Digital",
+    "filename": "RPS_SIM26G05_Etika Bisnis & Inovasi Digital.pdf",
+    "category": "D.2. MBKM Kewirausahaan",
+    "size_kb": 431.6,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM26G05_Etika Bisnis & Inovasi Digital.pdf"
+  },
+  {
+    "code": "SIM36G01",
+    "name": "Implementasi Solusi Profesional",
+    "filename": "RPS_SIM36G01_Implementasi Solusi Profesional.pdf",
+    "category": "D.3. MBKM Magang／Praktek Kerja",
+    "size_kb": 409.6,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM36G01_Implementasi Solusi Profesional.pdf"
+  },
+  {
+    "code": "SIM36G02",
+    "name": "Analisis Kebutuhan Operasional",
+    "filename": "RPS_SIM36G02_Analisis Kebutuhan Operasional.pdf",
+    "category": "D.3. MBKM Magang／Praktek Kerja",
+    "size_kb": 410.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM36G02_Analisis Kebutuhan Operasional.pdf"
+  },
+  {
+    "code": "SIM36G03",
+    "name": "Etika & Profesionalisme Kerja",
+    "filename": "RPS_SIM36G03_Etika & Profesionalisme Kerja.pdf",
+    "category": "D.3. MBKM Magang／Praktek Kerja",
+    "size_kb": 387.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM36G03_Etika & Profesionalisme Kerja.pdf"
+  },
+  {
+    "code": "SIM36G04",
+    "name": "Kolaborasi & Komunikasi Industri",
+    "filename": "RPS_SIM36G04_Kolaborasi & Komunikasi Industri.pdf",
+    "category": "D.3. MBKM Magang／Praktek Kerja",
+    "size_kb": 391.6,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM36G04_Kolaborasi & Komunikasi Industri.pdf"
+  },
+  {
+    "code": "SIM36G05",
+    "name": "Adaptasi & Inovasi Teknologi",
+    "filename": "RPS_SIM36G05_Adaptasi & Inovasi Teknologi.pdf",
+    "category": "D.3. MBKM Magang／Praktek Kerja",
+    "size_kb": 380.0,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM36G05_Adaptasi & Inovasi Teknologi.pdf"
+  },
+  {
+    "code": "SIM46G01",
+    "name": "Analisis Kebutuhan Digital Masyarakat",
+    "filename": "RPS_SIM46G01_Analisis_Kebutuhan_Digital_Masyarakat.pdf",
+    "category": "D.4. MBKM KKN",
+    "size_kb": 365.6,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM46G01_Analisis_Kebutuhan_Digital_Masyarakat.pdf"
+  },
+  {
+    "code": "SIM46G02",
+    "name": "Penyuluhan  Komunikasi Publik",
+    "filename": "RPS_SIM46G02_Penyuluhan__Komunikasi_Publik.pdf",
+    "category": "D.4. MBKM KKN",
+    "size_kb": 391.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM46G02_Penyuluhan__Komunikasi_Publik.pdf"
+  },
+  {
+    "code": "SIM46G03",
+    "name": "Pemberdayaan Teknologi Tepat Guna",
+    "filename": "RPS_SIM46G03_Pemberdayaan_Teknologi_Tepat_Guna.pdf",
+    "category": "D.4. MBKM KKN",
+    "size_kb": 393.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM46G03_Pemberdayaan_Teknologi_Tepat_Guna.pdf"
+  },
+  {
+    "code": "SIM46G04",
+    "name": "Manajemen Program & Kolaborasi Sosial",
+    "filename": "RPS_SIM46G04_Manajemen Program & Kolaborasi Sosial.pdf",
+    "category": "D.4. MBKM KKN",
+    "size_kb": 392.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM46G04_Manajemen Program & Kolaborasi Sosial.pdf"
+  },
+  {
+    "code": "SIM46G05",
+    "name": "Etika Kemasyarakatan & Dampak Sosial",
+    "filename": "RPS_SIM46G05_Etika Kemasyarakatan & Dampak Sosial.pdf",
+    "category": "D.4. MBKM KKN",
+    "size_kb": 363.8,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM46G05_Etika Kemasyarakatan & Dampak Sosial.pdf"
+  },
+  {
+    "code": "SIM57J01",
+    "name": "Komunikasi Ilmiah Terintegrasi",
+    "filename": "RPS_SIM57J01_Komunikasi Ilmiah Terintegrasi.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 406.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J01_Komunikasi Ilmiah Terintegrasi.pdf"
+  },
+  {
+    "code": "SIM57J02",
+    "name": "Analisis Data Terapan",
+    "filename": "RPS_SIM57J02_Analisis Data Terapan.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 405.2,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J02_Analisis Data Terapan.pdf"
+  },
+  {
+    "code": "SIM57J03",
+    "name": "Rekayasa Analisis Data Tingkat Lanjut",
+    "filename": "RPS_SIM57J03_Rekayasa Analisis Data Tingkat Lanjut.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 406.1,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J03_Rekayasa Analisis Data Tingkat Lanjut.pdf"
+  },
+  {
+    "code": "SIM57J04",
+    "name": "Visualisasi Data Komunikatif",
+    "filename": "RPS_SIM57J04_Visualisasi Data Komunikatif.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 404.4,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J04_Visualisasi Data Komunikatif.pdf"
+  },
+  {
+    "code": "SIM57J05",
+    "name": "Pemodelan Data Organisasi",
+    "filename": "RPS_SIM57J05_Pemodelan Data Organisasi.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 375.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J05_Pemodelan Data Organisasi.pdf"
+  },
+  {
+    "code": "SIM57J06",
+    "name": "Riset Pengalaman Pengguna",
+    "filename": "RPS_SIM57J06_Riset Pengalaman Pengguna.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 419.8,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J06_Riset Pengalaman Pengguna.pdf"
+  },
+  {
+    "code": "SIM57J07",
+    "name": "Pengembangan Media Digital Kreatif",
+    "filename": "RPS_SIM57J07_Pengembangan_Media_Digital_Kreatif.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 434.2,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J07_Pengembangan_Media_Digital_Kreatif.pdf"
+  },
+  {
+    "code": "SIM57J08",
+    "name": "Solusi Inovatif & Berpikir Desain",
+    "filename": "RPS_SIM57J08_Solusi Inovatif & Berpikir Desain.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 402.8,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J08_Solusi Inovatif & Berpikir Desain.pdf"
+  },
+  {
+    "code": "SIM57J09",
+    "name": "Pemodelan Solusi Multimedia",
+    "filename": "RPS_SIM57J09_Pemodelan_Solusi_Multimedia.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 440.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J09_Pemodelan_Solusi_Multimedia.pdf"
+  },
+  {
+    "code": "SIM57J10",
+    "name": "Analisis Statistik & Evaluasi Sistem",
+    "filename": "RPS_SIM57J10_Analisis Statistik & Evaluasi Sistem.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 425.3,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J10_Analisis Statistik & Evaluasi Sistem.pdf"
+  },
+  {
+    "code": "SIM57J11",
+    "name": "Manajemen Risiko  Pengendalian Proyek",
+    "filename": "RPS_SIM57J11_Manajemen_Risiko__Pengendalian_Proyek.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 376.5,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J11_Manajemen_Risiko__Pengendalian_Proyek.pdf"
+  },
+  {
+    "code": "SIM57J12",
+    "name": "Komunikasi & Kolaborasi Profesional",
+    "filename": "RPS_SIM57J12_Komunikasi & Kolaborasi Profesional.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 405.9,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J12_Komunikasi & Kolaborasi Profesional.pdf"
+  },
+  {
+    "code": "SIM57J13",
+    "name": "Pemodelan Solusi Bisnis  TI",
+    "filename": "RPS_SIM57J13_Pemodelan_Solusi_Bisnis__TI.pdf",
+    "category": "D.5. MBKM Penelitian",
+    "size_kb": 375.9,
+    "semester": null,
+    "download_url": "/rps/RPS_SIM57J13_Pemodelan_Solusi_Bisnis__TI.pdf"
+  },
+  {
+    "code": "SIBT5J01",
+    "name": "Sistem Informasi Pemasaran Digital",
+    "filename": "RPS_SIBT5J01_Sistem Informasi Pemasaran Digital.pdf",
+    "category": "E. MATA KULIAH DI LUAR PROGRAM STUDI (MKDPS)",
+    "size_kb": 459.6,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIBT5J01_Sistem Informasi Pemasaran Digital.pdf"
+  },
+  {
+    "code": "SIBT5J02",
+    "name": "Manajemen Organisasi Digital",
+    "filename": "RPS_SIBT5J02_Manajemen_Organisasi_Digital.pdf",
+    "category": "E. MATA KULIAH DI LUAR PROGRAM STUDI (MKDPS)",
+    "size_kb": 379.3,
+    "semester": 5,
+    "download_url": "/rps/RPS_SIBT5J02_Manajemen_Organisasi_Digital.pdf"
+  }
+]

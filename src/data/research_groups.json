@@ -1,0 +1,176 @@
+[
+  {
+    "id": "aiml-rg",
+    "code": "AIML-RG",
+    "name": "Artificial Intelligence & Machine Learning Research Group",
+    "name_id": "Kelompok Riset Kecerdasan Buatan & Pembelajaran Mesin",
+    "coordinator": "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.",
+    "coordinator_nuptk": "4536767668130283",
+    "members": [
+      "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng. (Koordinator)",
+      "Eka Prasetyaningrum, S.Kom., M.M.",
+      "Dwika Lovitasari Yonia, S.Kom., M.Kom.",
+      "Nurahman, S.Kom., M.M., M.Kom.",
+      "Agung Purwanto, S.Kom., M.Kom."
+    ],
+    "assistants": [],
+    "focus": "Bio-signal EEG / Brain-Computer Interface (BCI), Computer Vision, Deep Learning (CNN/Transformer), Recurrence Plots, dan Large Language Models (LLM) / Autonomous Agentic AI.",
+    "roadmap": [
+      "Eksplorasi representasi sinyal EEG non-linier melalui Recurrence Plots dan Asymmetric Windowing.",
+      "Pengembangan arsitektur Multi-Domain Convolutional Neural Network (MD-CNN) untuk pengenalan emosi manusia.",
+      "Penerapan Computer Vision berbasis CNN/YOLO untuk inspeksi kualitas komoditas lokal Kalimantan Tengah (kelapa sawit, rotan, dan ikan jelawat).",
+      "Rancang bangun agen AI otonom berbasis LLM untuk orkestrasi kurikulum OBE dan automasi tata kelola akademik universitas."
+    ],
+    "flagship_publications": [
+      "Enhancing EEG-Based Emotion Recognition Using Asymmetric Windowing Recurrence Plots — IEEE Access (Scopus Q1, 2024)",
+      "A systematic literature review of emotion recognition using EEG signals — Cognitive Systems Research (Scopus Q1, 2023)",
+      "An Advanced Data Augmentation Scheme on Limited EEG Signals for Human Emotion Recognition — LNEE Springer (Scopus, 2024)"
+    ],
+    "thesis_topics": [
+      "Klasifikasi Status Emosi Manusia Berbasis Sinyal EEG Menggunakan Visualisasi Recurrence Plot dan MobileNetV3.",
+      "Deteksi Tingkat Kematangan Tandan Buah Segar (TBS) Kelapa Sawit Berbasis Computer Vision dan YOLOv8.",
+      "Otomasi Deteksi Retak Permukaan Kayu Rotan Menggunakan Image Segmentation Deep Learning.",
+      "Pengembangan Sistem BCI Portabel Sinyal Tunggal untuk Kendali Perangkat Bantu Disabilitas."
+    ]
+  },
+  {
+    "id": "setk-rg",
+    "code": "SETK-RG",
+    "name": "Enterprise Systems, Governance & IS Strategy Research Group",
+    "name_id": "Kelompok Riset Sistem Enterprise, Tata Kelola & Strategi SI",
+    "coordinator": "Agung Purwanto, S.Kom., M.Kom.",
+    "coordinator_nuptk": "1146760661130213",
+    "members": [
+      "Agung Purwanto, S.Kom., M.Kom. (Koordinator)",
+      "Selviana Yunita, S.Kom., M.Kom.",
+      "Lukman Bachtiar, S.Kom., M.M., M.Kom.",
+      "Deny Sundari, S.Kom., A.Md., M.M.S.I.",
+      "Eka Prasetyaningrum, S.Kom., M.M."
+    ],
+    "assistants": [
+      "Fauzan Eka Prasatia, S.M.",
+      "Prio Jaka Arsyad, S.Kom."
+    ],
+    "focus": "Enterprise Resource Planning (ERP), Tata Kelola TI (COBIT 2019, ITIL 4), Audit Kepatuhan & Keamanan Sistem Informasi, Business Process Management (BPMN), dan Perencanaan Strategis Sistem Informasi (TOGAF).",
+    "roadmap": [
+      "Audit maturitas tata kelola teknologi informasi pada instansi pemerintah daerah dan BUMD Kotawaringin Timur.",
+      "Perancangan arsitektur enterprise menggunakan TOGAF ADM untuk modernisasi layanan digital institusi publik.",
+      "Evaluasi penerimaan teknologi (Technology Acceptance Model & UTAUT2) sistem perbankan digital dan e-wallet di daerah penyangga perkebunan.",
+      "Redesain dan optimasi proses bisnis rantai pasok logistik kelapa sawit menggunakan pemodelan BPMN standar."
+    ],
+    "flagship_publications": [
+      "Evaluasi Penerimaan E-Wallet Menggunakan UTAUT 2 Di Kabupaten Kotawaringin Timur (2023)",
+      "Perancangan Enterprise Architecture pada PDAM Tirta Mentaya Menggunakan Framework TOGAF (2023)",
+      "Audit Tata Kelola Teknologi Informasi Menggunakan Framework COBIT pada Instansi Publik (2022)"
+    ],
+    "thesis_topics": [
+      "Audit Tata Kelola Sistem Informasi Akademik SIAKAD Menggunakan Domain MEA dan DSS Framework COBIT 2019.",
+      "Perancangan Enterprise Architecture Layanan Publik Dinas Kependudukan dan Catatan Sipil Menggunakan TOGAF ADM.",
+      "Evaluasi Keberhasilan Implementasi ERP pada Perusahaan Perkebunan Kelapa Sawit Menggunakan Delone & McLean Model.",
+      "Analisis dan Perbaikan Proses Bisnis Pengadaan Barang & Jasa Menggunakan Business Process Reengineering (BPR)."
+    ]
+  },
+  {
+    "id": "mhui-rg",
+    "code": "MHUI-RG",
+    "name": "Multimedia, HCI, UI/UX, Mobile & IoT Research Group",
+    "name_id": "Kelompok Riset Multimedia, Interaksi Manusia-Komputer, UI/UX, Mobile & IoT",
+    "coordinator": "Elika Thea Kirana, S.T., M.Kom.",
+    "coordinator_nuptk": "2835773674230242",
+    "members": [
+      "Elika Thea Kirana, S.T., M.Kom. (Koordinator)",
+      "Dwika Lovitasari Yonia, S.Kom., M.Kom.",
+      "Deny Sundari, S.Kom., A.Md., M.M.S.I.",
+      "Agung Purwanto, S.Kom., M.Kom."
+    ],
+    "assistants": [
+      "Dody Erlangga, S.Kom."
+    ],
+    "focus": "Desain UI/UX Human-Centered (Design Thinking, Usability Evaluation SUS/UEQ), Pengembangan Aplikasi Mobile Lintas Platform (Flutter/React Native), Sensor IoT & Smart Environmental Monitoring, dan Media Digital Interaktif.",
+    "roadmap": [
+      "Pengembangan platform mobile ramah aksesibilitas untuk literasi digital pelaku UMKM di Kotawaringin Timur.",
+      "Rancang bangun sistem sensor IoT berbasis LoRa/ESP32 untuk pemantauan kualitas udara dan deteksi dini kabut asap kebakaran lahan gambut.",
+      "Evaluasi antarmuka portal layanan publik pemerintah daerah berbasis User Experience Questionnaire (UEQ).",
+      "Integrasi Augmented Reality (AR) dalam media edukasi konservasi satwa endemik Kalimantan (Orangutan & Bekantan)."
+    ],
+    "flagship_publications": [
+      "Evaluasi Usability Website Pemerintah Menggunakan System Usability Scale (SUS) dan User Experience Questionnaire (2023)",
+      "Penerapan Konsep Design Thinking dalam Rancang Bangun Aplikasi Mobile Layanan Darurat Kesehatan Daerah (2022)"
+    ],
+    "thesis_topics": [
+      "Rancang Bangun Prototipe Sistem Monitoring Kualitas Air Tambak Ikan Jelawat Berbasis IoT dan Dashboard Web.",
+      "Redesain Antarmuka Mobile Banking Menggunakan Metode Goal-Directed Design dan Evaluasi SUS.",
+      "Pengembangan Aplikasi Mobile Edukasi Aksara dan Budaya Dayak Menggunakan Flutter.",
+      "Sistem Presensi Mahasiswa Berbasis Geolocation dan QR-Code Dinamis Terintegrasi Layanan Kampus."
+    ]
+  },
+  {
+    "id": "dsdss-rg",
+    "code": "DSDSS-RG",
+    "name": "Data Science, Analytics & Decision Support Systems Research Group",
+    "name_id": "Kelompok Riset Sains Data, Analitika & Sistem Pendukung Keputusan",
+    "coordinator": "Nurahman, S.Kom., M.M., M.Kom.",
+    "coordinator_nuptk": "2342765666130493",
+    "members": [
+      "Nurahman, S.Kom., M.M., M.Kom. (Koordinator)",
+      "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.",
+      "Eka Prasetyaningrum, S.Kom., M.M.",
+      "Lukman Bachtiar, S.Kom., M.M., M.Kom.",
+      "Abdul Aziz, S.Pd., M.Pd."
+    ],
+    "assistants": [],
+    "focus": "Multi-Criteria Decision Making (MCDM: AHP, TOPSIS, SAW, Promethee, SMART), Healthcare & Epidemic Data Analytics, Klasterisasi Prediktif Pertanian/Perkebunan, dan Business Intelligence & Interactive Data Lakehouse.",
+    "roadmap": [
+      "Sistem Pendukung Keputusan Penentuan Penerima Bantuan Sosial Tepat Sasaran Menggunakan Integrasi AHP dan TOPSIS.",
+      "Klasterisasi spasial risiko kesehatan ibu hamil dan anak stunting di puskesmas pelosok Kalimantan Tengah menggunakan K-Means dan PCA.",
+      "Prediksi tren fluktuasi harga komoditas tandan buah segar kelapa sawit menggunakan Time Series Forecasting (ARIMA & Prophet).",
+      "Pembangunan Interactive Business Intelligence Dashboard untuk pemantauan kinerja akademik dan serapan alumni."
+    ],
+    "flagship_publications": [
+      "Sistem Pendukung Keputusan Penentuan Kelayakan Bantuan Sosial Menggunakan Kombinasi Metode AHP dan TOPSIS (2023)",
+      "Penerapan Data Mining untuk Analisis Pola Penjualan Ritel Menggunakan Algoritma Apriori (2022)",
+      "Analisis Sentimen Opini Publik Terhadap Kebijakan Daerah Menggunakan Naive Bayes dan SVM (2023)"
+    ],
+    "thesis_topics": [
+      "Sistem Pendukung Keputusan Pemilihan Lahan Perkebunan Kelapa Sawit Produktif Menggunakan Kombinasi AHP dan Promethee.",
+      "Klasterisasi Tingkat Kesejahteraan Keluarga Berdasarkan Data Registrasi Sosial Ekonomi Menggunakan K-Medoids.",
+      "Analisis Pola Transaksi Penjualan Menggunakan Algoritma FP-Growth untuk Rekomendasi Bundling Produk UMKM.",
+      "Prediksi Curah Hujan Harian di Sampit Berbasis Machine Learning untuk Antisipasi Musim Tanam."
+    ]
+  },
+  {
+    "id": "edutech-rg",
+    "code": "EDUTECH-RG",
+    "name": "Educational Technology, General Education & Karakter Research Group",
+    "name_id": "Kelompok Riset Teknologi Pendidikan, General Education & Karakter",
+    "coordinator": "Abdul Aziz, S.Pd., M.Pd.",
+    "coordinator_nuptk": "1953765666130272",
+    "members": [
+      "Abdul Aziz, S.Pd., M.Pd. (Koordinator)",
+      "Serika Zai, S.Pd., M.Pd.",
+      "Agung Purwanto, S.Kom., M.Kom.",
+      "Elika Thea Kirana, S.T., M.Kom.",
+      "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng."
+    ],
+    "assistants": [
+      "Dody Erlangga, S.Kom."
+    ],
+    "focus": "Digital Pedagogy, Gamifikasi Media Pembelajaran, E-Learning Berbasis Outcome-Based Education (OBE), dan Penguatan Karakter/Integritas Mahasiswa Era AI.",
+    "roadmap": [
+      "Model integrasi taksonomi Bloom revisi pada Learning Management System (Moodle & Edlink) berbasis asesmen OBE.",
+      "Pengembangan instrumen evaluasi pembelajaran bermakna (meaningful learning) pada mahasiswa ilmu komputer kelas malam dan pekerja.",
+      "Desain kerangka kerja etika akademik pencegahan plagiarisme berbasis Generative AI pada mahasiswa tingkat sarjana.",
+      "Gamifikasi asesmen formatif untuk meningkatkan retensi dan pemahaman konsep algoritma pemrograman dasar."
+    ],
+    "flagship_publications": [
+      "Penguatan Budaya Mutu Sekolah melalui Pendampingan Akreditasi di SMPN Satu Atap (2023)",
+      "Evaluasi Penerapan E-Learning Moodle Terhadap Motivasi Belajar Mahasiswa Komputer (2022)"
+    ],
+    "thesis_topics": [
+      "Pengembangan Game Edukasi Pembelajaran Logika Algoritma Berbasis Unity untuk Siswa SMK Rekayasa Perangkat Lunak.",
+      "Evaluasi Efektivitas Pembelajaran Berbasis OBE Menggunakan Analytics Log Activity LMS Moodle.",
+      "Rancang Bangun Sistem Evaluasi Kepuasan Mahasiswa Terhadap Pembelajaran Dosen Berbasis Web.",
+      "Pengembangan Modul Pembelajaran Interaktif Etika Profesi TI Berbasis Microlearning."
+    ]
+  }
+]

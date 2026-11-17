@@ -1,0 +1,261 @@
+{
+  "institution": {
+    "name": "Program Studi S1 Sistem Informasi",
+    "faculty": "Fakultas Ilmu Komputer",
+    "university": "Universitas Darwan Ali",
+    "accreditation": "Baik Sekali",
+    "address": "Jl. Batu Berlian No. 10, Sampit, Kotawaringin Timur, Kalimantan Tengah 74322",
+    "email": "sisteminformasi@unda.ac.id",
+    "instagram": "https://www.instagram.com/sisfounda/",
+    "head_of_program": "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.",
+    "head_personal_web": "http://bowo.staff.unda.ac.id/",
+    "head_nuptk": "4536767668130283"
+  },
+  "portals": [
+    {
+      "name": "Pendaftaran Mahasiswa Baru (SPMB)",
+      "url": "https://univdarwanali.siakadcloud.com/spmbfront/program-studi-detail/detail/57201",
+      "badge": "PMB 2026",
+      "icon": "user-plus",
+      "featured": true
+    },
+    {
+      "name": "SIAKAD Resmi UNDA",
+      "url": "https://siak.unda.ac.id/",
+      "badge": "Akademik",
+      "icon": "academic-cap"
+    },
+    {
+      "name": "Edlink LMS",
+      "url": "https://edlink.id/",
+      "badge": "Tugas & Kelas",
+      "icon": "book-open"
+    },
+    {
+      "name": "Moodle eLearning",
+      "url": "https://cloud.unda.ac.id/moodle",
+      "badge": "Ujian Online",
+      "icon": "desktop-computer"
+    },
+    {
+      "name": "Portal eSign FIKOM",
+      "url": "https://esign-fikom.unda.ac.id/",
+      "badge": "Layanan Digital",
+      "icon": "document-check"
+    },
+    {
+      "name": "Website Utama Universitas",
+      "url": "https://www.unda.ac.id",
+      "badge": "Portal Induk",
+      "icon": "globe"
+    }
+  ],
+  "menu_id": [
+    {
+      "label": "Beranda",
+      "href": "/"
+    },
+    {
+      "label": "Profil",
+      "href": "/profil/",
+      "sub": [
+        {
+          "label": "Visi, Misi & Tujuan",
+          "href": "/profil/#visi-misi"
+        },
+        {
+          "label": "Sambutan Kaprodi & Dekan",
+          "href": "/profil/#sambutan"
+        },
+        {
+          "label": "Struktur Organisasi",
+          "href": "/profil/#struktur"
+        },
+        {
+          "label": "Akreditasi & Sertifikasi",
+          "href": "/profil/#akreditasi"
+        }
+      ]
+    },
+    {
+      "label": "Akademik",
+      "href": "/akademik/kurikulum/",
+      "sub": [
+        {
+          "label": "Kurikulum OBE 144 SKS",
+          "href": "/akademik/kurikulum/"
+        },
+        {
+          "label": "Profil Lulusan & CPL",
+          "href": "/akademik/kurikulum/#cpl"
+        },
+        {
+          "label": "Repositori Master RPS PDF",
+          "href": "/akademik/rps/"
+        }
+      ]
+    },
+    {
+      "label": "Civitas",
+      "href": "/civitas/",
+      "sub": [
+        {
+          "label": "Direktori Dosen Tetap",
+          "href": "/civitas/#dosen"
+        },
+        {
+          "label": "Asisten Dosen",
+          "href": "/civitas/#asdos"
+        }
+      ]
+    },
+    {
+      "label": "Riset",
+      "href": "/riset/kelompok-riset/",
+      "sub": [
+        {
+          "label": "5 Kelompok Riset (Research Groups)",
+          "href": "/riset/kelompok-riset/"
+        },
+        {
+          "label": "Roadmap & Topik Skripsi",
+          "href": "/riset/kelompok-riset/#topik-skripsi"
+        }
+      ]
+    },
+    {
+      "label": "Layanan",
+      "href": "/mahasiswa/",
+      "sub": [
+        {
+          "label": "Layanan Mahasiswa (SOP & Skripsi)",
+          "href": "/mahasiswa/"
+        },
+        {
+          "label": "Alumni & Ikatan Lulusan",
+          "href": "/alumni/"
+        },
+        {
+          "label": "Tracer Study Alumni",
+          "href": "/tracer-study/"
+        },
+        {
+          "label": "Unduhan Formulir & Panduan",
+          "href": "/unduhan/"
+        }
+      ]
+    },
+    {
+      "label": "Berita",
+      "href": "/berita/"
+    },
+    {
+      "label": "Kontak",
+      "href": "/kontak/"
+    }
+  ],
+  "menu_en": [
+    {
+      "label": "Home",
+      "href": "/en/"
+    },
+    {
+      "label": "About",
+      "href": "/en/about/",
+      "sub": [
+        {
+          "label": "Vision, Mission & Goals",
+          "href": "/en/about/#vision-mission"
+        },
+        {
+          "label": "Dean & Head Message",
+          "href": "/en/about/#welcome"
+        },
+        {
+          "label": "Organization Structure",
+          "href": "/en/about/#organization"
+        },
+        {
+          "label": "Accreditation",
+          "href": "/en/about/#accreditation"
+        }
+      ]
+    },
+    {
+      "label": "Academics",
+      "href": "/en/academics/curriculum/",
+      "sub": [
+        {
+          "label": "OBE Curriculum (144 Credits)",
+          "href": "/en/academics/curriculum/"
+        },
+        {
+          "label": "Graduate Profiles & CPL",
+          "href": "/en/academics/curriculum/#cpl"
+        },
+        {
+          "label": "Syllabus (RPS) Repository",
+          "href": "/en/academics/rps/"
+        }
+      ]
+    },
+    {
+      "label": "Faculty",
+      "href": "/en/faculty/",
+      "sub": [
+        {
+          "label": "Faculty Members",
+          "href": "/en/faculty/#faculty"
+        },
+        {
+          "label": "Teaching Assistants",
+          "href": "/en/faculty/#assistants"
+        }
+      ]
+    },
+    {
+      "label": "Research",
+      "href": "/en/research/groups/",
+      "sub": [
+        {
+          "label": "5 Research Groups",
+          "href": "/en/research/groups/"
+        },
+        {
+          "label": "Roadmaps & Thesis Topics",
+          "href": "/en/research/groups/#thesis-topics"
+        }
+      ]
+    },
+    {
+      "label": "Services",
+      "href": "/en/students/",
+      "sub": [
+        {
+          "label": "Student Guidelines & SOP",
+          "href": "/en/students/"
+        },
+        {
+          "label": "Alumni Association",
+          "href": "/en/alumni/"
+        },
+        {
+          "label": "Alumni Tracer Study",
+          "href": "/en/tracer-study/"
+        },
+        {
+          "label": "Downloads & Documents",
+          "href": "/en/downloads/"
+        }
+      ]
+    },
+    {
+      "label": "News",
+      "href": "/en/news/"
+    },
+    {
+      "label": "Contact",
+      "href": "/en/contact/"
+    }
+  ]
+}

@@ -1,0 +1,3157 @@
+{
+  "profil_lulusan": [
+    {
+      "no": 1,
+      "code": "PL01",
+      "desc": "Lulusan memiliki kemampuan menyusun, menganalisis, merancang data menggunakan teknik analisis data dan kecerdasan buatan (artificial intelligence) untuk mendukung pengambilan keputusan organisasi yang beretika, akurat, dan komunikatif.",
+      "roles": "Associate Data Scientist, Machine Learning Engineer, AI Engineer."
+    },
+    {
+      "no": 2,
+      "code": "PL02",
+      "desc": "Lulusan memiliki kemampuan mengelola, merancang dan mengembangkan solusi media digital yang mendukung inovasi organisasi secara adaptif, kreatif, kolaboratif, dan kompeten.",
+      "roles": "Digital Media Support Specialist, Multimedia Content Creator, dan UI/UX Designer."
+    },
+    {
+      "no": 3,
+      "code": "PL03",
+      "desc": "Lulusan memiliki kemampuan mengelola, mengevaluasi, dan mengendalikan risiko proyek sistem informasi berdasarkan analisis kebutuhan melalui kerja sama tim secara bertanggungjawab dan kompeten.",
+      "roles": "Associate ICT PM, IT Project Administrator, System Analyst."
+    }
+  ],
+  "cpl": [
+    {
+      "no": 1,
+      "code": "CPL01",
+      "desc": "Mampu menunjukkanA5sikap profesional, bertanggung jawab, dan menjunjung etika akademik serta etika profesi dalam pemanfaatan teknologi informasi dan data.",
+      "bloom_tags": [
+        "A5"
+      ]
+    },
+    {
+      "no": 2,
+      "code": "CPL02",
+      "desc": "Mampu memadukanC6kemampuan komunikasi dan kerja sama dalam tim multidisiplin untuk menghasilkan solusi kolaboratif di lingkungan organisasi.",
+      "bloom_tags": [
+        "C6"
+      ]
+    },
+    {
+      "no": 3,
+      "code": "CPL03",
+      "desc": "Mampu menganalisisC4kebutuhan data organisasi dan merekomendasikanC5pendekatan algoritma Kecerdasan Buatan yang tepat untuk pemecahan masalah berbasis data.",
+      "bloom_tags": [
+        "C5",
+        "C4"
+      ]
+    },
+    {
+      "no": 4,
+      "code": "CPL04",
+      "desc": "Mampu memvalidasiC5hasil analisis data dan merekomendasikanC5keputusan organisasi yang akurat serta mengkomunikasikannya secara efektif kepada pemangku kepentingan.",
+      "bloom_tags": [
+        "C5"
+      ]
+    },
+    {
+      "no": 5,
+      "code": "CPL05",
+      "desc": "Mampu mengelolaC4data organisasi secara bertanggung jawab dengan mempertahankanC5prinsip privasi, keamanan data, dan etika AI dalam setiap keputusan profesional.",
+      "bloom_tags": [
+        "C5",
+        "C4"
+      ]
+    },
+    {
+      "no": 6,
+      "code": "CPL06",
+      "desc": "Mampu merancangC6dan mengembangkanC6solusi media digital yang inovatif dengan mengintegrasikan estetika, fungsionalitas, dan teknologi terkini untuk memecahkan masalah organisasi.",
+      "bloom_tags": [
+        "C6"
+      ]
+    },
+    {
+      "no": 7,
+      "code": "CPL07",
+      "desc": "Mampu mengelolaC4siklus hidup proyek media digital secara adaptif terhadap perubahan teknologi dan kebutuhan organisasi, mulai dari perencanaan hingga evaluasi dampak.",
+      "bloom_tags": [
+        "C4"
+      ]
+    },
+    {
+      "no": 8,
+      "code": "CPL08",
+      "desc": "Mampu membangunC6kolaborasi tim lintas disiplin untuk menghasilkan produk media digital yang mendukung tujuan strategis organisasi dengan menjunjung tinggi etika profesi.",
+      "bloom_tags": [
+        "C6"
+      ]
+    },
+    {
+      "no": 9,
+      "code": "CPL09",
+      "desc": "Mampu menganalisisC4kebutuhan sistem informasi dan menilaiC5risiko proyek secara sistematis sebagai dasar pengambilan keputusan dalam pengelolaan proyek teknologi informasi.",
+      "bloom_tags": [
+        "C5",
+        "C4"
+      ]
+    },
+    {
+      "no": 10,
+      "code": "CPL10",
+      "desc": "Mampu menganalisisC4kebutuhan dan risiko proyek sistem informasi, memvalidasiC5kesesuaiannya dengan standar manajemen proyek, serta merancangC6solusi pengelolaan proyek yang bertanggung jawab dan sesuai kebutuhan organisasi.",
+      "bloom_tags": [
+        "C5",
+        "C4",
+        "C6"
+      ]
+    }
+  ],
+  "bahan_kajian": [
+    {
+      "code": "BK01",
+      "name": "Foundations of Information Systems (Pondasi Sistem Informasi)"
+    },
+    {
+      "code": "BK02",
+      "name": "Data and Information Management (Manajemen Data & Informasi)"
+    },
+    {
+      "code": "BK03",
+      "name": "Enterprise Architecture & Business Process (Arsitektur Enterprise & Proses Bisnis)"
+    },
+    {
+      "code": "BK04",
+      "name": "Algorithms, Programming & Software Development (Algoritma, Pemrograman & Rekayasa PL)"
+    },
+    {
+      "code": "BK05",
+      "name": "Infrastructure, Networks & Cloud Technologies (Infrastruktur, Jaringan & Komputasi Awan)"
+    },
+    {
+      "code": "BK06",
+      "name": "Information Security, Privacy & Risk (Keamanan Informasi, Privasi & Manajemen Risiko)"
+    },
+    {
+      "code": "BK07",
+      "name": "Artificial Intelligence & Machine Learning (Kecerdasan Buatan & Pembelajaran Mesin)"
+    },
+    {
+      "code": "BK08",
+      "name": "Data Science & Predictive Analytics (Sains Data & Analitika Prediktif)"
+    },
+    {
+      "code": "BK09",
+      "name": "Human-Computer Interaction & User Experience (Interaksi Manusia-Komputer & UI/UX)"
+    },
+    {
+      "code": "BK10",
+      "name": "Digital Media, Multimedia & Content Creation (Media Digital, Multimedia & Kreativitas Konten)"
+    },
+    {
+      "code": "BK11",
+      "name": "IT Project Management & Capstone (Manajemen Proyek TI & Proyek Terpadu)"
+    },
+    {
+      "code": "BK12",
+      "name": "Digital Leadership, Strategy & Technopreneurship (Kepemimpinan Digital & Teknopreneur)"
+    },
+    {
+      "code": "BK13",
+      "name": "Ethics, Religion, Social & National Identity (Etika, Agama, Sosial & Karakter Bangsa)"
+    },
+    {
+      "code": "BK14",
+      "name": "Mathematics, Statistics & Research Methods (Matematika, Statistika & Metode Penelitian)"
+    }
+  ],
+  "total_sks_lulus": 144,
+  "semester_sks_distribution": {
+    "1": 19,
+    "2": 20,
+    "3": 18,
+    "4": 20,
+    "5": 18,
+    "6": 20,
+    "7": 20,
+    "8": 9
+  },
+  "courses": [
+    {
+      "code": "MKW110181",
+      "name": "Pendidikan Agama",
+      "semester": 1,
+      "sks": 2,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK13"
+      ],
+      "bloom": [
+        "C5",
+        "C4"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 9
+    },
+    {
+      "code": "MKW110182",
+      "name": "Pendidikan Pancasila / PAK",
+      "semester": 1,
+      "sks": 2,
+      "pl": "PL03",
+      "bk": [
+        "BK13"
+      ],
+      "bloom": [
+        "C5",
+        "C4"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 9
+    },
+    {
+      "code": "MKW110184",
+      "name": "Bahasa Inggris",
+      "semester": 1,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "MKW110183",
+      "name": "Pendidikan Kewarganegaraan",
+      "semester": 2,
+      "sks": 2,
+      "pl": "PL03",
+      "bk": [
+        "BK13"
+      ],
+      "bloom": [
+        "C5",
+        "C4"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "MKW110185",
+      "name": "Bahasa Indonesia",
+      "semester": 4,
+      "sks": 2,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIFT1J01",
+      "name": "Matematika",
+      "semester": 1,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIFT1J02",
+      "name": "Struktur Data dan Kompleksitas Algoritma",
+      "semester": 1,
+      "sks": 3,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIFT2G03",
+      "name": "Statistika",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIFT2G04",
+      "name": "Basis Data",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL01,PL03",
+      "bk": [
+        "BK02",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIFT2G05",
+      "name": "Bahasa Pemrograman",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIFT3J06",
+      "name": "Jaringan Komputer",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK05"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIFT5B07",
+      "name": "Metodologi Penelitian",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK14",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIFC8B01",
+      "name": "Skripsi",
+      "semester": 8,
+      "sks": 6,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK14",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT1J01",
+      "name": "Konsep Sistem Informasi",
+      "semester": 1,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK01",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT1J02",
+      "name": "Etika Profesi dan Isu Sosial",
+      "semester": 1,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK13"
+      ],
+      "bloom": [
+        "C5",
+        "C4"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIPT2G03",
+      "name": "Analisis dan Manajemen Proses Bisnis",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL02,PL03",
+      "bk": [
+        "BK09",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT3J04",
+      "name": "Analisis dan Perancangan Sistem Informasi",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK03",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT4G05",
+      "name": "Keamanan Sistem Informasi",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL01,PL03",
+      "bk": [
+        "BK08",
+        "BK05"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT2G06",
+      "name": "Kecerdasan Buatan",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT3J07",
+      "name": "Sains Data",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK02"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT4G08",
+      "name": "Pembelajaran Mendalam",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK10"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT5J09",
+      "name": "Visi Komputer",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT8G10",
+      "name": "Teknologi Mutakhir (Emerging Technology)",
+      "semester": 8,
+      "sks": 3,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT3J11",
+      "name": "Multimedia",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL02",
+      "bk": [
+        "BK11",
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIPT3J12",
+      "name": "Desain Antarmuka dan Pengalaman Pengguna",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL02",
+      "bk": [
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIPL4G01",
+      "name": "Pemrograman Mobile",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL02",
+      "bk": [
+        "BK04",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIPL4G02",
+      "name": "Pengembangan Konten Digital",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT5J13",
+      "name": "Teknologi Kewirausahaan (Technopreneur)",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL02",
+      "bk": [
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT2G14",
+      "name": "Tata Kelola Teknologi Informasi",
+      "semester": 2,
+      "sks": 3,
+      "pl": "PL03",
+      "bk": [
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT3J15",
+      "name": "Sistem Enterprise",
+      "semester": 3,
+      "sks": 3,
+      "pl": "PL03",
+      "bk": [
+        "BK06",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT4G16",
+      "name": "Audit Sistem Informasi",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL03",
+      "bk": [
+        "BK08",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPT4G17",
+      "name": "Perencanaan Strategis dan Rekayasa Sistem",
+      "semester": 4,
+      "sks": 3,
+      "pl": "PL03",
+      "bk": [
+        "BK06",
+        "BK03"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 5,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIPC5J01",
+      "name": "Manajemen Proyek (Capstone)",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK03"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 6,
+      "sub_cpmk_count": 12
+    },
+    {
+      "code": "SIBT5J01",
+      "name": "Sistem Informasi Pemasaran Digital",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK12",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIBT5J02",
+      "name": "Manajemen Organisasi Digital",
+      "semester": 5,
+      "sks": 3,
+      "pl": "PL02,PL03",
+      "bk": [
+        "BK06",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G01",
+      "name": "Eksplorasi Perangkat Sains Data",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK02"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G02",
+      "name": "Konstruksi Algoritma Data",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G03",
+      "name": "Sintesis Informasi Visual",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM16G04",
+      "name": "Penalaran Kritis & Solusi Data",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G05",
+      "name": "Infrastruktur Basis Data Modern",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK02",
+        "BK05"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM16G06",
+      "name": "Produksi Konten Digital Kreatif",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM16G07",
+      "name": "Riset Interaksi Antarmuka",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK11",
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G08",
+      "name": "Eksperimentasi Teknologi Media",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM16G09",
+      "name": "Logika Desain & Estetika",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G10",
+      "name": "Prototipe Media Interaktif",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK11",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G11",
+      "name": "Arsitektur Perangkat Lunak Terapan",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM16G12",
+      "name": "Rekayasa Sistem & Basis Data",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK02"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G13",
+      "name": "Administrasi & Operasional Proyek TI",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G14",
+      "name": "Strategi Ekonomi Digital & E-Bisnis",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK06",
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM16G15",
+      "name": "Rancang Bangun Solusi Korporasi",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM26G01",
+      "name": "Validasi Masalah & Model Bisnis",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK09",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM26G02",
+      "name": "Pengembangan Produk Digital",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK12",
+        "BK04"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM26G03",
+      "name": "Komunikasi Bisnis & Persuasi",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM26G04",
+      "name": "Manajemen Operasional & Tim",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM26G05",
+      "name": "Etika Bisnis & Inovasi Digital",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK13",
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM36G01",
+      "name": "Implementasi Solusi Profesional",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK04",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM36G02",
+      "name": "Analisis Kebutuhan Operasional",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM36G03",
+      "name": "Etika & Profesionalisme Kerja",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK13",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM36G04",
+      "name": "Kolaborasi & Komunikasi Industri",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK01",
+        "BK07"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM36G05",
+      "name": "Adaptasi & Inovasi Teknologi",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02,PL03",
+      "bk": [
+        "BK12",
+        "BK05"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM46G01",
+      "name": "Analisis Kebutuhan Digital Masyarakat",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 9
+    },
+    {
+      "code": "SIM46G02",
+      "name": "Penyuluhan & Komunikasi Publik",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK01",
+        "BK13"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM46G03",
+      "name": "Pemberdayaan Teknologi Tepat Guna",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL02",
+      "bk": [
+        "BK12",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM46G04",
+      "name": "Manajemen Program & Kolaborasi Sosial",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK09"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM46G05",
+      "name": "Etika Kemasyarakatan & Dampak Sosial",
+      "semester": 6,
+      "sks": 4,
+      "pl": "PL01,PL03",
+      "bk": [
+        "BK13",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 9
+    },
+    {
+      "code": "SIM57J01",
+      "name": "Komunikasi Ilmiah Terintegrasi",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL01,PL02,PL03",
+      "bk": [
+        "BK14",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J02",
+      "name": "Analisis Data Terapan",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM57J03",
+      "name": "Rekayasa Analisis Data Tingkat Lanjut",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK02"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J04",
+      "name": "Visualisasi Data Komunikatif",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK10",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM57J05",
+      "name": "Pemodelan Data Organisasi",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL01",
+      "bk": [
+        "BK02",
+        "BK10"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM57J06",
+      "name": "Riset Pengalaman Pengguna",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK11",
+        "BK14"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J07",
+      "name": "Pengembangan Media Digital Kreatif",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK11"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J08",
+      "name": "Solusi Inovatif & Berpikir Desain",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK12",
+        "BK03"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J09",
+      "name": "Pemodelan Solusi Multimedia",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL02",
+      "bk": [
+        "BK11",
+        "BK12"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J10",
+      "name": "Analisis Statistik & Evaluasi Sistem",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK14",
+        "BK03"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM57J11",
+      "name": "Manajemen Risiko & Pengendalian Proyek",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK08"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    },
+    {
+      "code": "SIM57J12",
+      "name": "Komunikasi & Kolaborasi Profesional",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK07",
+        "BK01"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 10
+    },
+    {
+      "code": "SIM57J13",
+      "name": "Pemodelan Solusi Bisnis & TI",
+      "semester": 7,
+      "sks": 4,
+      "pl": "PL03",
+      "bk": [
+        "BK03",
+        "BK06"
+      ],
+      "bloom": [
+        "C5",
+        "C4",
+        "C6"
+      ],
+      "cpmk_count": 4,
+      "sub_cpmk_count": 11
+    }
+  ],
+  "step3_matrix": {
+    "bks": [
+      {
+        "code": "BK01",
+        "name": "Foundations of IS"
+      },
+      {
+        "code": "BK02",
+        "name": "Data & Information Mgmt"
+      },
+      {
+        "code": "BK03",
+        "name": "Systems Analysis & Design"
+      },
+      {
+        "code": "BK04",
+        "name": "Application Development"
+      },
+      {
+        "code": "BK05",
+        "name": "IS Infrastructure"
+      },
+      {
+        "code": "BK06",
+        "name": "IS Management & Strategy"
+      },
+      {
+        "code": "BK07",
+        "name": "Project Management for IS"
+      },
+      {
+        "code": "BK08",
+        "name": "Info Security & Risk Mgmt"
+      },
+      {
+        "code": "BK09",
+        "name": "Business Process Mgmt"
+      },
+      {
+        "code": "BK10",
+        "name": "AI & Data Analytics for IS"
+      },
+      {
+        "code": "BK11",
+        "name": "UI & UX Design"
+      },
+      {
+        "code": "BK12",
+        "name": "Digital Innovation & Technopreneur"
+      },
+      {
+        "code": "BK13",
+        "name": "Ethics & Social Implications"
+      },
+      {
+        "code": "BK14",
+        "name": "Quantitative Methods & Research"
+      }
+    ],
+    "cpls": [
+      "CPL01",
+      "CPL02",
+      "CPL03",
+      "CPL04",
+      "CPL05",
+      "CPL06",
+      "CPL07",
+      "CPL08",
+      "CPL09",
+      "CPL10"
+    ],
+    "mks": [
+      [
+        "MKW110181",
+        "BK13",
+        "",
+        "CPL01",
+        "CPL02",
+        "",
+        "U"
+      ],
+      [
+        "MKW110182",
+        "BK13",
+        "",
+        "CPL01",
+        "CPL02",
+        "",
+        "U"
+      ],
+      [
+        "MKW110184",
+        "BK01",
+        "",
+        "CPL01",
+        "CPL02",
+        "",
+        "U"
+      ],
+      [
+        "MKW110183",
+        "BK13",
+        "",
+        "CPL01",
+        "CPL02",
+        "",
+        "U"
+      ],
+      [
+        "MKW110185",
+        "BK01",
+        "",
+        "CPL01",
+        "CPL02",
+        "",
+        "U"
+      ],
+      [
+        "SIFT1J01",
+        "BK14",
+        "",
+        "CPL01",
+        "CPL03",
+        "",
+        "F"
+      ],
+      [
+        "SIFT1J02",
+        "BK04",
+        "",
+        "CPL01",
+        "CPL03",
+        "CPL04",
+        "F"
+      ],
+      [
+        "SIFT2G03",
+        "BK14",
+        "",
+        "CPL01",
+        "CPL03",
+        "CPL04",
+        "F"
+      ],
+      [
+        "SIFT2G04",
+        "BK02",
+        "BK04",
+        "CPL01",
+        "CPL03",
+        "CPL05",
+        "F"
+      ],
+      [
+        "SIFT2G05",
+        "BK04",
+        "",
+        "CPL01",
+        "CPL03",
+        "",
+        "F"
+      ],
+      [
+        "SIFT3J06",
+        "BK05",
+        "",
+        "CPL01",
+        "CPL05",
+        "",
+        "F"
+      ],
+      [
+        "SIFT5B07",
+        "BK14",
+        "BK01",
+        "CPL01",
+        "CPL02",
+        "CPL04",
+        "F"
+      ],
+      [
+        "SIFC8B01",
+        "BK14",
+        "BK01",
+        "CPL01",
+        "CPL02",
+        "CPL04",
+        "C"
+      ],
+      [
+        "SIPT1J01",
+        "BK01",
+        "BK09",
+        "CPL01",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT1J02",
+        "BK13",
+        "",
+        "CPL01",
+        "CPL05",
+        "",
+        "R"
+      ],
+      [
+        "SIPT2G03",
+        "BK09",
+        "BK06",
+        "CPL02",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT3J04",
+        "BK03",
+        "BK09",
+        "CPL01",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT4G05",
+        "BK08",
+        "BK05",
+        "CPL01",
+        "CPL05",
+        "CPL09",
+        "R"
+      ],
+      [
+        "SIPT2G06",
+        "BK10",
+        "BK04",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "R"
+      ],
+      [
+        "SIPT3J07",
+        "BK10",
+        "BK02",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "R"
+      ],
+      [
+        "SIPT4G08",
+        "BK10",
+        "",
+        "CPL03",
+        "CPL04",
+        "",
+        "R"
+      ],
+      [
+        "SIPT5J09",
+        "BK10",
+        "BK04",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "R"
+      ],
+      [
+        "SIPT8G10",
+        "BK10",
+        "BK12",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "R"
+      ],
+      [
+        "SIPT3J11",
+        "BK11",
+        "BK12",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "R"
+      ],
+      [
+        "SIPT3J12",
+        "BK11",
+        "",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "R"
+      ],
+      [
+        "SIPL4G01",
+        "BK04",
+        "BK11",
+        "CPL06",
+        "CPL08",
+        "",
+        "R"
+      ],
+      [
+        "SIPL4G02",
+        "BK12",
+        "BK11",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "R"
+      ],
+      [
+        "SIPT5J13",
+        "BK12",
+        "",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "R"
+      ],
+      [
+        "SIPT2G14",
+        "BK06",
+        "",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT3J15",
+        "BK06",
+        "BK09",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT4G16",
+        "BK08",
+        "BK06",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPT4G17",
+        "BK06",
+        "BK03",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "R"
+      ],
+      [
+        "SIPC5J01",
+        "BK07",
+        "BK03",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "C"
+      ],
+      [
+        "SIBT5J01",
+        "BK12",
+        "BK06",
+        "CPL02",
+        "CPL07",
+        "CPL09",
+        "R"
+      ],
+      [
+        "SIBT5J02",
+        "BK06",
+        "BK09",
+        "CPL02",
+        "CPL07",
+        "CPL09",
+        "R"
+      ],
+      [
+        "SIM16G01",
+        "BK10",
+        "BK02",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM16G02",
+        "BK10",
+        "BK04",
+        "CPL03",
+        "CPL04",
+        "",
+        "M"
+      ],
+      [
+        "SIM16G03",
+        "BK10",
+        "BK11",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM16G04",
+        "BK10",
+        "BK14",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM16G05",
+        "BK02",
+        "BK05",
+        "CPL03",
+        "CPL05",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM16G06",
+        "BK12",
+        "BK11",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM16G07",
+        "BK11",
+        "BK14",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM16G08",
+        "BK12",
+        "BK11",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM16G09",
+        "BK11",
+        "",
+        "CPL06",
+        "CPL08",
+        "",
+        "M"
+      ],
+      [
+        "SIM16G10",
+        "BK11",
+        "BK04",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM16G11",
+        "BK03",
+        "BK04",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM16G12",
+        "BK03",
+        "BK02",
+        "CPL09",
+        "CPL10",
+        "",
+        "M"
+      ],
+      [
+        "SIM16G13",
+        "BK07",
+        "BK06",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM16G14",
+        "BK06",
+        "BK12",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM16G15",
+        "BK03",
+        "BK06",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM26G01",
+        "BK09",
+        "BK06",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM26G02",
+        "BK12",
+        "BK04",
+        "CPL05",
+        "CPL06",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM26G03",
+        "BK12",
+        "BK01",
+        "CPL02",
+        "CPL06",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM26G04",
+        "BK07",
+        "BK09",
+        "CPL02",
+        "CPL07",
+        "CPL09",
+        "M"
+      ],
+      [
+        "SIM26G05",
+        "BK13",
+        "BK12",
+        "CPL01",
+        "CPL05",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM36G01",
+        "BK04",
+        "BK01",
+        "CPL01",
+        "CPL06",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM36G02",
+        "BK03",
+        "BK09",
+        "CPL09",
+        "CPL10",
+        "",
+        "M"
+      ],
+      [
+        "SIM36G03",
+        "BK13",
+        "BK01",
+        "CPL01",
+        "CPL02",
+        "",
+        "M"
+      ],
+      [
+        "SIM36G04",
+        "BK01",
+        "BK07",
+        "CPL01",
+        "CPL02",
+        "CPL07",
+        "M"
+      ],
+      [
+        "SIM36G05",
+        "BK12",
+        "BK05",
+        "CPL07",
+        "CPL08",
+        "CPL09",
+        "M"
+      ],
+      [
+        "SIM46G01",
+        "BK03",
+        "BK01",
+        "CPL09",
+        "CPL10",
+        "",
+        "M"
+      ],
+      [
+        "SIM46G02",
+        "BK01",
+        "BK13",
+        "CPL02",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM46G03",
+        "BK12",
+        "BK01",
+        "CPL05",
+        "CPL06",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM46G04",
+        "BK07",
+        "BK09",
+        "CPL02",
+        "CPL07",
+        "CPL09",
+        "M"
+      ],
+      [
+        "SIM46G05",
+        "BK13",
+        "BK01",
+        "CPL01",
+        "CPL05",
+        "CPL09",
+        "M"
+      ],
+      [
+        "SIM57J01",
+        "BK14",
+        "BK01",
+        "CPL01",
+        "CPL02",
+        "CPL04",
+        "M"
+      ],
+      [
+        "SIM57J02",
+        "BK10",
+        "BK14",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM57J03",
+        "BK10",
+        "BK02",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM57J04",
+        "BK10",
+        "BK11",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM57J05",
+        "BK02",
+        "BK10",
+        "CPL03",
+        "CPL04",
+        "CPL05",
+        "M"
+      ],
+      [
+        "SIM57J06",
+        "BK11",
+        "BK14",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM57J07",
+        "BK12",
+        "BK11",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM57J08",
+        "BK12",
+        "BK03",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM57J09",
+        "BK11",
+        "BK12",
+        "CPL06",
+        "CPL07",
+        "CPL08",
+        "M"
+      ],
+      [
+        "SIM57J10",
+        "BK14",
+        "BK03",
+        "CPL09",
+        "CPL10",
+        "",
+        "M"
+      ],
+      [
+        "SIM57J11",
+        "BK07",
+        "BK08",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ],
+      [
+        "SIM57J12",
+        "BK07",
+        "BK01",
+        "CPL02",
+        "CPL07",
+        "CPL09",
+        "M"
+      ],
+      [
+        "SIM57J13",
+        "BK03",
+        "BK06",
+        "CPL07",
+        "CPL09",
+        "CPL10",
+        "M"
+      ]
+    ]
+  },
+  "step4_matrix": {
+    "cpl_meta": [
+      {
+        "code": "CPL01",
+        "short": "Sikap profesional & etika",
+        "group": "base"
+      },
+      {
+        "code": "CPL02",
+        "short": "Komunikasi & kolaborasi tim",
+        "group": "base"
+      },
+      {
+        "code": "CPL03",
+        "short": "Analisis kebutuhan data & AI",
+        "group": "pl1"
+      },
+      {
+        "code": "CPL04",
+        "short": "Validasi analisis & keputusan",
+        "group": "pl1"
+      },
+      {
+        "code": "CPL05",
+        "short": "Kelola data, privasi & etika AI",
+        "group": "pl1"
+      },
+      {
+        "code": "CPL06",
+        "short": "Rancang & kembangkan media digital",
+        "group": "pl2"
+      },
+      {
+        "code": "CPL07",
+        "short": "Kelola siklus proyek media/IS",
+        "group": "pl2"
+      },
+      {
+        "code": "CPL08",
+        "short": "Kolaborasi tim lintas disiplin",
+        "group": "pl2"
+      },
+      {
+        "code": "CPL09",
+        "short": "Analisis kebutuhan & risiko SI",
+        "group": "pl3"
+      },
+      {
+        "code": "CPL10",
+        "short": "Validasi & rancang solusi proyek",
+        "group": "pl3"
+      }
+    ],
+    "mks": [
+      [
+        "MKW110181",
+        1,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "U"
+      ],
+      [
+        "MKW110182",
+        1,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "U"
+      ],
+      [
+        "MKW110184",
+        1,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "U"
+      ],
+      [
+        "SIFT1J01",
+        1,
+        [
+          "CPL01",
+          "CPL03"
+        ],
+        "F"
+      ],
+      [
+        "SIFT1J02",
+        1,
+        [
+          "CPL01",
+          "CPL03",
+          "CPL04"
+        ],
+        "F"
+      ],
+      [
+        "SIPT1J01",
+        1,
+        [
+          "CPL01",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIPT1J02",
+        1,
+        [
+          "CPL01",
+          "CPL05"
+        ],
+        "R"
+      ],
+      [
+        "MKW110183",
+        2,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "U"
+      ],
+      [
+        "SIFT2G03",
+        2,
+        [
+          "CPL01",
+          "CPL03",
+          "CPL04"
+        ],
+        "F"
+      ],
+      [
+        "SIFT2G04",
+        2,
+        [
+          "CPL01",
+          "CPL03",
+          "CPL05"
+        ],
+        "F"
+      ],
+      [
+        "SIFT2G05",
+        2,
+        [
+          "CPL01",
+          "CPL03"
+        ],
+        "F"
+      ],
+      [
+        "SIPT2G03",
+        2,
+        [
+          "CPL02",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIPT2G06",
+        2,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "R"
+      ],
+      [
+        "SIPT2G14",
+        2,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIFT3J06",
+        3,
+        [
+          "CPL01",
+          "CPL05"
+        ],
+        "F"
+      ],
+      [
+        "SIPT3J04",
+        3,
+        [
+          "CPL01",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIPT3J07",
+        3,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "R"
+      ],
+      [
+        "SIPT3J11",
+        3,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "R"
+      ],
+      [
+        "SIPT3J12",
+        3,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "R"
+      ],
+      [
+        "SIPT3J15",
+        3,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "MKW110185",
+        4,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "U"
+      ],
+      [
+        "SIPT4G05",
+        4,
+        [
+          "CPL01",
+          "CPL05",
+          "CPL09"
+        ],
+        "R"
+      ],
+      [
+        "SIPT4G08",
+        4,
+        [
+          "CPL03",
+          "CPL04"
+        ],
+        "R"
+      ],
+      [
+        "SIPL4G01",
+        4,
+        [
+          "CPL06",
+          "CPL08"
+        ],
+        "R"
+      ],
+      [
+        "SIPL4G02",
+        4,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "R"
+      ],
+      [
+        "SIPT4G16",
+        4,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIPT4G17",
+        4,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "R"
+      ],
+      [
+        "SIFT5B07",
+        5,
+        [
+          "CPL01",
+          "CPL02",
+          "CPL04"
+        ],
+        "F"
+      ],
+      [
+        "SIPT5J09",
+        5,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "R"
+      ],
+      [
+        "SIPT5J13",
+        5,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "R"
+      ],
+      [
+        "SIPC5J01",
+        5,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "C"
+      ],
+      [
+        "SIBT5J01",
+        5,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL09"
+        ],
+        "R"
+      ],
+      [
+        "SIBT5J02",
+        5,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL09"
+        ],
+        "R"
+      ],
+      [
+        "SIM16G01",
+        6,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G02",
+        6,
+        [
+          "CPL03",
+          "CPL04"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G03",
+        6,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G04",
+        6,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G05",
+        6,
+        [
+          "CPL03",
+          "CPL05",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G06",
+        6,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G07",
+        6,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G08",
+        6,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G09",
+        6,
+        [
+          "CPL06",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G10",
+        6,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G11",
+        6,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G12",
+        6,
+        [
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G13",
+        6,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G14",
+        6,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM16G15",
+        6,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM26G01",
+        6,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM26G02",
+        6,
+        [
+          "CPL05",
+          "CPL06",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM26G03",
+        6,
+        [
+          "CPL02",
+          "CPL06",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM26G04",
+        6,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL09"
+        ],
+        "M"
+      ],
+      [
+        "SIM26G05",
+        6,
+        [
+          "CPL01",
+          "CPL05",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM36G01",
+        6,
+        [
+          "CPL01",
+          "CPL06",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM36G02",
+        6,
+        [
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM36G03",
+        6,
+        [
+          "CPL01",
+          "CPL02"
+        ],
+        "M"
+      ],
+      [
+        "SIM36G04",
+        6,
+        [
+          "CPL01",
+          "CPL02",
+          "CPL07"
+        ],
+        "M"
+      ],
+      [
+        "SIM36G05",
+        6,
+        [
+          "CPL07",
+          "CPL08",
+          "CPL09"
+        ],
+        "M"
+      ],
+      [
+        "SIM46G01",
+        6,
+        [
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM46G02",
+        6,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM46G03",
+        6,
+        [
+          "CPL05",
+          "CPL06",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM46G04",
+        6,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL09"
+        ],
+        "M"
+      ],
+      [
+        "SIM46G05",
+        6,
+        [
+          "CPL01",
+          "CPL05",
+          "CPL09"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J01",
+        7,
+        [
+          "CPL01",
+          "CPL02",
+          "CPL04"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J02",
+        7,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J03",
+        7,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J04",
+        7,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J05",
+        7,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J06",
+        7,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J07",
+        7,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J08",
+        7,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J09",
+        7,
+        [
+          "CPL06",
+          "CPL07",
+          "CPL08"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J10",
+        7,
+        [
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J11",
+        7,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J12",
+        7,
+        [
+          "CPL02",
+          "CPL07",
+          "CPL09"
+        ],
+        "M"
+      ],
+      [
+        "SIM57J13",
+        7,
+        [
+          "CPL07",
+          "CPL09",
+          "CPL10"
+        ],
+        "M"
+      ],
+      [
+        "SIPT8G10",
+        8,
+        [
+          "CPL03",
+          "CPL04",
+          "CPL05"
+        ],
+        "R"
+      ],
+      [
+        "SIFC8B01",
+        8,
+        [
+          "CPL01",
+          "CPL02",
+          "CPL04"
+        ],
+        "C"
+      ]
+    ]
+  }
+}
