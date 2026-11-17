@@ -1,0 +1,111 @@
+---
+interface Props {
+  currentLang?: 'id' | 'en';
+}
+
+const { currentLang = 'id' } = Astro.props;
+const isEn = currentLang === 'en';
+---
+
+<div
+  id="search-modal"
+  class="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-navy-950/80 backdrop-blur-sm hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="search-title"
+>
+  <div class="relative w-full max-w-2xl bg-white rounded-lg shadow-2xl border border-slate-200 overflow-hidden transform transition-all">
+    {/* Modal Header */}
+    <div class="flex items-center justify-between px-6 py-4 border-b border-slate-200 bg-slate-50">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <h3 id="search-title" class="text-sm font-bold text-navy-900">
+          {isEn ? 'Institutional Search (Pagefind)' : 'Pencarian Dokumen & Konten Prodi (Pagefind)'}
+        </h3>
+      </div>
+      <button
+        type="button"
+        id="btn-close-search"
+        class="text-slate-400 hover:text-slate-600 p-1 rounded-md focus:outline-none touch-target"
+        aria-label="Tutup Dialog Pencarian"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    {/* Search Input Container */}
+    <div class="p-6">
+      <div id="pagefind-container"></div>
+    </div>
+
+    {/* Footer Tips */}
+    <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+      <span>{isEn ? 'Pure client-side static indexing' : 'Indeks statis client-side cepat tanpa backend'}</span>
+      <span>Tekan <kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded text-[10px]">ESC</kbd> untuk menutup</span>
+    </div>
+  </div>
+</div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+<script>
+  function setupSearch() {
+    const modal = document.getElementById('search-modal');
+    const openBtns = [
+      document.getElementById('btn-open-search'),
+      document.getElementById('btn-open-search-mobile')
+    ];
+    const closeBtn = document.getElementById('btn-close-search');
+
+    let pagefindInitialized = false;
+
+    function openModal() {
+      if (!modal) return;
+      modal.classList.remove('hidden');
+
+      if (!pagefindInitialized && typeof (window as any).PagefindUI !== 'undefined') {
+        new (window as any).PagefindUI({
+          element: '#pagefind-container',
+          showSubResults: true,
+          showImages: false,
+          resetStyles: false
+        });
+        pagefindInitialized = true;
+      }
+
+      setTimeout(() => {
+        const input = document.querySelector<HTMLInputElement>('.pagefind-ui__search-input');
+        input?.focus();
+      }, 100);
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.add('hidden');
+    }
+
+    openBtns.forEach(btn => btn?.addEventListener('click', openModal));
+    closeBtn?.addEventListener('click', closeModal);
+
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
+        closeModal();
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        openModal();
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setupSearch);
+</script>

@@ -1,0 +1,92 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'id' | 'en';
+  canonicalUrl?: string;
+  ogType?: string;
+}
+
+const {
+  title,
+  description = 'Program Studi S1 Sistem Informasi — Fakultas Ilmu Komputer, Universitas Darwan Ali. Pendidikan sarjana berorientasi OBE, Kecerdasan Buatan, Sains Data, dan Sistem Enterprise.',
+  lang = 'id',
+  canonicalUrl = Astro.url.href,
+  ogType = 'website',
+} = Astro.props;
+
+import '../styles/global.css';
+import Header from '../components/common/Header.astro';
+import Footer from '../components/common/Footer.astro';
+import SearchModal from '../components/common/SearchModal.astro';
+
+const formattedTitle = title.includes('Universitas Darwan Ali') 
+  ? title 
+  : `${title} | S1 Sistem Informasi UNDA`;
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    {/* Primary SEO Meta */}
+    <title>{formattedTitle}</title>
+    <meta name="title" content={formattedTitle} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    {/* Open Graph / Facebook */}
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={formattedTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="S1 Sistem Informasi UNDA" />
+
+    {/* Twitter */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={formattedTitle} />
+    <meta property="twitter:description" content={description} />
+
+    {/* Google Structured Data / Schema.org */}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Program Studi S1 Sistem Informasi",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universitas Darwan Ali",
+        "url": "https://www.unda.ac.id"
+      },
+      "department": "Fakultas Ilmu Komputer",
+      "url": "https://sisteminformasi-tech.github.io/website-prodi-si/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Batu Berlian No. 10",
+        "addressLocality": "Sampit",
+        "addressRegion": "Kalimantan Tengah",
+        "postalCode": "74322",
+        "addressCountry": "ID"
+      },
+      "email": "sisteminformasi@unda.ac.id"
+    })} />
+  </head>
+  <body class="bg-[#FAF9F6] text-slate-800 antialiased flex flex-col min-h-screen selection:bg-gold-500 selection:text-navy-950">
+    <a href="#main-content" class="skip-link">
+      {lang === 'en' ? 'Skip to main content' : 'Lewati ke konten utama'}
+    </a>
+
+    <Header currentLang={lang} />
+
+    <main id="main-content" class="flex-grow focus:outline-none" data-pagefind-body>
+      <slot />
+    </main>
+
+    <Footer currentLang={lang} />
+    <SearchModal currentLang={lang} />
+  </body>
+</html>

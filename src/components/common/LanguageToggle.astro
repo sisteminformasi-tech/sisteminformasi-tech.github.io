@@ -1,0 +1,40 @@
+---
+interface Props {
+  currentLang: 'id' | 'en';
+  currentPath: string;
+}
+
+const { currentLang, currentPath } = Astro.props;
+import { getLocalizedPath } from '../../i18n/utils';
+
+const idUrl = getLocalizedPath(currentPath, 'id');
+const enUrl = getLocalizedPath(currentPath, 'en');
+---
+
+<div class="inline-flex items-center rounded-md border border-slate-700 bg-navy-950 p-0.5 text-xs font-semibold" role="group" aria-label="Language Selector">
+  <a
+    href={idUrl}
+    class={`px-2.5 py-1 rounded transition-colors duration-150 ${
+      currentLang === 'id'
+        ? 'bg-gold-500 text-navy-950 font-bold shadow-sm'
+        : 'text-slate-300 hover:text-white hover:bg-navy-800'
+    }`}
+    aria-current={currentLang === 'id' ? 'page' : undefined}
+    title="Bahasa Indonesia"
+  >
+    ID
+  </a>
+  <span class="text-slate-600 px-0.5 select-none">|</span>
+  <a
+    href={enUrl}
+    class={`px-2.5 py-1 rounded transition-colors duration-150 ${
+      currentLang === 'en'
+        ? 'bg-gold-500 text-navy-950 font-bold shadow-sm'
+        : 'text-slate-300 hover:text-white hover:bg-navy-800'
+    }`}
+    aria-current={currentLang === 'en' ? 'page' : undefined}
+    title="English Version"
+  >
+    EN
+  </a>
+</div>

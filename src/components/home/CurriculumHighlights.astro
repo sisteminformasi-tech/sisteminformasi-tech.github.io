@@ -1,0 +1,82 @@
+---
+interface Props {
+  lang?: 'id' | 'en';
+}
+
+const { lang = 'id' } = Astro.props;
+import curriculum from '../../data/curriculum.json';
+const isEn = lang === 'en';
+---
+
+<section class="py-16 bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block mb-1">
+        {isEn ? 'Outcome-Based Education' : 'Kurikulum Berstandar OBE'}
+      </span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight font-editorial mb-3">
+        {isEn ? '144 Credits Curriculum & 4 Graduate Profiles' : 'Struktur Kurikulum 144 SKS & Profil Lulusan'}
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+        {isEn
+          ? 'Mapped with Bloom Taxonomy (Cognitive C1-C6, Psychomotor P1-P5, Affective A1-A5) and structured across 13 core knowledge areas to deliver well-rounded competency.'
+          : 'Disusun berdasarkan taksonomi Bloom terukur (Kognitif C1-C6, Psikomotorik P1-P5, Afektif A1-A5) serta 13 Bahan Kajian terpadu guna memastikan kesiapan karir lulusan.'}
+      </p>
+    </div>
+
+    {/* Graduate Profiles Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      {curriculum.profil_lulusan.map((pl) => (
+        <div class="card-academic p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 bg-navy-900 text-gold-400 font-code font-bold text-xs rounded">
+                {pl.code}
+              </span>
+              <span class="text-xs font-medium text-slate-400">Profil Lulusan #{pl.no}</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed mb-4">
+              {pl.desc}
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-navy-900 block uppercase tracking-wider mb-1">
+              {isEn ? 'Career Prospects:' : 'Peluang Profesi:'}
+            </span>
+            <p class="text-xs text-gold-700 font-medium">
+              {pl.roles}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Semester SKS Distribution Summary */}
+    <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <h4 class="text-sm font-bold text-navy-900">
+          {isEn ? 'Balanced 8-Semester Progression (Total 144 SKS)' : 'Sebaran Beban Studi 8 Semester (Total 144 SKS)'}
+        </h4>
+        <p class="text-xs text-slate-500">
+          {isEn ? 'Compliant with National Higher Education Standards (Permendikbudristek).' : 'Memenuhi Standar Nasional Pendidikan Tinggi (SN-Dikti) dan Akreditasi LAM INFOKOM.'}
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        {Object.entries(curriculum.semester_sks_distribution).map(([smt, sks]) => (
+          <div class="flex flex-col items-center bg-white border border-slate-200 px-3 py-1.5 rounded text-center shadow-xs">
+            <span class="text-[10px] text-slate-400 uppercase font-bold">Sem {smt}</span>
+            <span class="text-xs font-bold text-navy-900 font-code">{sks} SKS</span>
+          </div>
+        ))}
+      </div>
+
+      <a
+        href={isEn ? '/en/academics/curriculum/' : '/akademik/kurikulum/'}
+        class="inline-flex items-center text-xs font-bold text-white bg-navy-900 hover:bg-navy-800 px-4 py-2.5 rounded shadow-sm transition-colors whitespace-nowrap"
+      >
+        {isEn ? 'View Detailed Matrix →' : 'Lihat Matriks Lengkap →'}
+      </a>
+    </div>
+  </div>
+</section>

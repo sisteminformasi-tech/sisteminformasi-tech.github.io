@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="404 — Halaman Tidak Ditemukan" lang="id">
+  <section class="py-24 text-center max-w-lg mx-auto px-4">
+    <div class="mb-6">
+      <span class="text-6xl font-bold text-gold-400 font-editorial">404</span>
+    </div>
+    <h1 class="text-2xl font-bold text-navy-900 font-editorial mb-4">
+      Halaman Tidak Ditemukan
+    </h1>
+    <p class="text-sm text-slate-600 mb-8 leading-relaxed">
+      Mohon maaf, laman yang Anda tuju tidak tersedia, telah dipindahkan, atau sedang dalam proses pemutakhiran. Silakan gunakan menu navigasi atau fitur pencarian untuk menemukan informasi yang dibutuhkan.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-4">
+      <a href="/" class="inline-flex items-center px-6 py-3 bg-navy-900 hover:bg-navy-800 text-white font-bold text-sm rounded-md transition-colors shadow-sm">
+        ← Kembali ke Beranda
+      </a>
+      <button
+        type="button"
+        id="btn-404-search"
+        class="inline-flex items-center px-5 py-3 border border-slate-300 hover:border-gold-400 text-navy-900 font-semibold text-sm rounded-md transition-colors bg-white hover:bg-slate-50"
+        onclick="document.getElementById('btn-open-search')?.click()"
+      >
+        Cari Dokumen
+      </button>
+    </div>
+  </section>
+</BaseLayout>

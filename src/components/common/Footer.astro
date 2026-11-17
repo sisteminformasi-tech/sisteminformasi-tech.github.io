@@ -1,0 +1,148 @@
+---
+interface Props {
+  currentLang?: 'id' | 'en';
+}
+
+const { currentLang = 'id' } = Astro.props;
+import navigation from '../../data/navigation.json';
+const isEn = currentLang === 'en';
+---
+
+<footer class="bg-navy-950 text-slate-300 border-t border-navy-800/80 pt-16 pb-12 mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      {/* Col 1: Institutional Identity */}
+      <div class="space-y-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-navy-900 border border-gold-500/50 flex items-center justify-center font-bold text-gold-400 text-lg shadow-sm">
+            SI
+          </div>
+          <div>
+            <div class="font-bold text-white text-base">
+              {isEn ? 'Information Systems' : 'S1 Sistem Informasi'}
+            </div>
+            <div class="text-xs text-slate-400">
+              Fakultas Ilmu Komputer · UNDA
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          {isEn
+            ? 'Delivering Outcome-Based Education (OBE) in AI, Data Science, and Enterprise Systems. Accredited "Baik Sekali" by BAN-PT.'
+            : 'Menyelenggarakan pendidikan sarjana berbasis Outcome-Based Education (OBE) di bidang Kecerdasan Buatan, Sains Data, dan Sistem Enterprise. Terakreditasi "Baik Sekali".'}
+        </p>
+        <div class="pt-2">
+          <span class="inline-block px-3 py-1 bg-navy-900 border border-gold-500/30 text-gold-400 rounded text-xs font-semibold">
+            SK Akreditasi: Baik Sekali
+          </span>
+        </div>
+      </div>
+
+      {/* Col 2: Institutional Portals */}
+      <div>
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-gold-500 pl-2">
+          {isEn ? 'Institutional Portals' : 'Portal Layanan Institusi'}
+        </h4>
+        <ul class="space-y-2.5 text-xs">
+          <li>
+            <a href="https://univdarwanali.siakadcloud.com/spmbfront/program-studi-detail/detail/57201" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> SPMB Online UNDA
+            </a>
+          </li>
+          <li>
+            <a href="https://siak.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> SIAKAD Cloud UNDA
+            </a>
+          </li>
+          <li>
+            <a href="https://edlink.id/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> Edlink Learning Platform
+            </a>
+          </li>
+          <li>
+            <a href="https://cloud.unda.ac.id/moodle" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> Moodle eLearning UNDA
+            </a>
+          </li>
+          <li>
+            <a href="https://esign-fikom.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> eSign FIKOM UNDA
+            </a>
+          </li>
+          <li>
+            <a href="https://www.unda.ac.id" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> Website Utama Universitas
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Col 3: Academic & Research Links */}
+      <div>
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-gold-500 pl-2">
+          {isEn ? 'Academic & Research' : 'Akademik & Riset'}
+        </h4>
+        <ul class="space-y-2.5 text-xs">
+          <li>
+            <a href={isEn ? '/en/academics/curriculum/' : '/akademik/kurikulum/'} class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> {isEn ? 'OBE Curriculum (144 Credits)' : 'Kurikulum OBE 144 SKS'}
+            </a>
+          </li>
+          <li>
+            <a href={isEn ? '/en/academics/rps/' : '/akademik/rps/'} class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> {isEn ? 'Syllabus (RPS) Repository' : 'Repositori Master RPS PDF'}
+            </a>
+          </li>
+          <li>
+            <a href={isEn ? '/en/faculty/' : '/civitas/'} class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> {isEn ? 'Faculty & Assistant Directory' : 'Direktori Dosen & Asisten'}
+            </a>
+          </li>
+          <li>
+            <a href={isEn ? '/en/research/groups/' : '/riset/kelompok-riset/'} class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> {isEn ? '5 Research Groups' : '5 Kelompok Riset Dosen'}
+            </a>
+          </li>
+          <li>
+            <a href="http://bowo.staff.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
+              <span class="text-gold-500 mr-2">›</span> {isEn ? 'Dean / Head Personal Web' : 'Web Staf Kaprodi & Dekan'}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Col 4: Contact & Secretariat */}
+      <div class="space-y-3 text-xs">
+        <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-gold-500 pl-2">
+          {isEn ? 'Secretariat & Contact' : 'Sekretariat & Kontak'}
+        </h4>
+        <p class="text-slate-400 leading-relaxed">
+          <strong>Kampus Utama:</strong><br />
+          Jl. Batu Berlian No. 10, Kel. Mentawa Baru Hulu, Kec. Mentawa Baru Ketapang, Kab. Kotawaringin Timur, Kalimantan Tengah 74322.
+        </p>
+        <p class="text-slate-400">
+          <strong>Email Resmi:</strong><br />
+          <a href="mailto:sisteminformasi@unda.ac.id" class="text-gold-400 hover:underline">sisteminformasi@unda.ac.id</a>
+        </p>
+        <p class="text-slate-400">
+          <strong>Instagram Resmi:</strong><br />
+          <a href="https://www.instagram.com/sisfounda/" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:underline">@sisfounda</a>
+        </p>
+      </div>
+    </div>
+
+    {/* Bottom Bar */}
+    <div class="pt-8 border-t border-navy-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <p>
+        &copy; {new Date().getFullYear()} Program Studi S1 Sistem Informasi — Fakultas Ilmu Komputer, Universitas Darwan Ali.
+      </p>
+      <div class="flex items-center space-x-4">
+        <span>Pure Static SSG</span>
+        <span>·</span>
+        <span>Zero Backend Bloat</span>
+        <span>·</span>
+        <a href="#top" class="text-slate-400 hover:text-gold-400 transition-colors">↑ {isEn ? 'Top' : 'Ke Atas'}</a>
+      </div>
+    </div>
+  </div>
+</footer>

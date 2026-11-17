@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sisteminformasi-tech.github.io/website-prodi-si/sitemap-index.xml

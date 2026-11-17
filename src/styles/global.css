@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy-primary: #0A192F;
+  --color-navy-secondary: #1E293B;
+  --color-slate-text: #334155;
+  --color-gold-accent: #C5A880;
+  --color-gold-hover: #B08D5B;
+  --color-canvas-bg: #FAF9F6;
+  --color-surface-white: #FFFFFF;
+  --color-border-hairline: #E2E8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-canvas-bg);
+  color: var(--color-navy-secondary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Skip link for accessibility (WCAG AA/AAA) */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.75rem 1.25rem;
+  background-color: #0A192F;
+  color: #C5A880;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border: 2px solid #C5A880;
+  text-decoration: none;
+  transition: top 0.15s ease-out;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Touch targets >= 48px for mobile accessibility */
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Editorial Serif Headings */
+h1, h2, h3, .font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Monospace for Course Codes & NUPTK */
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Non-AI Elegant Card & Borders */
+.card-academic {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-academic:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px rgba(10, 25, 47, 0.05);
+}
+
+/* Gold Badge & Accent borders */
+.badge-gold {
+  background-color: #FAF5EE;
+  color: #8E6E3A;
+  border: 1px solid #E5C97A;
+}
+
+.badge-navy {
+  background-color: #F1F5F9;
+  color: #0A192F;
+  border: 1px solid #CBD5E1;
+}
+
+/* Clean Matrix & Table Styling */
+.table-academic {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-academic th {
+  background-color: #0A192F;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.table-academic td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid #E2E8F0;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+.table-academic tr:nth-child(even) td {
+  background-color: #F8FAFC;
+}
+.table-academic tr:hover td {
+  background-color: #F1F5F9;
+}
+
+/* Bloom Badges */
+.bloom-tag {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+  vertical-align: baseline;
+}
+.bloom-cognitive {
+  background-color: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+}
+.bloom-psychomotor {
+  background-color: #F0FDF4;
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+}
+.bloom-affective {
+  background-color: #FFFBEB;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Print Styles */
+@media print {
+  .no-print, header, footer, .skip-link, #search-modal {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .card-academic {
+    border: 1px solid #000000 !important;
+    box-shadow: none !important;
+  }
+}

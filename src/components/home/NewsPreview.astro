@@ -1,0 +1,88 @@
+---
+interface Props {
+  lang?: 'id' | 'en';
+}
+
+const { lang = 'id' } = Astro.props;
+const isEn = lang === 'en';
+
+const sampleNews = [
+  {
+    title_id: 'Sosialisasi Kurikulum OBE 144 SKS bagi Mahasiswa Baru S1 Sistem Informasi',
+    title_en: 'Socialization of the 144-Credit OBE Curriculum for New Information Systems Students',
+    date: '15 November 2026',
+    category_id: 'Akademik',
+    category_en: 'Academics',
+    summary_id: 'Program Studi memaparkan peta capaian pembelajaran lulusan (CPL), pilihan konsentrasi, dan jalur riset skripsi.',
+    summary_en: 'The program outlines graduate learning outcomes (CPL), study concentrations, and thesis pathways.'
+  },
+  {
+    title_id: 'Dosen S1 Sistem Informasi Terbitkan Publikasi Internasional Terindeks Scopus Q1 di Bidang EEG & AI',
+    title_en: 'Information Systems Faculty Publishes Scopus Q1 Paper in EEG Emotion Recognition & AI',
+    date: '02 November 2026',
+    category_id: 'Riset',
+    category_en: 'Research',
+    summary_id: 'Penelitian Multi-Domain CNN dan Recurrence Plot berhasil terbit pada jurnal bereputasi tinggi.',
+    summary_en: 'Research on Multi-Domain CNN and Recurrence Plots is successfully published in a top-tier peer-reviewed journal.'
+  },
+  {
+    title_id: 'Pembekalan Peserta Magang Industri MBKM dan Studi Independen Bersertifikat Angkatan 2026',
+    title_en: 'Briefing for MBKM Certified Internship and Independent Study Participants 2026',
+    date: '24 Oktober 2026',
+    category_id: 'Kemahasiswaan',
+    category_en: 'Student Affairs',
+    summary_id: 'Mahasiswa dibekali etika kerja profesional, konversi 20 SKS, dan pelaporan logbook berkala.',
+    summary_en: 'Students receive orientation on professional ethics, 20-credit conversion, and periodic logbook reporting.'
+  }
+];
+---
+
+<section class="py-16 bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block mb-1">
+          {isEn ? 'Campus Bulletin' : 'Warta & Pengumuman'}
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight font-editorial">
+          {isEn ? 'Latest News & Events' : 'Berita & Pengumuman Terkini'}
+        </h2>
+      </div>
+      <a
+        href={isEn ? '/en/news/' : '/berita/'}
+        class="text-xs font-bold text-gold-700 hover:text-navy-900 hover:underline inline-flex items-center"
+      >
+        {isEn ? 'View All News & Announcements →' : 'Lihat Semua Arsip Berita →'}
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {sampleNews.map((news) => (
+        <article class="card-academic p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium">
+                {isEn ? news.category_en : news.category_id}
+              </span>
+              <span>{news.date}</span>
+            </div>
+            <h3 class="text-base font-bold text-navy-900 leading-snug font-editorial mb-3">
+              {isEn ? news.title_en : news.title_id}
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              {isEn ? news.summary_en : news.summary_id}
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100">
+            <a
+              href={isEn ? '/en/news/' : '/berita/'}
+              class="text-xs font-bold text-gold-700 hover:text-navy-900 inline-flex items-center"
+            >
+              {isEn ? 'Read Article →' : 'Baca Selengkapnya →'}
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
