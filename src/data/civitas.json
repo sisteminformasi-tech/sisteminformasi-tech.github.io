@@ -20,7 +20,6 @@
       "gs_cits": "204",
       "gs_hindex": "7",
       "email": "dwi.wahyu9@unda.ac.id",
-      "personal_web": "http://bowo.staff.unda.ac.id/",
       "education": [
         "S1: Sarjana Sains (S.Si.), Universitas Indonesia (2011)",
         "S2: Master of Engineering (M.Eng.), Universitas Gadjah Mada (2014)",
@@ -35,12 +34,12 @@
         "Computer Vision."
       ],
       "selected_publications": [
-        "*Enhancing EEG-Based Emotion Recognition Using Asymmetric Windowing Recurrence Plots* — **IEEE Access** (Scopus Q1, Open Access, 2024).",
-        "*A systematic literature review of emotion recognition using EEG signals* — **Cognitive Systems Research** (Scopus Q1, Elsevier, 2023, 58+ sitasi).",
-        "*An Advanced Data Augmentation Scheme on Limited EEG Signals for Human Emotion Recognition* — **Lecture Notes in Electrical Engineering** (Scopus Q4, Springer, 2023).",
-        "*Multi-Representation Convolutional Neural Network to Recognize Human Emotion* — **IEEE ICITDA**, 2023.",
-        "*A study of data randomization on a computer based feature selection for diagnosing coronary artery disease* — **WIT Transactions on Information and Communication Technologies** (Scopus Q4, 2014).",
-        "*Benchmarking of feature selection techniques for coronary artery disease diagnosis* — **IEEE ICITEE**, 2014."
+        "Enhancing EEG-Based Emotion Recognition Using Asymmetric Windowing Recurrence Plots — IEEE Access (Scopus Q1, Open Access, 2024).",
+        "A systematic literature review of emotion recognition using EEG signals — Cognitive Systems Research (Scopus Q1, Elsevier, 2023, 58+ sitasi).",
+        "An Advanced Data Augmentation Scheme on Limited EEG Signals for Human Emotion Recognition — Lecture Notes in Electrical Engineering (Scopus Q4, Springer, 2023).",
+        "Multi-Representation Convolutional Neural Network to Recognize Human Emotion — IEEE ICITDA, 2023.",
+        "A study of data randomization on a computer based feature selection for diagnosing coronary artery disease — WIT Transactions on Information and Communication Technologies (Scopus Q4, 2014).",
+        "Benchmarking of feature selection techniques for coronary artery disease diagnosis — IEEE ICITEE, 2014."
       ],
       "courses_taught": [
         "Visi Komputer",
@@ -50,7 +49,8 @@
       ],
       "bio": "",
       "slug": "dr-dwi-wahyu-prabowo-s-si-m-eng",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/bowo.jpg"
     },
     {
       "name": "Eka Prasetyaningrum, S.Kom., M.M.",
@@ -72,7 +72,6 @@
       "gs_cits": "120",
       "gs_hindex": "6",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Universitas Darwan Ali (2015)",
         "S2: Magister Manajemen (M.M.), Universitas Darwan Ali (2017)"
@@ -86,9 +85,9 @@
         "Information Systems."
       ],
       "selected_publications": [
-        "*Identification of High-Risk Breastfeeding Mother Subgroups Through K-Means Clustering and Principal Component Analysis (PCA)* (2024).",
-        "*Pemberdayaan Guru TK di PKG Markisa melalui Literasi Digital untuk Branding dan Promosi Sekolah* (2023).",
-        "*Analisis Perbandingan Algoritma Klasifikasi Data Mining untuk Evaluasi Kepuasan Mahasiswa*."
+        "Identification of High-Risk Breastfeeding Mother Subgroups Through K-Means Clustering and Principal Component Analysis (PCA) (2024).",
+        "Pemberdayaan Guru TK di PKG Markisa melalui Literasi Digital untuk Branding dan Promosi Sekolah (2023).",
+        "Analisis Perbandingan Algoritma Klasifikasi Data Mining untuk Evaluasi Kepuasan Mahasiswa."
       ],
       "courses_taught": [
         "Sistem Informasi Pemasaran Digital",
@@ -97,7 +96,8 @@
       ],
       "bio": "",
       "slug": "eka-prasetyaningrum-s-kom-m-m",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/eka.jpg"
     },
     {
       "name": "Nurahman, S.Kom., M.M., M.Kom.",
@@ -119,7 +119,6 @@
       "gs_cits": "306",
       "gs_hindex": "9",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Universitas Darwan Ali (2011)",
         "S2: Magister Manajemen (M.M.), Universitas Darwan Ali (2013)",
@@ -140,9 +139,9 @@
         "and Digital Competency Development."
       ],
       "selected_publications": [
-        "*Analisis Sentimen Ulasan Pengguna Aplikasi Ruangguru Berbasis IndoBERT untuk Evaluasi Layanan EdTech* (2024).",
-        "*Klasifikasi Kematangan Buah Lokal Kalimantan Menggunakan Transfer Learning* (2024).",
-        "*Pengaruh Penerapan HRIS terhadap Produktivitas Kerja Pegawai pada Industri Perkebunan di Kotawaringin Timur*."
+        "Analisis Sentimen Ulasan Pengguna Aplikasi Ruangguru Berbasis IndoBERT untuk Evaluasi Layanan EdTech (2024).",
+        "Klasifikasi Kematangan Buah Lokal Kalimantan Menggunakan Transfer Learning (2024).",
+        "Pengaruh Penerapan HRIS terhadap Produktivitas Kerja Pegawai pada Industri Perkebunan di Kotawaringin Timur."
       ],
       "courses_taught": [
         "Sains Data",
@@ -151,7 +150,8 @@
       ],
       "bio": "",
       "slug": "nurahman-s-kom-m-m-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/nurahman.jpg"
     },
     {
       "name": "Abdul Aziz, S.Pd., M.Pd.",
@@ -173,7 +173,6 @@
       "gs_cits": "88",
       "gs_hindex": "5",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Pendidikan (S.Pd.), Universitas Muhammadiyah Malang (2011)",
         "S2: Magister Pendidikan (M.Pd.), Universitas Muhammadiyah Malang (2014)"
@@ -188,8 +187,8 @@
         "Character Education."
       ],
       "selected_publications": [
-        "*Penguatan Budaya Mutu Sekolah melalui Pendampingan Akreditasi di SMPN Satu Atap* (2023).",
-        "*Sistem Pendukung Keputusan Penentuan Kelayakan Bantuan Sosial Menggunakan Kombinasi Metode AHP dan TOPSIS*."
+        "Penguatan Budaya Mutu Sekolah melalui Pendampingan Akreditasi di SMPN Satu Atap (2023).",
+        "Sistem Pendukung Keputusan Penentuan Kelayakan Bantuan Sosial Menggunakan Kombinasi Metode AHP dan TOPSIS."
       ],
       "courses_taught": [
         "Pendidikan Pancasila / Pendidikan Anti Korupsi (PAK)",
@@ -198,7 +197,8 @@
       ],
       "bio": "",
       "slug": "abdul-aziz-s-pd-m-pd",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/aziz.jpg"
     },
     {
       "name": "Agung Purwanto, S.Kom., M.Kom.",
@@ -220,7 +220,6 @@
       "gs_cits": "219",
       "gs_hindex": "10",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Universitas 17 Agustus 1945 Surabaya (2009)",
         "S2: Magister Komputer (M.Kom.), Institut Teknologi Sepuluh Nopember (ITS Surabaya) (2017)"
@@ -231,9 +230,9 @@
         "Information Systems."
       ],
       "selected_publications": [
-        "*Personalized Learning for Students with Special Needs: Empirical Evidence from Indonesia* (2024).",
-        "*Evaluasi Penerimaan E-Wallet Menggunakan UTAUT 2 Di Kabupaten Kotawaringin Timur* (2023).",
-        "*Audit Tata Kelola Teknologi Informasi Menggunakan Framework COBIT pada Instansi Publik*."
+        "Personalized Learning for Students with Special Needs: Empirical Evidence from Indonesia (2024).",
+        "Evaluasi Penerimaan E-Wallet Menggunakan UTAUT 2 Di Kabupaten Kotawaringin Timur (2023).",
+        "Audit Tata Kelola Teknologi Informasi Menggunakan Framework COBIT pada Instansi Publik."
       ],
       "courses_taught": [
         "Perencanaan Strategis dan Rekayasa Sistem",
@@ -242,7 +241,8 @@
       ],
       "bio": "",
       "slug": "agung-purwanto-s-kom-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/agung.jpg"
     },
     {
       "name": "Elika Thea Kirana, S.T., M.Kom.",
@@ -264,7 +264,6 @@
       "gs_cits": "49",
       "gs_hindex": "3",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Teknik (S.T.), Universitas Atma Jaya Yogyakarta (2017)",
         "S2: Magister Komputer (M.Kom.), Universitas Atma Jaya Yogyakarta (2019)"
@@ -278,8 +277,8 @@
         "Internet of Things (IoT)."
       ],
       "selected_publications": [
-        "*Membangun Sekolah Berkelanjutan: Implementasi Optimalisasi Sarana Prasarana dalam Era Digital* (2023).",
-        "*Mentoring of MGMP ICT High School in East Kotawaringin to Improve Teacher Competence in Augmented Reality Learning Media* (2023)."
+        "Membangun Sekolah Berkelanjutan: Implementasi Optimalisasi Sarana Prasarana dalam Era Digital (2023).",
+        "Mentoring of MGMP ICT High School in East Kotawaringin to Improve Teacher Competence in Augmented Reality Learning Media (2023)."
       ],
       "courses_taught": [
         "Struktur Data dan Kompleksitas Algoritma",
@@ -288,7 +287,8 @@
       ],
       "bio": "",
       "slug": "elika-thea-kirana-s-t-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/elika.jpg"
     },
     {
       "name": "Dwika Lovitasari Yonia, S.Kom., M.Kom.",
@@ -310,7 +310,6 @@
       "gs_cits": "46",
       "gs_hindex": "4",
       "email": "dwika.lovitasari.yonia@gmail.com",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Teknik Informatika, Universitas 17 Agustus 1945 Surabaya (2018)",
         "S2: Magister Komputer (M.Kom.), Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS Surabaya) (2025)"
@@ -323,9 +322,9 @@
         "Augmented Reality & Digital Content Development."
       ],
       "selected_publications": [
-        "*Deep Learning Approach for Legal Decision Prediction in Divorce Cases Using CNN-LSTM Model* — **JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika)**, 2025.",
-        "*Penerapan Adaptive Smoothing Regularization untuk Otomatisasi Penilaian Estetika Citra*, 2024.",
-        "*Benchmarking Machine Learning Models for Corporate Bankruptcy Prediction using Financial Ratios*, 2025."
+        "Deep Learning Approach for Legal Decision Prediction in Divorce Cases Using CNN-LSTM Model — JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika), 2025.",
+        "Penerapan Adaptive Smoothing Regularization untuk Otomatisasi Penilaian Estetika Citra, 2024.",
+        "Benchmarking Machine Learning Models for Corporate Bankruptcy Prediction using Financial Ratios, 2025."
       ],
       "courses_taught": [
         "Visi Komputer",
@@ -335,7 +334,8 @@
       ],
       "bio": "",
       "slug": "dwika-lovitasari-yonia-s-kom-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/dwika.jpg"
     },
     {
       "name": "Lukman Bachtiar, S.Kom., M.M., M.Kom.",
@@ -357,7 +357,6 @@
       "gs_cits": "163",
       "gs_hindex": "6",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Universitas 17 Agustus 1945 Surabaya (2009)",
         "S2: Magister Manajemen (M.M.), Universitas Darwan Ali (2013)",
@@ -376,8 +375,8 @@
         "IT Project Management."
       ],
       "selected_publications": [
-        "*Perancangan Enterprise Architecture pada Perusahaan Daerah Air Minum Tirta Mentaya Menggunakan TOGAF ADM* (2023).",
-        "*Implementasi Metode Simple Additive Weighting (SAW) untuk Pemilihan Bibit Ikan Patin Unggul* (2023)."
+        "Perancangan Enterprise Architecture pada Perusahaan Daerah Air Minum Tirta Mentaya Menggunakan TOGAF ADM (2023).",
+        "Implementasi Metode Simple Additive Weighting (SAW) untuk Pemilihan Bibit Ikan Patin Unggul (2023)."
       ],
       "courses_taught": [
         "Teknologi Kewirausahaan",
@@ -385,7 +384,8 @@
       ],
       "bio": "",
       "slug": "lukman-bachtiar-s-kom-m-m-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/lukman.jpg"
     },
     {
       "name": "Serika Zai, S.Pd., M.Pd.",
@@ -407,15 +407,14 @@
       "gs_cits": "",
       "gs_hindex": "",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Pendidikan (S.Pd.), Sekolah Tinggi Teologi Kristus Alfa Omega (2019)",
         "S2: Magister Pendidikan (M.Pd.), Sekolah Tinggi Teologi Kristus Alfa Omega (2023)"
       ],
       "expertise": [],
       "selected_publications": [
-        "*Pemberdayaan Guru TK di PKG Markisa melalui Literasi Digital untuk Branding dan Promosi Sekolah* (2023).",
-        "*Formulation of Red Dragon Fruit (Hylocereus Costaricensis) Based on Porang Tuber* (2023)."
+        "Pemberdayaan Guru TK di PKG Markisa melalui Literasi Digital untuk Branding dan Promosi Sekolah (2023).",
+        "Formulation of Red Dragon Fruit (Hylocereus Costaricensis) Based on Porang Tuber (2023)."
       ],
       "courses_taught": [
         "Pendidikan Kewarganegaraan",
@@ -424,7 +423,8 @@
       ],
       "bio": "",
       "slug": "serika-zai-s-pd-m-pd",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/serika.jpg"
     },
     {
       "name": "Selviana Yunita, S.Kom., M.Kom.",
@@ -446,7 +446,6 @@
       "gs_cits": "171",
       "gs_hindex": "8",
       "email": "",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Universitas Teknologi Yogyakarta (2015)",
         "S2: Magister Komputer (M.Kom.), Universitas Amikom Yogyakarta (2019)"
@@ -459,8 +458,8 @@
         "IT Governance."
       ],
       "selected_publications": [
-        "*Perancangan Enterprise Architecture pada Perusahaan Daerah Air Minum Tirta Mentaya Menggunakan Framework TOGAF* (2023).",
-        "*Pelatihan Desain Kreatif untuk Meningkatkan Branding Sekolah pada Pusat Kegiatan Belajar Masyarakat* (2023)."
+        "Perancangan Enterprise Architecture pada Perusahaan Daerah Air Minum Tirta Mentaya Menggunakan Framework TOGAF (2023).",
+        "Pelatihan Desain Kreatif untuk Meningkatkan Branding Sekolah pada Pusat Kegiatan Belajar Masyarakat (2023)."
       ],
       "courses_taught": [
         "Sistem Enterprise",
@@ -471,7 +470,8 @@
       ],
       "bio": "",
       "slug": "selviana-yunita-s-kom-m-kom",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/selviana.jpg"
     },
     {
       "name": "Deny Sundari, S.Kom., A.Md., M.M.S.I.",
@@ -493,7 +493,6 @@
       "gs_cits": "34",
       "gs_hindex": "3",
       "email": "",
-      "personal_web": "",
       "education": [
         "D3: Ahli Madya (A.Md.), Teknik Informatika, Politeknik Pos Indonesia (2013)",
         "S1: Sarjana Komputer (S.Kom.), Sistem Informasi, Universitas Bina Nusantara (BINUS) (2016)",
@@ -510,8 +509,8 @@
         "UI/UX Design & Usability Evaluation."
       ],
       "selected_publications": [
-        "*The Students' Speaking Attitudes toward International Islamic Conferences* (2023).",
-        "*Penerapan Metode AHP dan SAW dalam Pemilihan Bibit Unggul Kelapa Sawit di Kotawaringin Timur*."
+        "The Students' Speaking Attitudes toward International Islamic Conferences (2023).",
+        "Penerapan Metode AHP dan SAW dalam Pemilihan Bibit Unggul Kelapa Sawit di Kotawaringin Timur."
       ],
       "courses_taught": [
         "Manajemen Proyek",
@@ -520,7 +519,8 @@
       ],
       "bio": "",
       "slug": "deny-sundari-s-kom-a-md-m-m-s-i",
-      "role_category": "faculty"
+      "role_category": "faculty",
+      "image": "/images/dosen/deny.jpg"
     },
     {
       "name": "Minarni, S.Kom., M.M.",
@@ -542,7 +542,6 @@
       "gs_cits": "80",
       "gs_hindex": "4",
       "email": "minarni@unda.ac.id",
-      "personal_web": "",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Sistem Informasi",
         "S2: Magister Manajemen (M.M.), Manajemen Sistem Informasi"
@@ -597,7 +596,8 @@
       "courses_taught": [],
       "bio": "",
       "slug": "dody-erlangga-s-kom",
-      "role_category": "assistant"
+      "role_category": "assistant",
+      "image": "/images/dosen/dody.jpg"
     },
     {
       "name": "Fauzan Eka Prasatia, S.M.",
@@ -628,7 +628,8 @@
       "courses_taught": [],
       "bio": "",
       "slug": "fauzan-eka-prasatia-s-m",
-      "role_category": "assistant"
+      "role_category": "assistant",
+      "image": "/images/dosen/fauzan.jpg"
     },
     {
       "name": "Prio Jaka Arsyad, S.Kom.",

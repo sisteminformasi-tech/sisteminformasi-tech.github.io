@@ -8,8 +8,9 @@
     "email": "sisteminformasi@unda.ac.id",
     "instagram": "https://www.instagram.com/sisfounda/",
     "head_of_program": "Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.",
-    "head_personal_web": "http://bowo.staff.unda.ac.id/",
-    "head_nuptk": "4536767668130283"
+    "head_nuptk": "4536767668130283",
+    "whatsapp": "+62 823-5839-3889",
+    "whatsapp_url": "https://wa.me/6282358393889"
   },
   "portals": [
     {
@@ -114,7 +115,7 @@
       "href": "/riset/kelompok-riset/",
       "sub": [
         {
-          "label": "5 Kelompok Riset (Research Groups)",
+          "label": "Research Group",
           "href": "/riset/kelompok-riset/"
         },
         {
@@ -218,7 +219,7 @@
       "href": "/en/research/groups/",
       "sub": [
         {
-          "label": "5 Research Groups",
+          "label": "Research Group",
           "href": "/en/research/groups/"
         },
         {

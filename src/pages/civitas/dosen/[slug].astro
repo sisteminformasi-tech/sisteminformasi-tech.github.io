@@ -32,8 +32,12 @@ const { doc } = Astro.props;
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Avatar / Monogram */}
         <div class="lg:col-span-3 flex justify-center lg:justify-start">
-          <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-navy-950 border-4 border-gold-500 flex items-center justify-center text-gold-400 font-editorial font-bold text-4xl shadow-xl">
-            {doc.name.charAt(0)}
+          <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-navy-950 border-4 border-gold-500 flex items-center justify-center text-gold-400 font-editorial font-bold text-4xl shadow-xl overflow-hidden">
+            {doc.image ? (
+              <img src={doc.image} alt={doc.name} class="w-full h-full object-cover object-top" loading="lazy" />
+            ) : (
+              <>{doc.name.charAt(0)}</>
+            )}
           </div>
         </div>
 
@@ -46,16 +50,6 @@ const { doc } = Astro.props;
             <span class="px-2.5 py-1 bg-navy-950 text-slate-300 font-code text-xs rounded border border-navy-800">
               NUPTK: {doc.nuptk || '-'}
             </span>
-            {doc.personal_web && (
-              <a
-                href={doc.personal_web}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="px-2.5 py-1 bg-navy-800 hover:bg-gold-500 text-gold-300 hover:text-navy-950 font-semibold text-xs rounded border border-gold-500/40 transition-colors"
-              >
-                Website Staf Resmi ↗
-              </a>
-            )}
           </div>
 
           <h1 class="text-2xl sm:text-4xl font-bold font-editorial text-white tracking-tight">

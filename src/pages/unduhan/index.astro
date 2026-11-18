@@ -3,6 +3,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const docs = [
   {
+    category: 'Dokumen Akreditasi Resmi',
+    items: [
+      {
+        title: 'Sertifikat Akreditasi LAM INFOKOM — Sistem Informasi',
+        desc: 'Sertifikat resmi akreditasi Program Studi S1 Sistem Informasi dari LAM INFOKOM.',
+        size: 'PDF · 238 KB',
+        link: '/dokumen/akreditasi/Sertifikat-Akreditasi-LAM-INFOKOM-SI.pdf'
+      },
+      {
+        title: 'Materi SPMI LAM INFOKOM, 22 September 2023',
+        desc: 'Materi presentasi Sistem Penjaminan Mutu Internal (SPMI) dalam kerangka akreditasi LAM INFOKOM.',
+        size: 'PPTX · 9,0 MB',
+        link: '/dokumen/akreditasi/22-Sept-2023-SPMI-LAM-INFOKOM.pptx'
+      }
+    ]
+  },
+  {
     category: 'Pedoman Tugas Akhir & Skripsi',
     items: [
       {
@@ -111,6 +128,7 @@ const docs = [
               <div class="sm:flex-shrink-0">
                 <a
                   href={doc.link}
+                  download={doc.link !== '#' ? '' : undefined}
                   class="inline-flex items-center justify-center px-4 py-2 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-semibold text-xs transition-colors whitespace-nowrap shadow-xs"
                 >
                   <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

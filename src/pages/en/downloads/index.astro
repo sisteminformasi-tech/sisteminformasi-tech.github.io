@@ -3,6 +3,23 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 const docs = [
   {
+    category: 'Official Accreditation Documents',
+    items: [
+      {
+        title: 'LAM INFOKOM Accreditation Certificate — Information Systems',
+        desc: 'Official accreditation certificate of the Undergraduate Information Systems Program issued by LAM INFOKOM.',
+        size: 'PDF · 238 KB',
+        link: '/dokumen/akreditasi/Sertifikat-Akreditasi-LAM-INFOKOM-SI.pdf'
+      },
+      {
+        title: 'LAM INFOKOM Internal Quality Assurance (SPMI) Material, 22 Sept 2023',
+        desc: 'Presentation material on the internal quality assurance system (SPMI) in the LAM INFOKOM accreditation framework.',
+        size: 'PPTX · 9.0 MB',
+        link: '/dokumen/akreditasi/22-Sept-2023-SPMI-LAM-INFOKOM.pptx'
+      }
+    ]
+  },
+  {
     category: 'Capstone Thesis & Research Guidelines',
     items: [
       {
@@ -111,6 +128,7 @@ const docs = [
               <div class="sm:flex-shrink-0">
                 <a
                   href={doc.link}
+                  download={doc.link !== '#' ? '' : undefined}
                   class="inline-flex items-center justify-center px-4 py-2 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-semibold text-xs transition-colors whitespace-nowrap shadow-xs"
                 >
                   <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

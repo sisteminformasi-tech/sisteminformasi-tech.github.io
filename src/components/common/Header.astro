@@ -90,7 +90,7 @@ const spmbPortal = navigation.portals.find(p => p.featured) || navigation.portal
 
             {/* Dropdown Menu */}
             {item.sub && (
-              <div class="absolute left-0 mt-1 w-56 rounded-md shadow-lg bg-navy-950 border border-navy-800 py-2 hidden group-hover:block transition-all duration-200 z-50">
+              <div class="absolute left-0 w-56 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50 pointer-events-none group-hover:pointer-events-auto before:block before:absolute before:-top-3 before:left-0 before:w-full before:h-3 before:content-['']">
                 {item.sub.map((subItem) => (
                   <a
                     href={subItem.href}

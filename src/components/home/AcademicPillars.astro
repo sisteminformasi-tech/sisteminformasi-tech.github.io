@@ -8,16 +8,16 @@ const isEn = lang === 'en';
 
 const stats = isEn
   ? [
-      { value: '3', label: 'Core Graduate Profiles (Systems Analyst, Enterprise & AI)' },
-      { value: '10', label: 'Program Learning Outcomes (Measurable PLOs)' },
-      { value: '14', label: 'Curriculum Knowledge Areas (ACM/IEEE IS2020)' },
-      { value: '83', label: 'Open Digital Syllabi (RPS) Documents' },
+      { value: '3', label: 'Graduate Profiles', sub: 'Systems Analyst, Enterprise & AI' },
+      { value: '10', label: 'Learning Outcomes', sub: 'Measurable OBE PLOs' },
+      { value: '14', label: 'Knowledge Areas', sub: 'ACM/IEEE IS2020 Curricula' },
+      { value: '83', label: 'Open Syllabi (RPS)', sub: 'Verified Digital Documents' },
     ]
   : [
-      { value: '3', label: 'Profil Utama Lulusan (Sistem Analis, Enterprise & AI)' },
-      { value: '10', label: 'Capaian Pembelajaran Lulusan (CPL Terukur)' },
-      { value: '14', label: 'Bahan Kajian Keilmuan (ACM/IEEE IS2020)' },
-      { value: '83', label: 'Dokumen RPS Terbuka & Terverifikasi' },
+      { value: '3', label: 'Profil Lulusan', sub: 'Sistem Analis, Enterprise & AI' },
+      { value: '10', label: 'Capaian Pembelajaran', sub: 'CPL Terukur Standar OBE' },
+      { value: '14', label: 'Bahan Kajian', sub: 'Area Keilmuan ACM/IEEE' },
+      { value: '83', label: 'Silabus RPS Terbuka', sub: 'Dokumen Digital Terverifikasi' },
     ];
 
 const pillars = isEn
@@ -88,8 +88,9 @@ const pillars = isEn
   <div class="bg-navy-900 border-b border-navy-800">
     <dl class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 divide-x divide-navy-800">
       {stats.map((s) => (
-        <div class="py-6 px-4 text-center flex flex-col">
-          <dt class="order-2 text-xs text-slate-300 mt-1">{s.label}</dt>
+        <div class="min-w-0 break-words px-3 py-5 text-center flex flex-col justify-center">
+          <dt class="order-2 text-sm font-semibold text-slate-100 mt-1">{s.label}</dt>
+          <dd class="order-3 text-xs text-slate-300 mt-0.5">{s.sub}</dd>
           <dd class="order-1 font-editorial text-2xl sm:text-3xl font-bold text-gold-500">{s.value}</dd>
         </div>
       ))}
