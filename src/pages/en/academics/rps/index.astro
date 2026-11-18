@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import rpsList from '../../../../data/rps.json';
+
+const totalFiles = rpsList.length;
+const categories = Array.from(new Set(rpsList.map((r) => r.category))).sort();
+---
+
+<BaseLayout
+  title="OBE Course Syllabus (RPS) Repository — Information Systems Program"
+  description="Official digital repository of Outcome-Based Education (OBE) course syllabus (RPS) PDF files for the Information Systems Undergraduate Program at Universitas Darwan Ali."
+  lang="en"
+>
+  {/* Header */}
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Academic Document Repository</span>
+          <span class="text-slate-600">·</span>
+          <span>{totalFiles} Authoritative Syllabus PDF Files</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          OBE Course Syllabus (RPS) Master Repository
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Official catalog of Course Syllabi (Rencana Pembelajaran Semester / RPS) for the Undergraduate Program in Information Systems. All documents have been audited under rigorous Outcome-Based Education standards, outlining learning outcomes, weekly topics, and assessment rubrics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    {/* Filter & Live Search Toolbar */}
+    <div class="bg-white border border-slate-200 rounded-lg p-6 shadow-xs mb-8 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+        {/* Search Input */}
+        <div class="md:col-span-7 relative">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <input
+            type="text"
+            id="rps-search-input-en"
+            placeholder="Search by course code or course title (e.g., SIFC8B01, Database, Thesis)..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent placeholder-slate-400"
+          />
+        </div>
+
+        {/* Category Filter Select */}
+        <div class="md:col-span-5">
+          <select
+            id="rps-category-select-en"
+            class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 bg-white text-slate-700"
+          >
+            <option value="all">All Clusters & Categories ({totalFiles} Files)</option>
+            {categories.map((cat) => (
+              <option value={cat}>
+                {cat} ({rpsList.filter(r => r.category === cat).length})
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
+        <span>Showing <strong id="visible-count-en" class="text-navy-900 font-bold">{totalFiles}</strong> of {totalFiles} syllabus files</span>
+        <span>Format: Official Validated PDF</span>
+      </div>
+    </div>
+
+    {/* Table of RPS Documents */}
+    <div class="overflow-x-auto card-academic">
+      <table class="table-academic">
+        <thead>
+          <tr>
+            <th class="w-12 text-center">#</th>
+            <th class="w-32">Course Code</th>
+            <th>Course Title</th>
+            <th class="w-1/3">Knowledge Cluster / Category</th>
+            <th class="w-20 text-center">Size</th>
+            <th class="w-32 text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rpsList.map((item, idx) => (
+            <tr
+              class="rps-row-en"
+              data-code={item.code.toLowerCase()}
+              data-name={item.name.toLowerCase()}
+              data-category={item.category}
+            >
+              <td class="text-center font-bold text-slate-400 text-xs">
+                {idx + 1}
+              </td>
+              <td>
+                <span class="font-code font-bold text-xs text-navy-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                  {item.code || '-'}
+                </span>
+              </td>
+              <td class="font-medium text-slate-900">
+                {item.name}
+              </td>
+              <td class="text-xs text-slate-600">
+                {item.category}
+              </td>
+              <td class="text-center font-code text-xs text-slate-500">
+                {item.size_kb} KB
+              </td>
+              <td class="text-center">
+                <a
+                  href={item.download_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center px-3 py-1.5 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-semibold text-xs transition-colors shadow-xs"
+                >
+                  <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download PDF
+                </a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    {/* Empty State */}
+    <div id="rps-empty-en" class="text-center py-16 hidden">
+      <svg class="w-12 h-12 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <h3 class="text-sm font-bold text-navy-900 mb-1">No Syllabus Found</h3>
+      <p class="text-xs text-slate-500">Please adjust your search keywords or select a different category.</p>
+    </div>
+
+  </div>
+</BaseLayout>
+
+<script>
+  // Live filter & search script (EN)
+  const searchInput = document.getElementById('rps-search-input-en') as HTMLInputElement | null;
+  const catSelect = document.getElementById('rps-category-select-en') as HTMLSelectElement | null;
+  const rows = document.querySelectorAll<HTMLTableRowElement>('.rps-row-en');
+  const visibleCount = document.getElementById('visible-count-en');
+  const emptyState = document.getElementById('rps-empty-en');
+
+  function filterRps() {
+    const query = (searchInput?.value || '').toLowerCase().trim();
+    const cat = catSelect?.value || 'all';
+
+    let count = 0;
+    rows.forEach((row) => {
+      const code = row.dataset.code || '';
+      const name = row.dataset.name || '';
+      const rowCat = row.dataset.category || '';
+
+      const matchesSearch = !query || code.includes(query) || name.includes(query);
+      const matchesCat = cat === 'all' || rowCat === cat;
+
+      if (matchesSearch && matchesCat) {
+        row.style.display = '';
+        count++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    if (visibleCount) visibleCount.textContent = count.toString();
+    if (emptyState) {
+      if (count === 0) emptyState.classList.remove('hidden');
+      else emptyState.classList.add('hidden');
+    }
+  }
+
+  searchInput?.addEventListener('input', filterRps);
+  catSelect?.addEventListener('change', filterRps);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const qParam = urlParams.get('q');
+  if (qParam && searchInput) {
+    searchInput.value = qParam;
+    filterRps();
+  }
+</script>
