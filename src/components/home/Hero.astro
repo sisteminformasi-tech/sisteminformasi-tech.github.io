@@ -30,7 +30,7 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight font-editorial">
           {isEn ? (
             <>
-              Innovating in <span class="text-gold-400">Artificial Intelligence</span> & Enterprise Systems.
+              Excellence in <span class="text-gold-400">Artificial Intelligence</span> & Enterprise Systems.
             </>
           ) : (
             <>
@@ -42,8 +42,8 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
         {/* Subtitle / Value Proposition */}
         <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
           {isEn
-            ? 'The Undergraduate Program in Information Systems prepares future-ready leaders and tech architects through an Outcome-Based Education (OBE) curriculum with 144 credits, rigorous research, and real-world industrial relevance.'
-            : 'Program Studi S1 Sistem Informasi menyelenggarakan pendidikan berstandar Outcome-Based Education (OBE) dengan total 144 SKS, memadukan riset bio-signal & AI terdepan dengan rekayasa sistem enterprise untuk menjawab kebutuhan transformasi digital bangsa.'}
+            ? 'The Undergraduate Program in Information Systems prepares graduates in information systems analysis and design through an Outcome-Based Education (OBE) curriculum with 144 credits, applied research, and close ties to industry practice.'
+            : 'Program Studi S1 Sistem Informasi menyelenggarakan pendidikan berstandar Outcome-Based Education (OBE) dengan total 144 SKS, memadukan riset bio-signal dan kecerdasan buatan dengan rekayasa sistem enterprise untuk menjawab kebutuhan transformasi digital bangsa.'}
         </p>
 
         {/* Action Buttons */}
@@ -116,12 +116,10 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
 
           <div class="mt-6 pt-5 border-t border-navy-800">
             <a
-              href="http://bowo.staff.unda.ac.id/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full inline-flex items-center justify-center text-xs text-gold-400 hover:text-gold-300 font-medium py-2 px-3 rounded bg-navy-900 border border-gold-500/30 hover:border-gold-400 transition-colors"
+              href={isEn ? '/en/faculty/' : '/civitas/'}
+              class="w-full inline-flex items-center justify-center text-xs text-gold-400 hover:text-gold-300 font-medium py-2 px-3 rounded bg-navy-900 border border-gold-500/30 hover:border-gold-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500"
             >
-              <span>{isEn ? 'Dean & Program Head Profile →' : 'Profil Kaprodi & Dekan (Dr. Dwi) →'}</span>
+              <span>{isEn ? 'Faculty & Research Directory →' : 'Direktori Civitas Dosen & Peneliti →'}</span>
             </a>
           </div>
         </div>

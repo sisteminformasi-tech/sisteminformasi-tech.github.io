@@ -1,0 +1,128 @@
+---
+interface Props {
+  lang?: 'id' | 'en';
+}
+
+const { lang = 'id' } = Astro.props;
+const isEn = lang === 'en';
+
+const stats = isEn
+  ? [
+      { value: '3', label: 'Core Graduate Profiles (Systems Analyst, Enterprise & AI)' },
+      { value: '10', label: 'Program Learning Outcomes (Measurable PLOs)' },
+      { value: '14', label: 'Curriculum Knowledge Areas (ACM/IEEE IS2020)' },
+      { value: '83', label: 'Open Digital Syllabi (RPS) Documents' },
+    ]
+  : [
+      { value: '3', label: 'Profil Utama Lulusan (Sistem Analis, Enterprise & AI)' },
+      { value: '10', label: 'Capaian Pembelajaran Lulusan (CPL Terukur)' },
+      { value: '14', label: 'Bahan Kajian Keilmuan (ACM/IEEE IS2020)' },
+      { value: '83', label: 'Dokumen RPS Terbuka & Terverifikasi' },
+    ];
+
+const pillars = isEn
+  ? [
+      {
+        no: '01',
+        title: 'OBE Curriculum Aligned with Global Standards',
+        body: 'A 144-credit curriculum referencing ACM/IEEE IS2020 and integrated with the MBKM learning program.',
+        href: '/en/academics/curriculum/',
+        cta: 'View the curriculum',
+      },
+      {
+        no: '02',
+        title: 'Five Applied Research Groups',
+        body: 'AIML-RG, SETK-RG, MHUI-RG, DSDSS-RG, and EDUTECH-RG guide faculty research and undergraduate thesis topics.',
+        href: '/en/research/groups/',
+        cta: 'View research groups',
+      },
+      {
+        no: '03',
+        title: '83 Open Digital Syllabus Documents',
+        body: 'Every course syllabus (RPS) is published online, so students and partners can read the learning plan before enrolling.',
+        href: '/en/academics/rps/',
+        cta: 'Open the RPS repository',
+      },
+      {
+        no: '04',
+        title: 'Graduate Profile and Career Guidance',
+        body: 'Graduates are prepared as Systems Analysts, Enterprise and AI Specialists, and IT Consultants.',
+        href: '/en/about/',
+        cta: 'View the program profile',
+      },
+    ]
+  : [
+      {
+        no: '01',
+        title: 'Kurikulum OBE Berstandar Global',
+        body: 'Kurikulum 144 SKS yang mengacu pada ACM/IEEE IS2020 dan terintegrasi dengan program MBKM.',
+        href: '/akademik/kurikulum/',
+        cta: 'Lihat kurikulum',
+      },
+      {
+        no: '02',
+        title: 'Ekosistem 5 Kelompok Riset Terapan',
+        body: 'AIML-RG, SETK-RG, MHUI-RG, DSDSS-RG, dan EDUTECH-RG menaungi riset dosen serta topik skripsi mahasiswa.',
+        href: '/riset/kelompok-riset/',
+        cta: 'Lihat kelompok riset',
+      },
+      {
+        no: '03',
+        title: 'Transparansi 83 Dokumen RPS Digital Terbuka',
+        body: 'Seluruh Rencana Pembelajaran Semester dipublikasikan daring sehingga mahasiswa dan mitra dapat menelaahnya sejak awal.',
+        href: '/akademik/rps/',
+        cta: 'Buka repositori RPS',
+      },
+      {
+        no: '04',
+        title: 'Profil Lulusan dan Pembinaan Karier Profesional',
+        body: 'Lulusan disiapkan sebagai Systems Analyst, Enterprise & AI Specialist, dan IT Consultant.',
+        href: '/profil/',
+        cta: 'Lihat profil program studi',
+      },
+    ];
+---
+
+<section class="bg-[#FAF9F6] border-b border-slate-200" aria-labelledby="pillars-heading">
+  {/* Stat bar */}
+  <div class="bg-navy-900 border-b border-navy-800">
+    <dl class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 divide-x divide-navy-800">
+      {stats.map((s) => (
+        <div class="py-6 px-4 text-center flex flex-col">
+          <dt class="order-2 text-xs text-slate-300 mt-1">{s.label}</dt>
+          <dd class="order-1 font-editorial text-2xl sm:text-3xl font-bold text-gold-500">{s.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="max-w-2xl mb-10">
+      <h2 id="pillars-heading" class="font-editorial text-2xl sm:text-3xl font-bold text-navy-900">
+        {isEn ? 'Four Academic Strengths' : 'Empat Pilar Keunggulan Akademik'}
+      </h2>
+      <p class="mt-3 text-sm sm:text-base text-slate-500 leading-relaxed">
+        {isEn
+          ? 'Each strength links to the document or page where it can be verified.'
+          : 'Setiap keunggulan tertaut ke halaman atau dokumen yang dapat diperiksa langsung.'}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {pillars.map((p) => (
+        <a
+          href={p.href}
+          class="group block bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md hover:border-gold-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2"
+        >
+          <span class="font-code text-sm font-bold text-gold-700">{p.no}</span>
+          <h3 class="mt-2 font-editorial text-lg sm:text-xl font-bold text-navy-900 group-hover:text-navy-700 transition-colors">{p.title}</h3>
+          <p class="mt-3 text-sm text-slate-600 leading-relaxed">{p.body}</p>
+          <span class="mt-5 inline-flex items-center text-sm font-semibold text-navy-900 group-hover:text-gold-700 transition-colors">
+            {p.cta}
+            <span class="ml-1.5 transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true">→</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

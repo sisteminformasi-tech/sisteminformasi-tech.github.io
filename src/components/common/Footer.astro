@@ -14,15 +14,17 @@ const isEn = currentLang === 'en';
       {/* Col 1: Institutional Identity */}
       <div class="space-y-4">
         <div class="flex items-center space-x-3">
-          <div class="w-10 h-10 rounded-lg bg-navy-900 border border-gold-500/50 flex items-center justify-center font-bold text-gold-400 text-lg shadow-sm">
-            SI
+          <div class="flex items-center shrink-0 bg-white px-2 py-1 rounded-md shadow-sm border border-gold-500/30">
+            <img src="/images/logo/logo-unda.png" alt="Logo Universitas Darwan Ali" width="40" height="40" class="h-10 w-auto object-contain" loading="lazy" />
+            <span class="mx-2.5 h-8 w-px bg-slate-300" aria-hidden="true"></span>
+            <img src="/images/logo/logo-sisfo.png" alt={isEn ? 'Logo of the Information Systems Program' : 'Logo S1 Sistem Informasi'} width="40" height="40" class="h-10 w-auto object-contain" loading="lazy" />
           </div>
           <div>
             <div class="font-bold text-white text-base">
               {isEn ? 'Information Systems' : 'S1 Sistem Informasi'}
             </div>
             <div class="text-xs text-slate-400">
-              Fakultas Ilmu Komputer · UNDA
+              Fakultas Ilmu Komputer · Universitas Darwan Ali
             </div>
           </div>
         </div>
@@ -103,11 +105,6 @@ const isEn = currentLang === 'en';
               <span class="text-gold-500 mr-2">›</span> {isEn ? '5 Research Groups' : '5 Kelompok Riset Dosen'}
             </a>
           </li>
-          <li>
-            <a href="http://bowo.staff.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors flex items-center">
-              <span class="text-gold-500 mr-2">›</span> {isEn ? 'Dean / Head Personal Web' : 'Web Staf Kaprodi & Dekan'}
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -134,14 +131,10 @@ const isEn = currentLang === 'en';
     {/* Bottom Bar */}
     <div class="pt-8 border-t border-navy-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
       <p>
-        &copy; {new Date().getFullYear()} Program Studi S1 Sistem Informasi — Fakultas Ilmu Komputer, Universitas Darwan Ali.
+        &copy; {new Date().getFullYear()} Program Studi S1 Sistem Informasi, Fakultas Ilmu Komputer, Universitas Darwan Ali.
       </p>
       <div class="flex items-center space-x-4">
-        <span>Pure Static SSG</span>
-        <span>·</span>
-        <span>Zero Backend Bloat</span>
-        <span>·</span>
-        <a href="#top" class="text-slate-400 hover:text-gold-400 transition-colors">↑ {isEn ? 'Top' : 'Ke Atas'}</a>
+        <a href="#top" class="text-slate-400 hover:text-gold-400 transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500">↑ {isEn ? 'Top' : 'Ke Atas'}</a>
       </div>
     </div>
   </div>
