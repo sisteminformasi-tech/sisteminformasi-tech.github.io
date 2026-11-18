@@ -13,8 +13,8 @@ const { doc } = Astro.props;
 ---
 
 <BaseLayout
-  title={`${doc.name} — Profil Dosen S1 Sistem Informasi`}
-  description={`Profil akademik ${doc.name}, Dosen Tetap Program Studi S1 Sistem Informasi Universitas Darwan Ali. NUPTK: ${doc.nuptk || '-'}.`}
+  title={`${doc.name} — Profil Dosen Sistem Informasi`}
+  description={`Profil akademik ${doc.name}, Dosen Tetap Program Studi Sistem Informasi Universitas Darwan Ali. NUPTK: ${doc.nuptk || '-'}.`}
   lang="id"
 >
   {/* Header Section */}
@@ -57,7 +57,7 @@ const { doc } = Astro.props;
           </h1>
 
           <p class="text-sm sm:text-base text-slate-300 font-medium">
-            {doc.position || 'Dosen Tetap S1 Sistem Informasi'} — Fakultas Ilmu Komputer, Universitas Darwan Ali
+            {doc.position || 'Dosen Tetap Sistem Informasi'} — Fakultas Ilmu Komputer, Universitas Darwan Ali
           </p>
 
           {doc.personal_web && (

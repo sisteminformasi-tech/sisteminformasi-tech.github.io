@@ -39,7 +39,7 @@ export const ui = {
     'cta.official_web': 'Website Staf Personal',
 
     // Institution Branding
-    'inst.name': 'Program Studi S1 Sistem Informasi',
+    'inst.name': 'Program Studi Sistem Informasi',
     'inst.faculty': 'Fakultas Ilmu Komputer',
     'inst.univ': 'Universitas Darwan Ali',
     'inst.accreditation': 'Akreditasi: Baik Sekali',
@@ -51,7 +51,7 @@ export const ui = {
     'search.close': 'Tutup',
 
     // Footer
-    'footer.about': 'Program Studi S1 Sistem Informasi FIK Universitas Darwan Ali menyelenggarakan pendidikan tinggi berbasis Outcome-Based Education (OBE) untuk menghasilkan lulusan yang kompeten di era transformasi digital.',
+    'footer.about': 'Program Studi Sistem Informasi FIK Universitas Darwan Ali menyelenggarakan pendidikan tinggi berbasis Outcome-Based Education (OBE) untuk menghasilkan lulusan yang kompeten di era transformasi digital.',
     'footer.address': 'Alamat Kampus',
     'footer.quick_links': 'Tautan Cepat',
     'footer.academic_systems': 'Layanan Akademik',

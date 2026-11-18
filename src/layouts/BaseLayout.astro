@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  description = 'Program Studi S1 Sistem Informasi — Fakultas Ilmu Komputer, Universitas Darwan Ali. Pendidikan sarjana berorientasi OBE, Kecerdasan Buatan, Sains Data, dan Sistem Enterprise.',
+  description = 'Program Studi Sistem Informasi — Fakultas Ilmu Komputer, Universitas Darwan Ali. Pendidikan sarjana berorientasi OBE, Kecerdasan Buatan, Sains Data, dan Sistem Enterprise.',
   lang = 'id',
   canonicalUrl = Astro.url.href,
   ogType = 'website',
@@ -22,7 +22,7 @@ import SearchModal from '../components/common/SearchModal.astro';
 
 const formattedTitle = title.includes('Universitas Darwan Ali') 
   ? title 
-  : `${title} | S1 Sistem Informasi UNDA`;
+  : `${title} | Sistem Informasi UNDA`;
 ---
 
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ const formattedTitle = title.includes('Universitas Darwan Ali')
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={formattedTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="S1 Sistem Informasi UNDA" />
+    <meta property="og:site_name" content="Sistem Informasi UNDA" />
 
     {/* Twitter */}
     <meta property="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@ const formattedTitle = title.includes('Universitas Darwan Ali')
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "Program Studi S1 Sistem Informasi",
+      "name": "Program Studi Sistem Informasi",
       "parentOrganization": {
         "@type": "CollegeOrUniversity",
         "name": "Universitas Darwan Ali",

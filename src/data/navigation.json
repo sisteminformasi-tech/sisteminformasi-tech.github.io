@@ -1,6 +1,6 @@
 {
   "institution": {
-    "name": "Program Studi S1 Sistem Informasi",
+    "name": "Program Studi Sistem Informasi",
     "faculty": "Fakultas Ilmu Komputer",
     "university": "Universitas Darwan Ali",
     "accreditation": "Baik Sekali",
@@ -121,6 +121,10 @@
         {
           "label": "Roadmap & Topik Skripsi",
           "href": "/riset/kelompok-riset/#topik-skripsi"
+        },
+        {
+          "label": "Pengabdian kepada Masyarakat (PkM)",
+          "href": "/riset/pengabdian/"
         }
       ]
     },
@@ -225,6 +229,10 @@
         {
           "label": "Roadmaps & Thesis Topics",
           "href": "/en/research/groups/#thesis-topics"
+        },
+        {
+          "label": "Community Service (PkM)",
+          "href": "/en/research/community-service/"
         }
       ]
     },
