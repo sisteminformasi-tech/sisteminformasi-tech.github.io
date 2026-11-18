@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import civitas from '../../../data/civitas.json';
+
+export function getStaticPaths() {
+  return civitas.faculty.map((doc) => ({
+    params: { slug: doc.slug },
+    props: { doc },
+  }));
+}
+
+const { doc } = Astro.props;
+---
+
+<BaseLayout
+  title={`${doc.name} — Faculty Profile in Information Systems`}
+  description={`Academic profile of ${doc.name}, Full-Time Faculty in Information Systems at Universitas Darwan Ali. NUPTK: ${doc.nuptk || '-'}.`}
+  lang="en"
+>
+  {/* Header Section */}
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Breadcrumb */}
+      <nav class="flex items-center space-x-2 text-xs text-slate-400 mb-6" aria-label="Breadcrumb">
+        <a href="/en/" class="hover:text-gold-400">Home</a>
+        <span>›</span>
+        <a href="/en/faculty/" class="hover:text-gold-400">Faculty</a>
+        <span>›</span>
+        <span class="text-slate-200">{doc.name}</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        {/* Avatar / Monogram */}
+        <div class="lg:col-span-3 flex justify-center lg:justify-start">
+          <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-navy-950 border-4 border-gold-500 flex items-center justify-center text-gold-400 font-editorial font-bold text-4xl shadow-xl">
+            {doc.name.charAt(0)}
+          </div>
+        </div>
+
+        {/* Identity & Credentials */}
+        <div class="lg:col-span-9 space-y-3">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2.5 py-1 bg-gold-500 text-navy-950 font-bold text-xs uppercase tracking-wider rounded">
+              {doc.functional_rank || 'Faculty Member'}
+            </span>
+            <span class="px-2.5 py-1 bg-navy-950 text-slate-300 font-code text-xs rounded border border-navy-800">
+              NUPTK: {doc.nuptk || '-'}
+            </span>
+            {doc.personal_web && (
+              <a
+                href={doc.personal_web}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-2.5 py-1 bg-navy-800 hover:bg-gold-500 text-gold-300 hover:text-navy-950 font-semibold text-xs rounded border border-gold-500/40 transition-colors"
+              >
+                Official Personal Web ↗
+              </a>
+            )}
+          </div>
+
+          <h1 class="text-2xl sm:text-4xl font-bold font-editorial text-white tracking-tight">
+            {doc.name}
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 font-medium">
+            {doc.position || 'Full-Time Faculty in Information Systems'} — Faculty of Computer Science, Universitas Darwan Ali
+          </p>
+
+          {doc.email && (
+            <div class="text-xs text-slate-400 pt-1">
+              Email: <a href={`mailto:${doc.email}`} class="text-gold-400 hover:underline">{doc.email}</a>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Content Body */}
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      {/* Left Column: Academic Profile */}
+      <div class="lg:col-span-8 space-y-10">
+        
+        {/* Education History */}
+        <div class="card-academic p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-4">
+            Educational Background
+          </h2>
+          {doc.education && doc.education.length > 0 ? (
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
+              {doc.education.map((edu: string) => (
+                <li class="flex items-start">
+                  <span class="text-gold-600 mr-2.5 font-bold">▪</span>
+                  <span>{edu}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p class="text-xs text-slate-500">Educational credentials recorded on PDDIKTI national database.</p>
+          )}
+        </div>
+
+        {/* Expertise */}
+        <div class="card-academic p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-4">
+            Research Interests & Scientific Expertise
+          </h2>
+          <div class="flex flex-wrap gap-2">
+            {doc.expertise.map((exp: string) => (
+              <span class="px-3 py-1.5 rounded bg-slate-100 text-navy-900 text-xs font-semibold border border-slate-200">
+                {exp}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Selected Publications */}
+        <div class="card-academic p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-4">
+            Selected Flagship Publications
+          </h2>
+          {doc.selected_publications && doc.selected_publications.length > 0 ? (
+            <ol class="space-y-4 text-xs sm:text-sm text-slate-800 list-decimal pl-5">
+              {doc.selected_publications.map((pub: string) => (
+                <li class="leading-relaxed font-medium">
+                  {pub}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p class="text-xs text-slate-500">Complete publication list available via SINTA and Google Scholar profiles.</p>
+          )}
+        </div>
+
+        {/* Courses Taught */}
+        <div class="card-academic p-6 sm:p-8">
+          <h2 class="text-lg font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-4">
+            Courses Taught
+          </h2>
+          {doc.courses_taught && doc.courses_taught.length > 0 ? (
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {doc.courses_taught.map((mk: string) => (
+                <div class="p-3 rounded bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 flex items-center">
+                  <span class="w-2 h-2 rounded-full bg-gold-500 mr-2"></span>
+                  <span>{mk}</span>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p class="text-xs text-slate-500">Course schedule registered on SIAKAD UNDA.</p>
+          )}
+        </div>
+
+      </div>
+
+      {/* Right Column: Research Profiles & Metrics */}
+      <div class="lg:col-span-4 space-y-6">
+        
+        {/* Research Metrics Card */}
+        <div class="card-academic p-6 bg-slate-50 border-slate-200">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider mb-4 pb-2 border-b border-slate-200">
+            Citation & Publication Metrics
+          </h3>
+          <div class="space-y-4">
+            {doc.sinta_score_overall && (
+              <div class="flex items-center justify-between pb-2 border-b border-slate-200/80">
+                <span class="text-xs text-slate-600">SINTA Score (Overall / 3Yr)</span>
+                <span class="font-code font-bold text-navy-900 text-xs">
+                  {doc.sinta_score_overall} / {doc.sinta_score_3yr || '-'}
+                </span>
+              </div>
+            )}
+            {doc.scopus_hindex && (
+              <div class="flex items-center justify-between pb-2 border-b border-slate-200/80">
+                <span class="text-xs text-slate-600">Scopus (Docs / Cits / H-Index)</span>
+                <span class="font-code font-bold text-navy-900 text-xs">
+                  {doc.scopus_docs} / {doc.scopus_cits} / H-{doc.scopus_hindex}
+                </span>
+              </div>
+            )}
+            {doc.gs_hindex && (
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-slate-600">Google Scholar H-Index</span>
+                <span class="font-code font-bold text-navy-900 text-xs">
+                  H-{doc.gs_hindex} ({doc.gs_cits} Citations)
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Profile External Links */}
+        <div class="card-academic p-6 space-y-3">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider mb-3">
+            Authoritative Research Profiles
+          </h3>
+          {doc.sinta_url && (
+            <a
+              href={doc.sinta_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-between p-3 rounded bg-white hover:bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-800 transition-colors"
+            >
+              <span>SINTA Kemdiktisaintek</span>
+              <span class="text-gold-600">↗</span>
+            </a>
+          )}
+          {doc.scopus_url && (
+            <a
+              href={doc.scopus_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-between p-3 rounded bg-white hover:bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-800 transition-colors"
+            >
+              <span>Scopus Author Profile</span>
+              <span class="text-gold-600">↗</span>
+            </a>
+          )}
+          {doc.gs_url && (
+            <a
+              href={doc.gs_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full flex items-center justify-between p-3 rounded bg-white hover:bg-slate-50 border border-slate-200 text-xs font-semibold text-slate-800 transition-colors"
+            >
+              <span>Google Scholar Citations</span>
+              <span class="text-gold-600">↗</span>
+            </a>
+          )}
+        </div>
+
+        {/* Back Link */}
+        <div class="pt-2 text-center">
+          <a
+            href="/en/faculty/"
+            class="text-xs font-bold text-navy-900 hover:text-gold-700 underline"
+          >
+            ← Back to Faculty Directory
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>
