@@ -62,7 +62,7 @@ const { faculty, assistants } = civitas;
               <div class="flex items-start justify-between gap-3 mb-4">
                 <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-2 border-gold-500/80 shadow-md overflow-hidden bg-navy-950 flex items-center justify-center shrink-0 text-gold-400 font-editorial font-bold text-3xl">
                   {doc.image ? (
-                    <img src={doc.image} alt={doc.name} class="w-full h-full object-cover object-top" loading="lazy" />
+                    <img src={doc.image} alt={doc.name} class="w-full h-full object-cover object-center" loading="lazy" />
                   ) : (
                     <>{doc.name.charAt(0)}</>
                   )}
@@ -147,9 +147,9 @@ const { faculty, assistants } = civitas;
           <div class="card-academic p-6 flex flex-col justify-between group hover:border-gold-500 transition-all">
             <div>
               <div class="flex items-start justify-between gap-3 mb-4">
-                <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-gold-400 flex items-center justify-center text-white font-editorial font-bold text-lg overflow-hidden">
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-2 border-gold-500/80 shadow-md overflow-hidden bg-navy-950 flex items-center justify-center shrink-0 transition-colors text-gold-400 font-editorial font-bold text-4xl">
                   {asdos.image ? (
-                    <img src={asdos.image} alt={asdos.name} class="w-full h-full object-cover object-top" loading="lazy" />
+                    <img src={asdos.image} alt={asdos.name} class="w-full h-full object-cover object-center" loading="lazy" />
                   ) : (
                     <>{asdos.name.charAt(0)}</>
                   )}
