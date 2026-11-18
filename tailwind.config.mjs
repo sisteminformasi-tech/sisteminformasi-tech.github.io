@@ -19,6 +19,7 @@ export default {
           700: '#8E6E3A',
           400: '#D4AF37',
           300: '#E5C97A',
+          200: '#EADCBF',
           100: '#FDFBF7',
           50: '#FCF9F2',
         },
@@ -45,6 +46,7 @@ export default {
         mono: ['"JetBrains Mono"', 'Menlo', 'Monaco', 'monospace'],
       },
       boxShadow: {
+        '2xs': '0 1px 1px 0 rgba(10, 25, 47, 0.05)',
         'subtle': '0 1px 3px 0 rgba(10, 25, 47, 0.05), 0 1px 2px 0 rgba(10, 25, 47, 0.03)',
         'card': '0 4px 6px -1px rgba(10, 25, 47, 0.05), 0 2px 4px -1px rgba(10, 25, 47, 0.03)',
         'elevated': '0 10px 15px -3px rgba(10, 25, 47, 0.08), 0 4px 6px -2px rgba(10, 25, 47, 0.04)',

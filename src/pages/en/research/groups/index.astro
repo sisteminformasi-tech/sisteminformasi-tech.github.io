@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import ResearchGroupCard from '../../../../components/research/ResearchGroupCard.astro';
 import groups from '../../../../data/research_groups.json';
 ---
 
@@ -47,107 +48,7 @@ import groups from '../../../../data/research_groups.json';
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
     
     {groups.map((rg, idx) => (
-      <section id={rg.id} class="scroll-mt-24 card-academic p-6 sm:p-10 border-slate-200">
-        <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-slate-200 pb-4 mb-6 gap-3">
-          <div class="flex items-center space-x-3">
-            <span class="w-12 h-12 rounded-lg bg-navy-900 border border-gold-500/60 flex items-center justify-center font-code font-bold text-gold-400 text-sm shadow-xs">
-              {rg.code}
-            </span>
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">
-                Research Cluster #{idx + 1}
-              </span>
-              <h2 class="text-xl sm:text-2xl font-bold text-navy-900 font-editorial">
-                {rg.name}
-              </h2>
-              <span class="text-xs text-slate-500 font-medium italic block">
-                {rg.name_id}
-              </span>
-            </div>
-          </div>
-
-          <div class="text-left md:text-right">
-            <span class="text-[10px] uppercase font-bold text-slate-400 block">Lead Coordinator</span>
-            <span class="text-xs font-bold text-navy-900 font-code block">
-              {rg.coordinator}
-            </span>
-            <span class="text-[10px] text-slate-500 font-code">
-              NUPTK: {rg.coordinator_nuptk}
-            </span>
-          </div>
-        </div>
-
-        <div class="mb-8 bg-slate-50 rounded-lg p-4 border border-slate-200 text-xs sm:text-sm text-slate-800 leading-relaxed">
-          <strong class="text-navy-900 block mb-1 font-bold uppercase text-[11px] tracking-wider">
-            Research Scope & Vision:
-          </strong>
-          {rg.focus}
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          
-          <div class="lg:col-span-5 space-y-4">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-navy-900 border-l-2 border-gold-500 pl-2">
-              Faculty Investigators
-            </h3>
-            <ul class="space-y-2 text-xs text-slate-700">
-              {rg.members.map((m: string) => (
-                <li class="flex items-center">
-                  <span class="w-1.5 h-1.5 rounded-full bg-gold-500 mr-2"></span>
-                  <span>{m}</span>
-                </li>
-              ))}
-            </ul>
-
-            {rg.assistants && rg.assistants.length > 0 && (
-              <div class="pt-2">
-                <span class="text-[11px] font-bold text-slate-500 block mb-1 uppercase tracking-wider">
-                  Research Assistants:
-                </span>
-                <ul class="space-y-1 text-xs text-slate-600 pl-2">
-                  {rg.assistants.map((ast: string) => (
-                    <li class="flex items-center">
-                      <span class="text-slate-400 mr-1.5">›</span>
-                      <span>{ast}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-
-          <div class="lg:col-span-7 space-y-4">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-navy-900 border-l-2 border-gold-500 pl-2">
-              Strategic Research Roadmap
-            </h3>
-            <ul class="space-y-2.5 text-xs text-slate-700">
-              {rg.roadmap.map((step: string) => (
-                <li class="flex items-start">
-                  <span class="text-gold-600 font-bold mr-2">▪</span>
-                  <span class="leading-relaxed">{step}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-        </div>
-
-        {rg.flagship_publications && rg.flagship_publications.length > 0 && (
-          <div class="mt-8 pt-6 border-t border-slate-100">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-navy-900 mb-3">
-              Selected Flagship Publications
-            </h3>
-            <div class="space-y-2">
-              {rg.flagship_publications.map((pub: string) => (
-                <div class="p-3 bg-white rounded border border-slate-200 text-xs font-medium text-slate-800 flex items-start">
-                  <span class="text-gold-600 mr-2 font-bold font-code">✦</span>
-                  <span class="leading-relaxed">{pub}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      </section>
+      <ResearchGroupCard rg={rg} idx={idx} lang="en" />
     ))}
 
     {/* Open Thesis Topics (EN) */}
