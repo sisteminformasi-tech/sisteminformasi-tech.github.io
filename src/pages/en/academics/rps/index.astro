@@ -21,7 +21,7 @@ const categories = Array.from(new Set(rpsList.map((r) => r.category))).sort();
           <span>{totalFiles} Authoritative Syllabus PDF Files</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
-          OBE Course Syllabus (RPS) Master Repository
+          OBE Course Syllabus (RPS) Repository
         </h1>
         <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
           Official catalog of Course Syllabi (Rencana Pembelajaran Semester / RPS) for the Undergraduate Program in Information Systems. All documents have been audited under rigorous Outcome-Based Education standards, outlining learning outcomes, weekly topics, and assessment rubrics.
@@ -81,7 +81,6 @@ const categories = Array.from(new Set(rpsList.map((r) => r.category))).sort();
             <th class="w-32">Course Code</th>
             <th>Course Title</th>
             <th class="w-1/3">Knowledge Cluster / Category</th>
-            <th class="w-20 text-center">Size</th>
             <th class="w-32 text-center">Action</th>
           </tr>
         </thead>
@@ -106,9 +105,6 @@ const categories = Array.from(new Set(rpsList.map((r) => r.category))).sort();
               </td>
               <td class="text-xs text-slate-600">
                 {item.category}
-              </td>
-              <td class="text-center font-code text-xs text-slate-500">
-                {item.size_kb} KB
               </td>
               <td class="text-center">
                 <a

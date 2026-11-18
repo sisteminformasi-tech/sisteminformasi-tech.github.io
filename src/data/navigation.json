@@ -83,7 +83,7 @@
       "href": "/akademik/kurikulum/",
       "sub": [
         {
-          "label": "Kurikulum OBE 144 SKS",
+          "label": "Kurikulum OBE",
           "href": "/akademik/kurikulum/"
         },
         {
@@ -91,7 +91,7 @@
           "href": "/akademik/kurikulum/#cpl"
         },
         {
-          "label": "Repositori Master RPS PDF",
+          "label": "Repositori RPS Berbasis OBE",
           "href": "/akademik/rps/"
         }
       ]
@@ -187,7 +187,7 @@
       "href": "/en/academics/curriculum/",
       "sub": [
         {
-          "label": "OBE Curriculum (144 Credits)",
+          "label": "OBE Curriculum",
           "href": "/en/academics/curriculum/"
         },
         {
