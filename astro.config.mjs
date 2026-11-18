@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
-const base = process.env.ASTRO_BASE !== undefined ? process.env.ASTRO_BASE : '/website-prodi-si';
+const base = process.env.ASTRO_BASE || '/';
 
 export default defineConfig({
   site: 'https://sisteminformasi-tech.github.io',
