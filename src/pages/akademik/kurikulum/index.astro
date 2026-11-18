@@ -1,0 +1,310 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import curriculum from '../../../data/curriculum.json';
+
+const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, total_sks_lulus } = curriculum;
+---
+
+<BaseLayout
+  title="Kurikulum OBE 144 SKS — Program Studi S1 Sistem Informasi"
+  description="Struktur Kurikulum Berbasis Outcome-Based Education (OBE) S1 Sistem Informasi Universitas Darwan Ali. 144 SKS, 3 Profil Lulusan, 10 CPL, 14 Bahan Kajian, dan Taksonomi Bloom."
+  lang="id"
+>
+  {/* Page Header */}
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Standar Outcome-Based Education (OBE)</span>
+          <span class="text-slate-600">·</span>
+          <span>Total {total_sks_lulus} SKS</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Kurikulum OBE Program Studi S1 Sistem Informasi
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Kurikulum operasional berbasis luaran (OBE) yang dirancang secara komprehensif mengacu pada Standar Nasional Pendidikan Tinggi (SN-Dikti), panduan kurikulum ACM/IEEE-CS Information Systems, dan kriteria akreditasi LAM INFOKOM untuk melahirkan profesional teknologi berwawasan kecerdasan buatan, analitika data, dan rekayasa enterprise.
+        </p>
+      </div>
+
+      {/* Quick Nav Anchors */}
+      <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
+        <a href="#profil-lulusan" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Profil Lulusan
+        </a>
+        <a href="#cpl" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Capaian Pembelajaran (CPL)
+        </a>
+        <a href="#bahan-kajian" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Bahan Kajian (BK)
+        </a>
+        <a href="#sebaran-mk" class="px-3 py-1.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold transition-colors">
+          ↓ Matriks Mata Kuliah (Sem 1-8)
+        </a>
+        <a href="/akademik/rps/" class="px-3 py-1.5 rounded border border-gold-500/50 text-gold-400 hover:bg-navy-800 transition-colors">
+          Repositori RPS PDF ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    {/* Section 1: Profil Lulusan */}
+    <section id="profil-lulusan" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Bagian 1</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          Profil Lulusan (Graduate Profiles)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Peran dan profil profesional mandiri yang disiapkan bagi lulusan sarjana program studi setelah 3–5 tahun berkiprah di industri.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">#</th>
+              <th class="w-24">Kode</th>
+              <th>Rumusan Profil Lulusan</th>
+              <th class="w-1/3">Prospek Karier & Profesi Relevan</th>
+            </tr>
+          </thead>
+          <tbody>
+            {profil_lulusan.map((pl) => (
+              <tr>
+                <td class="text-center font-bold text-slate-400">{pl.no}</td>
+                <td>
+                  <span class="font-code font-bold text-navy-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                    {pl.code}
+                  </span>
+                </td>
+                <td class="text-slate-800 leading-relaxed font-medium">
+                  {pl.desc}
+                </td>
+                <td class="text-gold-800 font-medium bg-gold-50/40">
+                  {pl.roles}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* Section 2: Capaian Pembelajaran Lulusan (CPL) */}
+    <section id="cpl" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Bagian 2</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          Capaian Pembelajaran Lulusan (CPL)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Rumusan kompetensi terukur yang wajib dikuasai seluruh sarjana Sistem Informasi UNDA, mencakup aspek Sikap, Keterampilan Umum, Pengetahuan, dan Keterampilan Khusus.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">#</th>
+              <th class="w-24">Kode</th>
+              <th>Deskripsi Capaian Pembelajaran Lulusan (CPL)</th>
+              <th class="w-40 text-center">Penekanan Taksonomi Bloom</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cpl.map((item) => (
+              <tr>
+                <td class="text-center font-bold text-slate-400">{item.no}</td>
+                <td>
+                  <span class="font-code font-bold text-navy-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                    {item.code}
+                  </span>
+                </td>
+                <td class="text-slate-800 leading-relaxed">
+                  {item.desc}
+                </td>
+                <td class="text-center">
+                  {item.bloom_tags.map((tag: string) => (
+                    <span class={`bloom-tag ${
+                      tag.startsWith('C') ? 'bloom-cognitive' : tag.startsWith('P') ? 'bloom-psychomotor' : 'bloom-affective'
+                    }`}>
+                      {tag}
+                    </span>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* Section 3: Bahan Kajian (BK) */}
+    <section id="bahan-kajian" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Bagian 3</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          14 Bahan Kajian Utama (Body of Knowledge)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Rumpun keilmuan yang menjadi dasar penentuan muatan isi mata kuliah dalam struktur kurikulum 144 SKS.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {bahan_kajian.map((bk) => (
+          <div class="card-academic p-4 flex items-start space-x-3">
+            <span class="font-code font-bold text-xs bg-navy-900 text-gold-400 px-2.5 py-1 rounded">
+              {bk.code}
+            </span>
+            <div class="text-xs text-slate-800 font-medium leading-snug pt-0.5">
+              {bk.name}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Section 4: Matriks Sebaran Mata Kuliah Semester 1-8 */}
+    <section id="sebaran-mk" class="scroll-mt-24">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-4 mb-6 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Bagian 4</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+            Matriks Sebaran Mata Kuliah (Total {total_sks_lulus} SKS)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            Daftar lengkap 78 mata kuliah reguler dan paket MBKM/pilihan yang terdistribusi ke dalam 8 semester.
+          </p>
+        </div>
+
+        {/* Total SKS Badges */}
+        <div class="flex flex-wrap gap-1.5 items-center">
+          {Object.entries(semester_sks_distribution).map(([s, val]) => (
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-code">
+              S{s}: <strong>{val}</strong> SKS
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Filter Tabs by Semester */}
+      <div class="flex flex-wrap gap-2 mb-6" id="semester-filters">
+        <button
+          type="button"
+          class="sem-filter-btn px-3 py-1.5 rounded text-xs font-bold bg-navy-900 text-white transition-colors"
+          data-filter="all"
+        >
+          Semua Semester
+        </button>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => (
+          <button
+            type="button"
+            class="sem-filter-btn px-3 py-1.5 rounded text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:border-gold-500 hover:text-navy-900 transition-colors"
+            data-filter={s.toString()}
+          >
+            Semester {s} ({semester_sks_distribution[s.toString() as keyof typeof semester_sks_distribution]} SKS)
+          </button>
+        ))}
+      </div>
+
+      {/* Courses Table */}
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic" id="courses-table">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">Smt</th>
+              <th class="w-28">Kode MK</th>
+              <th>Nama Mata Kuliah</th>
+              <th class="w-16 text-center">SKS</th>
+              <th class="w-24">Bahan Kajian</th>
+              <th class="w-24">Profil (PL)</th>
+              <th class="w-24 text-center">Taksonomi</th>
+              <th class="w-24 text-center">RPS PDF</th>
+            </tr>
+          </thead>
+          <tbody>
+            {courses.map((c) => (
+              <tr class="course-row" data-semester={c.semester}>
+                <td class="text-center font-code font-bold text-slate-600 bg-slate-50">
+                  {c.semester}
+                </td>
+                <td>
+                  <span class="font-code font-bold text-xs text-navy-900">
+                    {c.code}
+                  </span>
+                </td>
+                <td class="font-medium text-slate-900">
+                  {c.name}
+                </td>
+                <td class="text-center font-code font-bold text-gold-700 bg-gold-50/50">
+                  {c.sks} SKS
+                </td>
+                <td class="text-xs text-slate-500 font-code">
+                  {c.bk && c.bk.length > 0 ? c.bk.join(', ') : '-'}
+                </td>
+                <td class="text-xs text-slate-500 font-code">
+                  {c.pl || '-'}
+                </td>
+                <td class="text-center">
+                  {c.bloom && c.bloom.length > 0 ? (
+                    c.bloom.map((b: string) => (
+                      <span class={`bloom-tag ${
+                        b.startsWith('C') ? 'bloom-cognitive' : b.startsWith('P') ? 'bloom-psychomotor' : 'bloom-affective'
+                      }`}>
+                        {b}
+                      </span>
+                    ))
+                  ) : (
+                    <span class="text-slate-400 text-xs">-</span>
+                  )}
+                </td>
+                <td class="text-center">
+                  <a
+                    href={`/akademik/rps/?q=${encodeURIComponent(c.code)}`}
+                    class="inline-flex items-center text-xs font-bold text-navy-900 hover:text-gold-700 underline"
+                    title={`Lihat RPS ${c.name}`}
+                  >
+                    RPS ↗
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<script>
+  // Filter logic for semesters
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.sem-filter-btn');
+  const rows = document.querySelectorAll<HTMLTableRowElement>('.course-row');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => {
+        b.classList.remove('bg-navy-900', 'text-white', 'font-bold');
+        b.classList.add('bg-white', 'text-slate-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'font-bold');
+      btn.classList.remove('bg-white', 'text-slate-700', 'font-semibold');
+
+      const filter = btn.dataset.filter;
+      rows.forEach((row) => {
+        if (filter === 'all' || row.dataset.semester === filter) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

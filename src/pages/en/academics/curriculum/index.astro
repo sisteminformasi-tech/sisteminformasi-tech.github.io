@@ -1,0 +1,310 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import curriculum from '../../../../data/curriculum.json';
+
+const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, total_sks_lulus } = curriculum;
+---
+
+<BaseLayout
+  title="OBE Curriculum (144 Credits) — Information Systems Program"
+  description="Outcome-Based Education (OBE) Curriculum for Information Systems at Universitas Darwan Ali. 144 Credits, 3 Graduate Profiles, 10 Learning Outcomes, and Bloom Taxonomy."
+  lang="en"
+>
+  {/* Page Header */}
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Outcome-Based Education (OBE) Standard</span>
+          <span class="text-slate-600">·</span>
+          <span>{total_sks_lulus} Total Credits</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Undergraduate Information Systems Curriculum
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          A comprehensive outcome-based curriculum adhering to National Higher Education Standards (SN-Dikti), ACM/IEEE-CS Information Systems Curricula guidelines, and LAM INFOKOM accreditation criteria to develop ethical, future-ready leaders in Artificial Intelligence, Data Science, and Enterprise Systems.
+        </p>
+      </div>
+
+      {/* Quick Nav Anchors */}
+      <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
+        <a href="#profil-lulusan" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Graduate Profiles
+        </a>
+        <a href="#cpl" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Learning Outcomes (CPL)
+        </a>
+        <a href="#bahan-kajian" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ Body of Knowledge (BK)
+        </a>
+        <a href="#sebaran-mk" class="px-3 py-1.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold transition-colors">
+          ↓ Course Matrix (Sem 1-8)
+        </a>
+        <a href="/en/academics/rps/" class="px-3 py-1.5 rounded border border-gold-500/50 text-gold-400 hover:bg-navy-800 transition-colors">
+          Syllabus Repository ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    {/* Section 1: Profil Lulusan */}
+    <section id="profil-lulusan" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Section 1</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          Graduate Profiles
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Target professional roles and career trajectories envisioned for our graduates after 3–5 years of active industry practice.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">#</th>
+              <th class="w-24">Code</th>
+              <th>Graduate Profile Formulation</th>
+              <th class="w-1/3">Target Professional Roles</th>
+            </tr>
+          </thead>
+          <tbody>
+            {profil_lulusan.map((pl) => (
+              <tr>
+                <td class="text-center font-bold text-slate-400">{pl.no}</td>
+                <td>
+                  <span class="font-code font-bold text-navy-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                    {pl.code}
+                  </span>
+                </td>
+                <td class="text-slate-800 leading-relaxed font-medium">
+                  {pl.desc}
+                </td>
+                <td class="text-gold-800 font-medium bg-gold-50/40">
+                  {pl.roles}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* Section 2: Capaian Pembelajaran Lulusan (CPL) */}
+    <section id="cpl" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Section 2</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          Program Learning Outcomes (CPL)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Measurable competencies encompassing Attitudes, General Skills, Knowledge, and Specialized Technical Skills.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">#</th>
+              <th class="w-24">Code</th>
+              <th>Learning Outcome Formulation (CPL)</th>
+              <th class="w-40 text-center">Bloom Taxonomy Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cpl.map((item) => (
+              <tr>
+                <td class="text-center font-bold text-slate-400">{item.no}</td>
+                <td>
+                  <span class="font-code font-bold text-navy-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+                    {item.code}
+                  </span>
+                </td>
+                <td class="text-slate-800 leading-relaxed">
+                  {item.desc}
+                </td>
+                <td class="text-center">
+                  {item.bloom_tags.map((tag: string) => (
+                    <span class={`bloom-tag ${
+                      tag.startsWith('C') ? 'bloom-cognitive' : tag.startsWith('P') ? 'bloom-psychomotor' : 'bloom-affective'
+                    }`}>
+                      {tag}
+                    </span>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* Section 3: Bahan Kajian (BK) */}
+    <section id="bahan-kajian" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Section 3</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          14 Core Knowledge Areas (Body of Knowledge)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          The scientific domains guiding the course syllabus and curricular structure across 144 credits.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {bahan_kajian.map((bk) => (
+          <div class="card-academic p-4 flex items-start space-x-3">
+            <span class="font-code font-bold text-xs bg-navy-900 text-gold-400 px-2.5 py-1 rounded">
+              {bk.code}
+            </span>
+            <div class="text-xs text-slate-800 font-medium leading-snug pt-0.5">
+              {bk.name}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Section 4: Course Matrix */}
+    <section id="sebaran-mk" class="scroll-mt-24">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-4 mb-6 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Section 4</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+            8-Semester Course Distribution Matrix (Total {total_sks_lulus} Credits)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            Complete inventory of 78 courses distributed across semesters 1 to 8, including MBKM tracks.
+          </p>
+        </div>
+
+        {/* Total SKS Badges */}
+        <div class="flex flex-wrap gap-1.5 items-center">
+          {Object.entries(semester_sks_distribution).map(([s, val]) => (
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[11px] font-code">
+              S{s}: <strong>{val}</strong> SKS
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Filter Tabs by Semester */}
+      <div class="flex flex-wrap gap-2 mb-6" id="semester-filters-en">
+        <button
+          type="button"
+          class="sem-filter-btn-en px-3 py-1.5 rounded text-xs font-bold bg-navy-900 text-white transition-colors"
+          data-filter="all"
+        >
+          All Semesters
+        </button>
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => (
+          <button
+            type="button"
+            class="sem-filter-btn-en px-3 py-1.5 rounded text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:border-gold-500 hover:text-navy-900 transition-colors"
+            data-filter={s.toString()}
+          >
+            Semester {s} ({semester_sks_distribution[s.toString() as keyof typeof semester_sks_distribution]} Credits)
+          </button>
+        ))}
+      </div>
+
+      {/* Courses Table */}
+      <div class="overflow-x-auto card-academic">
+        <table class="table-academic">
+          <thead>
+            <tr>
+              <th class="w-12 text-center">Sem</th>
+              <th class="w-28">Course Code</th>
+              <th>Course Name</th>
+              <th class="w-16 text-center">Credits</th>
+              <th class="w-24">Knowledge Area</th>
+              <th class="w-24">Profile (PL)</th>
+              <th class="w-24 text-center">Taxonomy</th>
+              <th class="w-24 text-center">Syllabus</th>
+            </tr>
+          </thead>
+          <tbody>
+            {courses.map((c) => (
+              <tr class="course-row-en" data-semester={c.semester}>
+                <td class="text-center font-code font-bold text-slate-600 bg-slate-50">
+                  {c.semester}
+                </td>
+                <td>
+                  <span class="font-code font-bold text-xs text-navy-900">
+                    {c.code}
+                  </span>
+                </td>
+                <td class="font-medium text-slate-900">
+                  {c.name}
+                </td>
+                <td class="text-center font-code font-bold text-gold-700 bg-gold-50/50">
+                  {c.sks} SKS
+                </td>
+                <td class="text-xs text-slate-500 font-code">
+                  {c.bk && c.bk.length > 0 ? c.bk.join(', ') : '-'}
+                </td>
+                <td class="text-xs text-slate-500 font-code">
+                  {c.pl || '-'}
+                </td>
+                <td class="text-center">
+                  {c.bloom && c.bloom.length > 0 ? (
+                    c.bloom.map((b: string) => (
+                      <span class={`bloom-tag ${
+                        b.startsWith('C') ? 'bloom-cognitive' : b.startsWith('P') ? 'bloom-psychomotor' : 'bloom-affective'
+                      }`}>
+                        {b}
+                      </span>
+                    ))
+                  ) : (
+                    <span class="text-slate-400 text-xs">-</span>
+                  )}
+                </td>
+                <td class="text-center">
+                  <a
+                    href={`/en/academics/rps/?q=${encodeURIComponent(c.code)}`}
+                    class="inline-flex items-center text-xs font-bold text-navy-900 hover:text-gold-700 underline"
+                    title={`View Syllabus for ${c.name}`}
+                  >
+                    PDF ↗
+                  </a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<script>
+  // Filter logic for semesters (EN)
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.sem-filter-btn-en');
+  const rows = document.querySelectorAll<HTMLTableRowElement>('.course-row-en');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => {
+        b.classList.remove('bg-navy-900', 'text-white', 'font-bold');
+        b.classList.add('bg-white', 'text-slate-700', 'font-semibold');
+      });
+      btn.classList.add('bg-navy-900', 'text-white', 'font-bold');
+      btn.classList.remove('bg-white', 'text-slate-700', 'font-semibold');
+
+      const filter = btn.dataset.filter;
+      rows.forEach((row) => {
+        if (filter === 'all' || row.dataset.semester === filter) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
