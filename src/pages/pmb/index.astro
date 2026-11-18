@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const spmbUrl = "https://univdarwanali.siakadcloud.com/spmbfront/program-studi-detail/detail/57201";
+---
+
+<BaseLayout
+  title="Penerimaan Mahasiswa Baru (SPMB 2026) — S1 Sistem Informasi"
+  description="Pendaftaran Mahasiswa Baru Program Studi S1 Sistem Informasi Universitas Darwan Ali. Jalur Reguler, Kelas Malam / Karyawan, dan Jalur RPL (Rekognisi Pembelajaran Lampau)."
+  lang="id"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Tahun Akademik 2026/2027</span>
+          <span class="text-slate-600">·</span>
+          <span>Akreditasi Baik Sekali</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Penerimaan Mahasiswa Baru (SPMB)
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Wujudkan cita-cita Anda menjadi Sarjana Komputer (S.Kom.) yang menguasai kecerdasan buatan, sains data, dan tata kelola enterprise di Program Studi S1 Sistem Informasi FIK Universitas Darwan Ali.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-4 items-center">
+        <a
+          href={spmbUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-6 py-3.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-xs uppercase tracking-wider shadow-md transition-all transform hover:-translate-y-0.5"
+        >
+          Daftar Online Sekarang (Portal Resmi SPMB) ↗
+        </a>
+        <a href="#jalur" class="text-xs text-slate-300 hover:text-white underline">
+          Lihat Jalur Masuk ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    
+    {/* Jalur Pendaftaran */}
+    <section id="jalur" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Pilihan Jalur Studi</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          3 Jalur Penerimaan Mahasiswa
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-academic p-6 border-t-4 border-t-navy-900 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-slate-100 text-navy-900 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Jalur 01
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Jalur Reguler (Pagi/Siang)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Ditujukan bagi lulusan SMA, SMK, atau MA sederajat yang ingin fokus menempuh pendidikan sarjana secara penuh waktu dengan lingkungan kampus yang dinamis, laboratorium modern, dan kegiatan ormawa aktif.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Kuliah Senin – Jumat</li>
+              <li>✓ Magang industri MBKM bersertifikat</li>
+              <li>✓ Peluang beasiswa KIP-Kuliah & Yayasan</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Daftar Jalur Reguler ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6 border-t-4 border-t-gold-500 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-gold-50 text-gold-800 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Jalur 02 · Populer
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Jalur Kelas Malam & Karyawan
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Dirancang khusus untuk para pekerja, ASN, karyawan swasta, dan wirausahawan yang ingin meraih gelar Sarjana Komputer tanpa mengorbankan karir dan jam kerja operasional harian.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Perkuliahan malam hari & Sabtu</li>
+              <li>✓ Blended learning via Edlink & Moodle</li>
+              <li>✓ Jadwal ujian dan tugas ramah pekerja</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Daftar Kelas Karyawan ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6 border-t-4 border-t-slate-700 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Jalur 03
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Jalur RPL (Rekognisi Pembelajaran Lampau)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Pengakuan hasil belajar formal (lulusan D3/alih program) maupun non-formal/informal dari pengalaman kerja nyata untuk dikonversi menjadi perolehan SKS, sehingga masa studi menjadi lebih singkat.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Konversi SKS transparan dan tervalidasi</li>
+              <li>✓ Masa studi 2–4 semester (sesuai konversi)</li>
+              <li>✓ Asesmen portofolio pengalaman kerja</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Daftar Jalur RPL ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* Alur Pendaftaran */}
+    <section class="card-academic p-8 sm:p-10 border-slate-200">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Panduan Step-by-Step</span>
+        <h2 class="text-2xl font-bold text-navy-900 font-editorial">
+          Alur Seleksi & Pendaftaran Online
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Langkah 1</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Pembuatan Akun SPMB</h4>
+          <p class="text-[11px] text-slate-600">Buka portal SPMB resmi UNDA dan daftarkan diri menggunakan email aktif serta nomor WhatsApp.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Langkah 2</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Pengisian Biodata & Berkas</h4>
+          <p class="text-[11px] text-slate-600">Unggah salinan ijazah/SKL, transkrip nilai, kartu keluarga, dan pasfoto terbaru.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Langkah 3</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Verifikasi & Ujian Seleksi</h4>
+          <p class="text-[11px] text-slate-600">Verifikasi berkas oleh panitia SPMB dan asesmen potensi akademik online atau penilaian portofolio RPL.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Langkah 4</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Registrasi & Pembayaran</h4>
+          <p class="text-[11px] text-slate-600">Pengumuman kelulusan, penentuan NIM, dan registrasi ulang semester pertama melalui SIAKAD.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

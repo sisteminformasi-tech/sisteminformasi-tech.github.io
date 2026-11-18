@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const newsItems = [
+  {
+    title: 'Sosialisasi Kurikulum OBE 144 SKS bagi Mahasiswa Baru S1 Sistem Informasi',
+    date: '15 November 2026',
+    category: 'Akademik',
+    author: 'Admin Prodi SI',
+    summary: 'Program Studi memaparkan peta capaian pembelajaran lulusan (CPL), pilihan konsentrasi, dan jalur riset skripsi berbasis luaran kepada mahasiswa angkatan 2026.',
+    content: 'Dalam rangka memastikan pemahaman menyeluruh terhadap transformasi kurikulum pendidikan tinggi, Program Studi S1 Sistem Informasi menyelenggarakan sosialisasi Kurikulum Outcome-Based Education (OBE) 144 SKS. Acara ini dihadiri oleh pimpinan fakultas, dosen pembimbing akademik, dan seluruh mahasiswa baru. Dalam sambutannya, Kaprodi SI Dr. Dwi Wahyu Prabowo menegaskan pentingnya penguasaan kompetensi analitis, etika kecerdasan buatan, dan kemandirian riset sebagai bekal berharga bersaing di pasar kerja modern.'
+  },
+  {
+    title: 'Dosen S1 Sistem Informasi Terbitkan Publikasi Internasional Terindeks Scopus Q1 di Bidang EEG & AI',
+    date: '02 November 2026',
+    category: 'Riset',
+    author: 'Kelompok Riset AIML-RG',
+    summary: 'Penelitian bertajuk Multi-Domain CNN dan Recurrence Plot untuk pengenalan emosi manusia berhasil terbit pada jurnal bereputasi tinggi IEEE Access.',
+    content: 'Kabar membanggakan datang dari klaster riset Artificial Intelligence & Machine Learning (AIML-RG) Prodi S1 Sistem Informasi. Naskah ilmiah berjudul "Enhancing EEG-Based Emotion Recognition Using Asymmetric Windowing Recurrence Plots" berhasil dipublikasikan pada jurnal internasional bereputasi Scopus Q1. Penelitian ini mengusulkan transformasi sinyal elektroensefalogram (EEG) non-linier ke representasi matriks citra rekurensi guna meningkatkan akurasi inferensi model deep learning.'
+  },
+  {
+    title: 'Pembekalan Peserta Magang Industri MBKM dan Studi Independen Bersertifikat Angkatan 2026',
+    date: '24 Oktober 2026',
+    category: 'Kemahasiswaan',
+    author: 'Pengelola MBKM',
+    summary: 'Sebanyak 35 mahasiswa S1 Sistem Informasi siap diterjunkan ke berbagai mitra industri nasional dan instansi pemerintah daerah untuk program magang 1 semester.',
+    content: 'Fakultas Ilmu Komputer Universitas Darwan Ali menggelar pembekalan intensif bagi mahasiswa program studi Sistem Informasi yang lolos program Kampus Merdeka (MBKM) semester genap. Mahasiswa dibekali pemahaman etika profesional kerja, standar kerahasiaan data perusahaan, serta mekanisme konversi rekognisi 20 SKS ke dalam transkrip akademik semester 6 dan 7.'
+  },
+  {
+    title: 'Workshop Desain Antarmuka UI/UX Berbasis Human-Centered Design untuk UMKM Lokal',
+    date: '12 Oktober 2026',
+    category: 'Pengabdian',
+    author: 'Kelompok Riset MHUI-RG',
+    summary: 'Kelompok Studi Multimedia & UI/UX mengadakan pelatihan digital branding dan perancangan prototipe aplikasi mobile bagi pelaku usaha mikro Kotawaringin Timur.',
+    content: 'Sebagai wujud hilirisasi kepakaran akademis ke masyarakat, tim dosen dari kelompok riset MHUI-RG menyelenggarakan lokakarya praktis bagi 40 pelaku UMKM lokal di Sampit. Pelatihan ini melatih peserta merancang mock-up antarmuka e-commerce menggunakan Figma yang ramah pengguna dan memiliki rasio kontras visual yang mudah diakses konsumen.'
+  }
+];
+---
+
+<BaseLayout
+  title="Berita & Pengumuman — Program Studi S1 Sistem Informasi"
+  description="Warta terkini, publikasi riset, kegiatan kemahasiswaan, dan pengumuman akademik Program Studi S1 Sistem Informasi Universitas Darwan Ali."
+  lang="id"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Kabar Kampus & Riset</span>
+          <span class="text-slate-600">·</span>
+          <span>Warta Resmi Prodi</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Berita & Agenda Akademik
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Dokumentasi warta kegiatan ilmiah, publikasi riset dosen, prestasi mahasiswa, dan pengumuman operasional terkini di lingkungan S1 Sistem Informasi Universitas Darwan Ali.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {newsItems.map((item) => (
+        <article class="card-academic p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3 pb-3 border-b border-slate-100">
+              <span class="px-2.5 py-0.5 rounded font-bold uppercase tracking-wider text-[10px] bg-slate-100 text-slate-700">
+                {item.category}
+              </span>
+              <span>{item.date}</span>
+            </div>
+
+            <h2 class="text-lg sm:text-xl font-bold text-navy-900 font-editorial mb-3 leading-snug">
+              {item.title}
+            </h2>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
+              {item.content}
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 font-medium">Oleh: {item.author}</span>
+            <span class="font-bold text-gold-700">Warta Terverifikasi</span>
+          </div>
+        </article>
+      ))}
+    </div>
+
+  </div>
+</BaseLayout>

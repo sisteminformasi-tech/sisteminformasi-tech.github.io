@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Kontak & Lokasi Kampus — Program Studi S1 Sistem Informasi"
+  description="Sekretariat Program Studi S1 Sistem Informasi, Fakultas Ilmu Komputer, Universitas Darwan Ali. Lokasi kampus di Sampit, Kotawaringin Timur, email, dan layanan informasi."
+  lang="id"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Sekretariat & Hubungan Masyarakat</span>
+          <span class="text-slate-600">·</span>
+          <span>Layanan Informasi Terpadu</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Kontak & Lokasi Kampus
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Hubungi sekretariat Program Studi S1 Sistem Informasi untuk keperluan informasi pendaftaran, kerjasama riset industri, pengabdian masyarakat, atau layanan administrasi akademik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      {/* Form Kontak */}
+      <div class="lg:col-span-7 card-academic p-8 border-slate-200">
+        <h2 class="text-xl font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-6">
+          Kirimkan Pesan atau Pertanyaan
+        </h2>
+
+        <form action="mailto:sisteminformasi@unda.ac.id" method="post" enctype="text/plain" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                Nama Lengkap *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Nama Anda..."
+                class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                Alamat Email *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="nama@email.com"
+                class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="subject" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+              Subjek Pesan *
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Contoh: Informasi Pendaftaran / Kerjasama Riset"
+              class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+              Isi Pesan *
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tuliskan pesan atau pertanyaan Anda secara rinci..."
+              class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center px-6 py-3 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-bold text-xs uppercase tracking-wider shadow-sm transition-colors"
+          >
+            Kirimkan Pesan Sekarang
+          </button>
+        </form>
+      </div>
+
+      {/* Informasi Kontak & Lokasi */}
+      <div class="lg:col-span-5 space-y-6">
+        
+        <div class="card-academic p-6 space-y-4">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider border-b border-slate-200 pb-2">
+            Alamat Kampus Utama
+          </h3>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong>Fakultas Ilmu Komputer — Universitas Darwan Ali</strong><br />
+            Jl. Batu Berlian No. 10, Kel. Mentawa Baru Hulu, Kec. Mentawa Baru Ketapang, Kab. Kotawaringin Timur, Kalimantan Tengah 74322, Indonesia.
+          </p>
+        </div>
+
+        <div class="card-academic p-6 space-y-3">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider border-b border-slate-200 pb-2">
+            Kanal Komunikasi Resmi
+          </h3>
+          <div class="text-xs space-y-2 text-slate-700">
+            <div>
+              <span class="text-slate-400 block text-[11px]">Email Resmi Prodi:</span>
+              <a href="mailto:sisteminformasi@unda.ac.id" class="text-gold-700 font-semibold hover:underline">
+                sisteminformasi@unda.ac.id
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Instagram Resmi:</span>
+              <a href="https://www.instagram.com/sisfounda/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                @sisfounda
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Web Staf Kaprodi & Dekan:</span>
+              <a href="http://bowo.staff.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                bowo.staff.unda.ac.id
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Portal eSign Fakultas:</span>
+              <a href="https://esign-fikom.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                esign-fikom.unda.ac.id
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-academic p-6 bg-slate-50 border-slate-200">
+          <h4 class="text-xs font-bold text-navy-900 uppercase tracking-wider mb-2">
+            Jam Operasional Layanan Sekretariat
+          </h4>
+          <ul class="text-xs text-slate-600 space-y-1">
+            <li><strong>Senin – Kamis:</strong> 08:00 – 16:00 WIB</li>
+            <li><strong>Jumat:</strong> 08:00 – 11:30 & 13:00 – 16:30 WIB</li>
+            <li><strong>Sabtu (Kelas Karyawan):</strong> 09:00 – 17:00 WIB</li>
+            <li><strong>Minggu & Hari Libur Nasional:</strong> Tutup</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

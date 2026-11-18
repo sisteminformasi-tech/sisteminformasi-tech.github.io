@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Alumni Tracer Study — Information Systems Program"
+  description="Graduate tracer study portal for Information Systems at Universitas Darwan Ali. Employment metrics, employer satisfaction, and official survey form."
+  lang="en"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Quality Assurance Instrument</span>
+          <span class="text-slate-600">·</span>
+          <span>Official Graduate Survey</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Alumni Tracer Study
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Systematic tracking of alumni career progressions to evaluate time-to-employment, curricular relevance, industry satisfaction, and continuous refinement of our Outcome-Based Education (OBE) ecosystem.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    
+    {/* Key Metrics */}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card-academic p-6 text-center">
+        <span class="font-code text-3xl font-bold text-gold-600 block mb-1">&lt; 3.8</span>
+        <span class="text-xs font-bold text-navy-900 uppercase tracking-wider block mb-1">Months</span>
+        <p class="text-xs text-slate-500">Average time to secure first professional employment.</p>
+      </div>
+
+      <div class="card-academic p-6 text-center">
+        <span class="font-code text-3xl font-bold text-gold-600 block mb-1">86.4%</span>
+        <span class="text-xs font-bold text-navy-900 uppercase tracking-wider block mb-1">Field Alignment</span>
+        <p class="text-xs text-slate-500">Graduates employed directly in IT and digital systems domains.</p>
+      </div>
+
+      <div class="card-academic p-6 text-center">
+        <span class="font-code text-3xl font-bold text-gold-600 block mb-1">92.5%</span>
+        <span class="text-xs font-bold text-navy-900 uppercase tracking-wider block mb-1">Employer Satisfaction</span>
+        <p class="text-xs text-slate-500">Industry partners rate graduate integrity and competence as Very Good.</p>
+      </div>
+
+      <div class="card-academic p-6 text-center">
+        <span class="font-code text-3xl font-bold text-gold-600 block mb-1">100%</span>
+        <span class="text-xs font-bold text-navy-900 uppercase tracking-wider block mb-1">National Registry</span>
+        <p class="text-xs text-slate-500">Officially verified in PDDIKTI national database.</p>
+      </div>
+    </div>
+
+    {/* Survey Form Card */}
+    <section class="card-academic p-8 sm:p-12 border-slate-200">
+      <div class="max-w-2xl mx-auto text-center space-y-4">
+        <div class="w-16 h-16 mx-auto rounded-full bg-gold-50 border-2 border-gold-400 flex items-center justify-center text-gold-700">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold text-navy-900 font-editorial">
+          Complete the Alumni Tracer Study Questionnaire
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          We invite all alumni to spend 5–10 minutes completing the official survey. All responses are strictly confidential and solely utilized for institutional quality enhancement.
+        </p>
+
+        <div class="pt-4 flex flex-wrap justify-center gap-4">
+          <a
+            href="https://univdarwanali.siakadcloud.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-6 py-3 rounded-md bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-xs uppercase tracking-wider shadow-sm transition-colors"
+          >
+            Open Online Questionnaire ↗
+          </a>
+          <a
+            href="mailto:sisteminformasi@unda.ac.id"
+            class="inline-flex items-center px-5 py-3 rounded-md bg-slate-100 hover:bg-slate-200 text-navy-900 font-semibold text-xs transition-colors"
+          >
+            Contact Alumni Coordinator
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

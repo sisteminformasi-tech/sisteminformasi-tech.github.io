@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Contact & Location — Information Systems Program"
+  description="Secretariat of the Undergraduate Information Systems Program, Faculty of Computer Science, Universitas Darwan Ali. Campus address, email, and inquiries."
+  lang="en"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Secretariat & Public Liaison</span>
+          <span class="text-slate-600">·</span>
+          <span>Integrated Information Service</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Contact & Campus Location
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Reach out to the Information Systems secretariat for admissions inquiries, research collaborations, corporate partnerships, or academic services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      {/* Contact Form */}
+      <div class="lg:col-span-7 card-academic p-8 border-slate-200">
+        <h2 class="text-xl font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-6">
+          Send an Inquiry
+        </h2>
+
+        <form action="mailto:sisteminformasi@unda.ac.id" method="post" enctype="text/plain" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                Full Name *
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your full name..."
+                class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                Email Address *
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="name@email.com"
+                class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="subject" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+              Subject *
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="e.g. Admission Inquiry / Research Collaboration"
+              class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+              Message Content *
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Provide details regarding your inquiry..."
+              class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center px-6 py-3 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-bold text-xs uppercase tracking-wider shadow-sm transition-colors"
+          >
+            Submit Message
+          </button>
+        </form>
+      </div>
+
+      {/* Campus Info & Channels */}
+      <div class="lg:col-span-5 space-y-6">
+        
+        <div class="card-academic p-6 space-y-4">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider border-b border-slate-200 pb-2">
+            Campus Headquarters
+          </h3>
+          <p class="text-xs text-slate-700 leading-relaxed">
+            <strong>Faculty of Computer Science — Universitas Darwan Ali</strong><br />
+            Jl. Batu Berlian No. 10, Kel. Mentawa Baru Hulu, Kec. Mentawa Baru Ketapang, Kab. Kotawaringin Timur, Central Kalimantan 74322, Indonesia.
+          </p>
+        </div>
+
+        <div class="card-academic p-6 space-y-3">
+          <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider border-b border-slate-200 pb-2">
+            Official Communication Channels
+          </h3>
+          <div class="text-xs space-y-2 text-slate-700">
+            <div>
+              <span class="text-slate-400 block text-[11px]">Official Email:</span>
+              <a href="mailto:sisteminformasi@unda.ac.id" class="text-gold-700 font-semibold hover:underline">
+                sisteminformasi@unda.ac.id
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Instagram Account:</span>
+              <a href="https://www.instagram.com/sisfounda/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                @sisfounda
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Dean & Program Head Web:</span>
+              <a href="http://bowo.staff.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                bowo.staff.unda.ac.id
+              </a>
+            </div>
+            <div>
+              <span class="text-slate-400 block text-[11px]">Faculty eSign Service:</span>
+              <a href="https://esign-fikom.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-gold-700 font-semibold hover:underline">
+                esign-fikom.unda.ac.id
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-academic p-6 bg-slate-50 border-slate-200">
+          <h4 class="text-xs font-bold text-navy-900 uppercase tracking-wider mb-2">
+            Secretariat Office Hours
+          </h4>
+          <ul class="text-xs text-slate-600 space-y-1">
+            <li><strong>Monday – Thursday:</strong> 08:00 – 16:00 WIB</li>
+            <li><strong>Friday:</strong> 08:00 – 11:30 & 13:00 – 16:30 WIB</li>
+            <li><strong>Saturday (Working Class):</strong> 09:00 – 17:00 WIB</li>
+            <li><strong>Sunday & National Holidays:</strong> Closed</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

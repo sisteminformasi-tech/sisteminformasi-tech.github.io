@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Layanan Mahasiswa — Program Studi S1 Sistem Informasi"
+  description="Pusat layanan kemahasiswaan S1 Sistem Informasi Universitas Darwan Ali. SOP Skripsi OBE, Kerja Praktik (KP), MBKM, Beasiswa, dan Himpunan Mahasiswa (HIMASI)."
+  lang="id"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Layanan Terpadu Mahasiswa</span>
+          <span class="text-slate-600">·</span>
+          <span>Panduan Akademik & Ormawa</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Layanan & Kemahasiswaan
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Pusat informasi prosedur operasional standar (SOP), bimbingan skripsi OBE, kerja praktik industri, kegiatan organisasi mahasiswa (HIMASI), dan akses portal administrasi akademik bagi mahasiswa S1 Sistem Informasi.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
+        <a href="#sop" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ Panduan SOP</a>
+        <a href="#skripsi" class="px-3 py-1.5 rounded bg-gold-500 text-navy-950 font-bold hover:bg-gold-600">↓ Skripsi OBE</a>
+        <a href="#mbkm" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ MBKM & KP</a>
+        <a href="#himasi" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ Ormawa HIMASI</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    
+    {/* SOP & Panduan Akademik */}
+    <section id="sop" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Prosedur Operasional Standar</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          SOP Akademik Mahasiswa
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-academic p-6">
+          <div class="w-10 h-10 rounded-lg bg-navy-100 text-navy-900 flex items-center justify-center font-bold mb-4">
+            01
+          </div>
+          <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+            Pengisian KRS & Konsultasi DPA
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Dilakukan tiap awal semester melalui SIAKAD Cloud. Mahasiswa wajib berkonsultasi dengan Dosen Pembimbing Akademik (DPA) terkait beban SKS dan mata kuliah prasyarat.
+          </p>
+          <a href="https://siak.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-gold-700 hover:underline">
+            Akses SIAKAD ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6">
+          <div class="w-10 h-10 rounded-lg bg-navy-100 text-navy-900 flex items-center justify-center font-bold mb-4">
+            02
+          </div>
+          <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+            Kerja Praktik (KP) & Magang
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Dapat diambil setelah menyelesaikan minimal 90 SKS. Mahasiswa magang di instansi pemerintah, BUMD, atau perusahaan swasta selama 1–3 bulan dengan luaran laporan dan penilaian mitra.
+          </p>
+          <a href="/unduhan/#panduan-kp" class="text-xs font-bold text-gold-700 hover:underline">
+            Unduh Format KP ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6">
+          <div class="w-10 h-10 rounded-lg bg-navy-100 text-navy-900 flex items-center justify-center font-bold mb-4">
+            03
+          </div>
+          <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+            Layanan Tanda Tangan eSign
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Pengajuan surat pengantar survei, izin riset, surat bebas pustaka, dan pengesahan berkas akademik fakultas kini dilakukan secara online melalui portal eSign FIKOM UNDA.
+          </p>
+          <a href="https://esign-fikom.unda.ac.id/" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-gold-700 hover:underline">
+            Portal eSign FIKOM ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* Skripsi OBE */}
+    <section id="skripsi" class="scroll-mt-24 card-academic p-8 sm:p-10 border-slate-200">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Tugas Akhir / Capstone (SIFC8B01 - 6 SKS)</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          Pedoman & Standar Riset Skripsi OBE
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Skripsi Program Studi S1 Sistem Informasi dirancang sebagai puncak integrasi kompetensi keilmuan mahasiswa dengan 4 tahapan evaluasi transparan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code text-xs font-bold text-gold-600 block mb-1">Tahap 1</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Pengajuan Topik & Dosen Pembimbing</h4>
+          <p class="text-[11px] text-slate-600">Pemilihan payung riset yang selaras dengan 5 Kelompok Riset (AIML-RG, SETK-RG, MHUI-RG, DSDSS-RG, EDUTECH-RG).</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code text-xs font-bold text-gold-600 block mb-1">Tahap 2</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Seminar Proposal (Sempro)</h4>
+          <p class="text-[11px] text-slate-600">Presentasi Bab 1–3 di hadapan dosen pembimbing dan dewan penguji untuk memvalidasi metodologi dan kebaruan.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code text-xs font-bold text-gold-600 block mb-1">Tahap 3</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Implementasi & Seminar Hasil</h4>
+          <p class="text-[11px] text-slate-600">Uji coba artefak sistem, model AI, atau hasil audit sistem informasi bersama data empiris institusi mitra.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code text-xs font-bold text-gold-600 block mb-1">Tahap 4</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Sidang Munaqasyah / Pendadaran</h4>
+          <p class="text-[11px] text-slate-600">Ujian komprehensif penentu kelulusan dan penyerahan naskah publikasi artikel ilmiah atau draft paten.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-4 items-center">
+        <a
+          href="/riset/kelompok-riset/#topik-skripsi"
+          class="inline-flex items-center px-4 py-2.5 rounded bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs uppercase tracking-wider transition-colors"
+        >
+          Lihat Katalog Topik Skripsi Terbuka →
+        </a>
+        <a
+          href="/unduhan/"
+          class="inline-flex items-center px-4 py-2.5 rounded bg-slate-100 hover:bg-slate-200 text-navy-900 font-semibold text-xs transition-colors"
+        >
+          Unduh Template Word & LaTeX Skripsi →
+        </a>
+      </div>
+    </section>
+
+    {/* HIMASI Ormawa */}
+    <section id="himasi" class="scroll-mt-24 card-academic p-8 sm:p-10 border-slate-200">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Organisasi Mahasiswa</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+            Himpunan Mahasiswa Sistem Informasi (HIMASI)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            HIMASI merupakan wadah keorganisasian resmi mahasiswa S1 Sistem Informasi FIK UNDA yang bertujuan memupuk kepemimpinan, persaudaraan, dan profesionalitas melalui beragam kegiatan seperti bootcamp coding, seminar teknologi, pengabdian masyarakat desa pesisir, dan kompetisi inovasi digital tahunan.
+          </p>
+          <div class="pt-2 flex items-center space-x-4 text-xs font-semibold">
+            <span class="text-slate-700">Instagram Resmi: <a href="https://www.instagram.com/sisfounda/" target="_blank" rel="noopener noreferrer" class="text-gold-700 hover:underline">@sisfounda</a></span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 bg-slate-50 border border-slate-200 rounded-lg p-6 text-center space-y-3">
+          <div class="w-16 h-16 mx-auto rounded-full bg-navy-900 text-gold-400 font-bold font-editorial text-2xl flex items-center justify-center">
+            HI
+          </div>
+          <h4 class="text-sm font-bold text-navy-900">Sinergi & Dedikasi</h4>
+          <p class="text-xs text-slate-500">
+            Terbuka bagi seluruh mahasiswa aktif S1 Sistem Informasi untuk mengembangkan soft-skills organisasi dan portofolio teknologi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>

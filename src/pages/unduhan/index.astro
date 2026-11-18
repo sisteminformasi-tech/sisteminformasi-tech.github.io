@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const docs = [
+  {
+    category: 'Pedoman Tugas Akhir & Skripsi',
+    items: [
+      {
+        title: 'Buku Pedoman & Standar Riset Skripsi OBE (SIFC8B01)',
+        desc: 'Panduan lengkap penyusunan bab 1 s.d. 5, metodologi riset, standar sitasi IEEE, dan rubrik penilaian dewan penguji.',
+        size: 'PDF · 1.4 MB',
+        link: '#'
+      },
+      {
+        title: 'Template LaTeX & Word Naskah Skripsi Sistem Informasi',
+        desc: 'Berkas cetakan baku halaman judul, lembar pengesahan dewan penguji, abstrak bilingual, dan tata letak bab.',
+        size: 'ZIP / DOCX · 850 KB',
+        link: '#'
+      },
+      {
+        title: 'Formulir Pengajuan Judul & Dosen Pembimbing Skripsi',
+        desc: 'Formulir usulan tema penelitian mahasiswa yang diselaraskan dengan 5 Kelompok Riset Dosen.',
+        size: 'PDF · 210 KB',
+        link: '#'
+      }
+    ]
+  },
+  {
+    category: 'Kerja Praktik (KP) & Magang MBKM',
+    items: [
+      {
+        title: 'Buku Panduan Kerja Praktik (KP) S1 Sistem Informasi',
+        desc: 'SOP pengajuan izin observasi, logbook kegiatan mingguan, etika magang, dan format laporan akhir KP.',
+        size: 'PDF · 920 KB',
+        link: '#'
+      },
+      {
+        title: 'Panduan Operasional Konversi 20 SKS MBKM',
+        desc: 'Rubrik pemetaan capaian pembelajaran kegiatan magang industri dan studi independen ke dalam mata kuliah semester 6 & 7.',
+        size: 'PDF · 640 KB',
+        link: '#'
+      }
+    ]
+  },
+  {
+    category: 'Formulir Administrasi & Layanan Akademik',
+    items: [
+      {
+        title: 'Surat Permohonan Izin Survei / Pengambilan Data Penelitian',
+        desc: 'Format surat resmi pengantar ke instansi/perusahaan untuk keperluan pengambilan data penelitian skripsi/KP.',
+        size: 'DOCX · 180 KB',
+        link: '#'
+      },
+      {
+        title: 'Formulir Bebas Tanggungan Laboratorium & Perpustakaan',
+        desc: 'Dokumen syarat pendaftaran yudisium dan pencetakan ijazah kelulusan.',
+        size: 'PDF · 140 KB',
+        link: '#'
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title="Pusat Unduhan Dokumen — Program Studi S1 Sistem Informasi"
+  description="Pusat unduhan berkas resmi S1 Sistem Informasi Universitas Darwan Ali: template skripsi, pedoman KP, formulir akademik, dan panduan MBKM."
+  lang="id"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Arsip & Instrumen Akademik</span>
+          <span class="text-slate-600">·</span>
+          <span>Format Resmi Institusi</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Pusat Unduhan Dokumen
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Kumpulan berkas panduan teknis, pedoman penulisan naskah ilmiah, template dokumen Word & LaTeX, serta formulir administrasi akademik bagi mahasiswa dan dosen S1 Sistem Informasi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    
+    {docs.map((grp) => (
+      <section class="card-academic p-6 sm:p-8 border-slate-200">
+        <h2 class="text-lg sm:text-xl font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-6">
+          {grp.category}
+        </h2>
+
+        <div class="space-y-4">
+          {grp.items.map((doc) => (
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-lg bg-slate-50 border border-slate-200 hover:border-gold-400 transition-colors gap-4">
+              <div class="space-y-1">
+                <h3 class="text-sm font-bold text-navy-900 leading-snug">
+                  {doc.title}
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  {doc.desc}
+                </p>
+                <span class="inline-block text-[10px] font-code text-slate-500">
+                  {doc.size}
+                </span>
+              </div>
+
+              <div class="sm:flex-shrink-0">
+                <a
+                  href={doc.link}
+                  class="inline-flex items-center justify-center px-4 py-2 rounded bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-semibold text-xs transition-colors whitespace-nowrap shadow-xs"
+                >
+                  <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Unduh Berkas
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    {/* RPS Reference Notice */}
+    <div class="bg-navy-950 text-white rounded-lg p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1">
+        <h4 class="text-base font-bold font-editorial text-gold-400">
+          Mencari Berkas Rencana Pembelajaran Semester (RPS)?
+        </h4>
+        <p class="text-xs text-slate-300">
+          Seluruh 83 berkas RPS PDF resmi tersimpan pada repositori khusus dengan fitur filter instan.
+        </p>
+      </div>
+      <a
+        href="/akademik/rps/"
+        class="inline-flex items-center px-5 py-2.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-xs uppercase tracking-wider transition-colors whitespace-nowrap"
+      >
+        Buka Repositori RPS PDF →
+      </a>
+    </div>
+
+  </div>
+</BaseLayout>

@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+const spmbUrl = "https://univdarwanali.siakadcloud.com/spmbfront/program-studi-detail/detail/57201";
+---
+
+<BaseLayout
+  title="Admissions 2026/2027 — Information Systems Program"
+  description="Undergraduate Admissions for Information Systems at Universitas Darwan Ali. Regular Track, Executive Evening Track, and Prior Learning Recognition (RPL)."
+  lang="en"
+>
+  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
+          <span>Academic Year 2026/2027</span>
+          <span class="text-slate-600">·</span>
+          <span>Accreditation: Baik Sekali</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
+          Undergraduate Admissions
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+          Embark on your journey towards a Bachelor of Computer Science (S.Kom.) specializing in Artificial Intelligence, Data Science, and Enterprise Systems Architecture at Universitas Darwan Ali.
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-4 items-center">
+        <a
+          href={spmbUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-6 py-3.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-xs uppercase tracking-wider shadow-md transition-all transform hover:-translate-y-0.5"
+        >
+          Apply Online Now (Official Portal) ↗
+        </a>
+        <a href="#tracks" class="text-xs text-slate-300 hover:text-white underline">
+          Explore Admission Tracks ↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+    
+    {/* Admission Tracks */}
+    <section id="tracks" class="scroll-mt-24">
+      <div class="border-b border-slate-200 pb-4 mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Flexible Study Pathways</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
+          3 Distinct Admission Pathways
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-academic p-6 border-t-4 border-t-navy-900 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-slate-100 text-navy-900 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Track 01
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Regular Undergraduate Track
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Designed for high school and vocational school graduates committed to full-time academic immersion, state-of-the-art computer labs, and active student organization life.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Weekday schedule (Monday – Friday)</li>
+              <li>✓ Certified national MBKM internships</li>
+              <li>✓ Academic & merit-based scholarships</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Apply Regular Track ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6 border-t-4 border-t-gold-500 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-gold-50 text-gold-800 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Track 02 · Popular
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Evening & Working Professional Track
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Specially structured for working professionals, civil servants, and entrepreneurs seeking a bachelor's degree without interrupting daytime employment.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Evening classes & Saturday sessions</li>
+              <li>✓ Blended learning via Edlink & Moodle</li>
+              <li>✓ Work-friendly assignment timelines</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Apply Evening Track ↗
+          </a>
+        </div>
+
+        <div class="card-academic p-6 border-t-4 border-t-slate-700 flex flex-col justify-between">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-[10px] font-bold uppercase tracking-wider block w-fit mb-3">
+              Track 03
+            </span>
+            <h3 class="text-base font-bold text-navy-900 font-editorial mb-2">
+              Prior Learning Recognition (RPL)
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Formal credit transfer for associate degree holders (D3) as well as assessment of prior experiential work experience to shorten time to graduation.
+            </p>
+            <ul class="text-xs text-slate-700 space-y-1.5 mb-4">
+              <li>✓ Transparent credit conversion audits</li>
+              <li>✓ Accelerated 2–4 semester completion</li>
+              <li>✓ Portfolio-based competency assessment</li>
+            </ul>
+          </div>
+          <a href={spmbUrl} target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-navy-900 hover:text-gold-700">
+            Apply RPL Track ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* Step by step */}
+    <section class="card-academic p-8 sm:p-10 border-slate-200">
+      <div class="border-b border-slate-200 pb-4 mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Application Roadmap</span>
+        <h2 class="text-2xl font-bold text-navy-900 font-editorial">
+          Step-by-Step Online Admission Flow
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Step 1</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Create Admission Account</h4>
+          <p class="text-[11px] text-slate-600">Register on the official university portal using your active email address and phone number.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Step 2</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Document Submission</h4>
+          <p class="text-[11px] text-slate-600">Upload scans of high school diploma/transcript, identity cards, and recent photograph.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Step 3</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Review & Evaluation</h4>
+          <p class="text-[11px] text-slate-600">Document auditing by admission staff and online competency evaluation or RPL portfolio assessment.</p>
+        </div>
+        <div class="p-4 rounded bg-slate-50 border border-slate-200">
+          <span class="font-code font-bold text-xs text-gold-600 block mb-1">Step 4</span>
+          <h4 class="text-xs font-bold text-navy-900 mb-1">Matriculation & Enrollment</h4>
+          <p class="text-[11px] text-slate-600">Admission notice issuance, student ID generation, and first semester course onboarding via SIAKAD.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
