@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const nav = [
+  { id: 'vision-mission', label: 'Vision & Mission' },
+  { id: 'welcome', label: 'Welcome' },
+  { id: 'organization', label: 'Organization' },
+  { id: 'accreditation', label: 'Accreditation' },
+];
+
+const vision =
+  'To become an excellent, globally competitive, and highly principled information systems program in enterprise systems engineering, artificial intelligence, and data science, for the benefit of society by 2035.';
+
+const mission = [
+  'To deliver education that produces graduates of integrity and competence who command AI and data science.',
+  'To promote research and community service in artificial intelligence, information systems, and digital innovation that improve the quality of technology and public services.',
+  'To build a collaborative ecosystem among educational institutions, business and industry, MSMEs, creative communities, and government to expand employment opportunities and empower communities.',
+];
+
+const organization = [
+  { role: 'Program Secretary', name: 'Eka Prasetyaningrum, S.Kom., M.M.' },
+  { role: 'Head of Laboratory & MBKM', name: 'Dody Erlangga, S.Kom.' },
+  { role: 'Quality Assurance Unit', name: 'Nurahman, S.Kom., M.M., M.Kom.' },
+  { role: 'Student Affairs & Alumni Coordinator', name: 'Abdul Aziz, S.Pd., M.Pd.' },
+];
+---
+
+<BaseLayout
+  title="About the Program"
+  description="Vision, mission, leadership welcome, organizational structure, and accreditation status of the Bachelor of Information Systems Program, Faculty of Computer Science, Universitas Darwan Ali."
+  lang="en"
+>
+  <header class="bg-navy-900 text-white border-b border-navy-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-12 sm:pt-20 sm:pb-16">
+      <p class="font-code text-xs uppercase tracking-[0.2em] text-gold-500 mb-5">About the Institution</p>
+      <h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1] max-w-3xl">
+        Bachelor of Information Systems
+      </h1>
+      <p class="mt-6 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed">
+        Faculty of Computer Science, Universitas Darwan Ali, Sampit. This page covers the program's direction, leadership, management, and quality status.
+      </p>
+    </div>
+  </header>
+
+  <nav aria-label="About page navigation" class="sticky top-20 z-40 bg-canvas-light/95 backdrop-blur border-b border-slate-200">
+    <ul class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-x-8 overflow-x-auto">
+      {nav.map((item, i) => (
+        <li class="shrink-0">
+          <a
+            href={`#${item.id}`}
+            class="inline-flex items-center gap-2 min-h-[48px] text-sm font-semibold text-navy-900 border-b-2 border-transparent hover:border-gold-600 focus-visible:border-gold-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2 transition-colors"
+          >
+            <span class="font-code text-xs text-gold-700">0{i + 1}</span>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    {/* 01 Vision & Mission */}
+    <section id="vision-mission" aria-labelledby="vision-mission-h" class="scroll-mt-40 py-16 sm:py-24 border-b border-slate-200">
+      <div class="grid lg:grid-cols-12 gap-x-12 gap-y-6">
+        <div class="lg:col-span-4">
+          <p class="font-code text-xs text-gold-700 mb-3">01</p>
+          <h2 id="vision-mission-h" class="font-editorial text-3xl sm:text-4xl font-semibold text-navy-900">Vision &amp; Mission</h2>
+        </div>
+
+        <div class="lg:col-span-8 space-y-14">
+          <div>
+            <h3 class="font-sans text-xs font-bold uppercase tracking-[0.18em] text-slate-600 mb-4">Program Vision</h3>
+            <blockquote class="border-l-4 border-gold-600 pl-6">
+              <p class="font-editorial text-2xl sm:text-3xl leading-snug text-navy-900">{vision}</p>
+            </blockquote>
+          </div>
+
+          <div>
+            <h3 class="font-sans text-xs font-bold uppercase tracking-[0.18em] text-slate-600 mb-2">Program Mission</h3>
+            <ol class="divide-y divide-slate-200">
+              {mission.map((m, i) => (
+                <li class="flex gap-5 sm:gap-8 py-6">
+                  <span class="font-editorial text-4xl sm:text-5xl leading-none text-gold-700 w-10 sm:w-14 shrink-0" aria-hidden="true">{i + 1}</span>
+                  <p class="text-base sm:text-lg text-slate-700 leading-relaxed">{m}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* 02 Welcome */}
+    <section id="welcome" aria-labelledby="welcome-h" class="scroll-mt-40 py-16 sm:py-24 border-b border-slate-200">
+      <div class="grid lg:grid-cols-12 gap-x-12 gap-y-6">
+        <div class="lg:col-span-4">
+          <p class="font-code text-xs text-gold-700 mb-3">02</p>
+          <h2 id="welcome-h" class="font-editorial text-3xl sm:text-4xl font-semibold text-navy-900">Welcome from the Head of Program &amp; Dean</h2>
+        </div>
+
+        <article class="lg:col-span-8">
+          <div class="space-y-5 text-base sm:text-lg text-slate-700 leading-relaxed max-w-prose">
+            <p>
+              Welcome to the official portal of the Bachelor of Information Systems Program, Faculty of Computer Science, Universitas Darwan Ali. As artificial intelligence and global data integration accelerate, our task is to graduate people who master technology and also act with integrity, think analytically, and adapt to the real problems of their country.
+            </p>
+            <p>
+              Through a structured, measurable 144-credit Outcome-Based Education (OBE) curriculum and five faculty research groups, we equip students with research capability, business process engineering, and AI skills to compete nationally and internationally.
+            </p>
+          </div>
+
+          <footer class="mt-10 pt-6 border-t border-slate-200">
+            <p class="font-editorial text-xl font-semibold text-navy-900">Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.</p>
+            <p class="mt-1 text-sm text-slate-600">Head of the Bachelor of Information Systems Program &amp; Dean of the Faculty of Computer Science</p>
+            <p class="mt-1 font-code text-xs text-slate-600">NUPTK 4536767668130283</p>
+            <a
+              href="http://bowo.staff.unda.ac.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-5 inline-flex items-center min-h-[48px] px-6 bg-navy-900 text-white text-sm font-semibold rounded hover:bg-navy-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-600 focus-visible:ring-offset-2 transition-colors"
+            >
+              Staff page: bowo.staff.unda.ac.id
+              <span class="sr-only"> (opens in a new tab)</span>
+              <span aria-hidden="true" class="ml-2">↗</span>
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    {/* 03 Organization */}
+    <section id="organization" aria-labelledby="organization-h" class="scroll-mt-40 py-16 sm:py-24 border-b border-slate-200">
+      <div class="grid lg:grid-cols-12 gap-x-12 gap-y-6">
+        <div class="lg:col-span-4">
+          <p class="font-code text-xs text-gold-700 mb-3">03</p>
+          <h2 id="organization-h" class="font-editorial text-3xl sm:text-4xl font-semibold text-navy-900">Organizational Structure</h2>
+        </div>
+
+        <div class="lg:col-span-8">
+          <div class="bg-navy-900 text-white rounded px-6 py-7 sm:px-8">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Dean &amp; Head of the IS Program</p>
+            <p class="mt-2 font-editorial text-2xl sm:text-3xl font-semibold">Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.</p>
+          </div>
+
+          <dl class="divide-y divide-slate-200 border-b border-slate-200">
+            {organization.map((s) => (
+              <div class="grid sm:grid-cols-5 gap-x-8 gap-y-1 py-5 px-1">
+                <dt class="sm:col-span-2 text-sm font-semibold text-slate-600">{s.role}</dt>
+                <dd class="sm:col-span-3 font-editorial text-lg text-navy-900">{s.name}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {/* 04 Accreditation */}
+  <section id="accreditation" aria-labelledby="accreditation-h" class="scroll-mt-20 bg-navy-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-12 gap-x-12 gap-y-8 items-end">
+      <div class="lg:col-span-4">
+        <p class="font-code text-xs text-gold-500 mb-3">04</p>
+        <h2 id="accreditation-h" class="font-editorial text-3xl sm:text-4xl font-semibold">Accreditation Status</h2>
+      </div>
+      <div class="lg:col-span-8">
+        <p class="text-xs font-bold uppercase tracking-[0.18em] text-slate-300">Rating</p>
+        <p class="mt-2 font-editorial text-5xl sm:text-7xl font-semibold text-gold-500 leading-none">Baik Sekali</p>
+        <p class="mt-6 max-w-xl text-base sm:text-lg text-slate-300 leading-relaxed">
+          Accredited by LAM INFOKOM / BAN-PT. "Baik Sekali" is the Indonesian national rating for "Very Good".
+        </p>
+        <a
+          href="/profil/#akreditasi"
+          hreflang="id"
+          class="mt-8 inline-flex items-center min-h-[48px] px-6 border border-gold-500 text-gold-500 text-sm font-semibold rounded hover:bg-gold-500 hover:text-navy-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900 transition-colors"
+        >
+          Baca dalam Bahasa Indonesia
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
