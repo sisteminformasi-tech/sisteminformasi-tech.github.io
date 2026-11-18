@@ -14,14 +14,24 @@ export default {
           600: '#2A528A',
         },
         gold: {
-          500: '#C5A880', // Refined Accent Gold
-          600: '#B08D5B',
-          700: '#8E6E3A',
-          400: '#D4AF37',
-          300: '#E5C97A',
-          200: '#EADCBF',
-          100: '#FDFBF7',
-          50: '#FCF9F2',
+          950: '#3D050D',
+          900: '#5C0A15',
+          800: '#75101E',
+          700: '#8A172B', // Deep Crimson
+          600: '#A31F34', // MIT Cardinal Red (Official)
+          500: '#B8233B', // Main interactive red
+          400: '#E03E52', // High-visibility bright red on dark backgrounds
+          300: '#EE7281',
+          200: '#F8B4BD',
+          100: '#FDF2F4', // Soft tech rose background
+          50: '#FFF5F6',
+        },
+        mit: {
+          red: '#A31F34',
+          bright: '#E03E52',
+          dark: '#821828',
+          tint: '#FDF2F4',
+          silver: '#8A8B8C',
         },
         slate: {
           900: '#0F172A',
