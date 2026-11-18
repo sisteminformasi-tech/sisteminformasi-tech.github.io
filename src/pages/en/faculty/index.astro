@@ -7,7 +7,7 @@ const { faculty, assistants } = civitas;
 
 <BaseLayout
   title="Faculty & Academic Staff — Information Systems Program"
-  description="Academic directory of 12 full-time faculty members with official NUPTK and 3 teaching assistants in Information Systems at Universitas Darwan Ali."
+  description="Academic directory of 11 full-time faculty members with official NUPTK and 3 teaching assistants in Information Systems at Universitas Darwan Ali."
   lang="en"
 >
   {/* Header */}
@@ -17,7 +17,7 @@ const { faculty, assistants } = civitas;
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
           <span>Academic Human Capital</span>
           <span class="text-slate-600">·</span>
-          <span>12 Full-Time Faculty & 3 Teaching Assistants</span>
+          <span>11 Full-Time Faculty & 3 Teaching Assistants</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
           Faculty Members & Teaching Staff
@@ -29,13 +29,13 @@ const { faculty, assistants } = civitas;
 
       <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
         <a href="#faculty" class="px-3 py-1.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold transition-colors">
-          ↓ Full-Time Faculty (12)
+          ↓ Full-Time Faculty ({faculty.length})
         </a>
         <a href="#assistants" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
           ↓ Teaching Assistants (3)
         </a>
         <a href="/en/research/groups/" class="px-3 py-1.5 rounded border border-gold-500/50 text-gold-400 hover:bg-navy-800 transition-colors">
-          5 Research Groups ↗
+          Research Group ↗
         </a>
       </div>
     </div>
@@ -48,7 +48,7 @@ const { faculty, assistants } = civitas;
       <div class="border-b border-slate-200 pb-4 mb-8">
         <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Faculty Roster</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
-          12 Full-Time Faculty Members
+          {faculty.length} Full-Time Faculty Members
         </h2>
         <p class="text-xs sm:text-sm text-slate-600 mt-1">
           Master and Doctoral degree holders supervising OBE coursework, mentoring student capstone research, and leading research clusters.

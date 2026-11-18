@@ -90,15 +90,17 @@ const spmbPortal = navigation.portals.find(p => p.featured) || navigation.portal
 
             {/* Dropdown Menu */}
             {item.sub && (
-              <div class="absolute left-0 w-56 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50 pointer-events-none group-hover:pointer-events-auto before:block before:absolute before:-top-3 before:left-0 before:w-full before:h-3 before:content-['']">
-                {item.sub.map((subItem) => (
-                  <a
-                    href={subItem.href}
-                    class="block px-4 py-2 text-xs text-slate-300 hover:bg-navy-800 hover:text-gold-400 transition-colors"
-                  >
-                    {subItem.label}
-                  </a>
-                ))}
+              <div class="absolute left-0 w-60 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50 pointer-events-none group-hover:pointer-events-auto before:block before:absolute before:-top-3 before:left-0 before:w-full before:h-3 before:content-['']">
+                <div class="rounded-lg shadow-2xl bg-[#071324] border border-navy-700/80 py-1.5 divide-y divide-navy-800/40">
+                  {item.sub.map((subItem) => (
+                    <a
+                      href={subItem.href}
+                      class="block px-4 py-2.5 text-xs font-medium text-slate-200 hover:bg-navy-800 hover:text-gold-400 transition-colors"
+                    >
+                      {subItem.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             )}
           </div>

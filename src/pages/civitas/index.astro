@@ -7,7 +7,7 @@ const { faculty, assistants } = civitas;
 
 <BaseLayout
   title="Civitas Akademika — Program Studi S1 Sistem Informasi"
-  description="Direktori profil akademik 12 Dosen Tetap ber-NUPTK dan 3 Asisten Dosen Program Studi S1 Sistem Informasi, Fakultas Ilmu Komputer, Universitas Darwan Ali."
+  description="Direktori profil akademik 11 Dosen Tetap ber-NUPTK dan 3 Asisten Dosen Program Studi S1 Sistem Informasi, Fakultas Ilmu Komputer, Universitas Darwan Ali."
   lang="id"
 >
   {/* Header */}
@@ -17,7 +17,7 @@ const { faculty, assistants } = civitas;
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy-950 border border-gold-500/40 text-xs font-semibold text-gold-300 mb-4">
           <span>Sumber Daya Manusia (SDM) Akademik</span>
           <span class="text-slate-600">·</span>
-          <span>12 Dosen Tetap & 3 Asisten Dosen</span>
+          <span>11 Dosen Tetap & 3 Asisten Dosen</span>
         </div>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">
           Civitas Akademika & Tenaga Pendidik
@@ -29,7 +29,7 @@ const { faculty, assistants } = civitas;
 
       <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
         <a href="#dosen" class="px-3 py-1.5 rounded bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold transition-colors">
-          ↓ Direktori Dosen Tetap (12)
+          ↓ Direktori Dosen Tetap ({faculty.length})
         </a>
         <a href="#asdos" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
           ↓ Asisten Dosen (3)
@@ -48,7 +48,7 @@ const { faculty, assistants } = civitas;
       <div class="border-b border-slate-200 pb-4 mb-8">
         <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Dosen Homebase</span>
         <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">
-          Direktori 12 Dosen Tetap Program Studi
+          Direktori {faculty.length} Dosen Tetap Program Studi
         </h2>
         <p class="text-xs sm:text-sm text-slate-600 mt-1">
           Dosen tetap berkualifikasi S2 dan S3 yang membimbing kurikulum OBE, perkuliahan, dan payung penelitian skripsi mahasiswa.

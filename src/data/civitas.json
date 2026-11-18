@@ -521,49 +521,6 @@
       "slug": "deny-sundari-s-kom-a-md-m-m-s-i",
       "role_category": "faculty",
       "image": "/images/dosen/deny.jpg"
-    },
-    {
-      "name": "Minarni, S.Kom., M.M.",
-      "raw_title": "Minarni, S.Kom., M.M.",
-      "position": "Dosen Tetap S1 Sistem Informasi",
-      "functional_rank": "Lektor",
-      "employment_status": "Dosen Tetap",
-      "nuptk": "6557767668230343",
-      "sinta_id": "6027580",
-      "sinta_url": "https://sinta.kemdiktisaintek.go.id/authors/profile/6027580",
-      "sinta_score_overall": "210",
-      "sinta_score_3yr": "90",
-      "scopus_url": "",
-      "scopus_docs": "0",
-      "scopus_cits": "0",
-      "scopus_hindex": "0",
-      "gs_url": "https://scholar.google.com/citations?user=minarni",
-      "gs_docs": "15",
-      "gs_cits": "80",
-      "gs_hindex": "4",
-      "email": "minarni@unda.ac.id",
-      "education": [
-        "S1: Sarjana Komputer (S.Kom.), Sistem Informasi",
-        "S2: Magister Manajemen (M.M.), Manajemen Sistem Informasi"
-      ],
-      "expertise": [
-        "Sistem Informasi Manajemen",
-        "Audit Sistem Informasi",
-        "Tata Kelola TI",
-        "E-Business"
-      ],
-      "selected_publications": [
-        "Implementasi Sistem Informasi Manajemen Terintegrasi pada Organisasi Pendidikan (2023)",
-        "Evaluasi Efektivitas Layanan Akademik Berbasis Web Menggunakan Metode Servqual (2022)"
-      ],
-      "courses_taught": [
-        "Sistem Informasi Manajemen",
-        "Pengantar Bisnis & Manajemen",
-        "Audit SI"
-      ],
-      "bio": "Dosen Tetap Program Studi S1 Sistem Informasi dengan kepakaran di bidang Manajemen Sistem Informasi, Tata Kelola TI, dan Evaluasi Layanan Digital.",
-      "slug": "minarni-s-kom-m-m",
-      "role_category": "faculty"
     }
   ],
   "assistants": [
