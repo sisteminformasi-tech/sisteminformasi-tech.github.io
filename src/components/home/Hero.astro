@@ -10,8 +10,6 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
 ---
 
 <section class="relative bg-navy-900 text-white overflow-hidden border-b border-navy-800">
-  {/* Institutional Subtle Grid Pattern */}
-  <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#E03E52_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -19,7 +17,7 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
       {/* Left Column: Headlines & Call to Actions */}
       <div class="lg:col-span-8 space-y-6">
         {/* Accreditation & Faculty Badge */}
-        <div class="inline-flex flex-wrap items-center gap-x-2 gap-y-1 max-w-full px-3 py-1.5 rounded-2xl sm:rounded-full bg-navy-950/80 border border-gold-500/40 text-xs font-semibold text-gold-300">
+        <div class="inline-flex flex-wrap items-center gap-x-2 gap-y-1 max-w-full px-3 py-1.5 rounded-md bg-navy-950 border border-navy-800 text-xs font-semibold text-gold-300">
           <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
           <span>{isEn ? 'Faculty of Computer Science · Universitas Darwan Ali' : 'Fakultas Ilmu Komputer · Universitas Darwan Ali'}</span>
           <span class="text-slate-600">|</span>
@@ -78,7 +76,7 @@ const spmb = navigation.portals.find(p => p.featured) || navigation.portals[0];
 
       {/* Right Column: Key Academic Metrics Card */}
       <div class="lg:col-span-4">
-        <div class="bg-navy-950/90 border border-navy-800 rounded-xl p-6 sm:p-8 shadow-xl relative backdrop-blur">
+        <div class="bg-navy-950 border border-navy-800 rounded-xl p-6 sm:p-8 shadow-xl relative">
           <div class="absolute -top-3 right-6 bg-gold-500 text-white font-bold text-[10px] uppercase px-2.5 py-1 rounded shadow">
             OBE Standard
           </div>

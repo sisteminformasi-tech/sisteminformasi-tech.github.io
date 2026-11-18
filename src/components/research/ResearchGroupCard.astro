@@ -68,7 +68,7 @@ const h3 = 'text-xs font-bold uppercase tracking-wider text-navy-900 border-l-2 
     <h3 class={`${h3} mb-3`}>{t.focus}</h3>
     <ul class="flex flex-wrap gap-2">
       {focusChips.map((chip: string) => (
-        <li class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-[#FAF9F6] text-navy-950 border border-slate-200/80 shadow-2xs">
+        <li class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-canvas-light text-navy-950 border border-slate-200/80 shadow-2xs">
           <span class="w-1.5 h-1.5 rounded-full bg-gold-500 mr-2 shrink-0"></span>
           {chip}
         </li>
@@ -103,7 +103,7 @@ const h3 = 'text-xs font-bold uppercase tracking-wider text-navy-900 border-l-2 
           <span class="text-[11px] font-bold text-slate-600 block mb-2 uppercase tracking-wider">{t.assistants}</span>
           <ul class="flex flex-wrap gap-2">
             {rg.assistants.map((ast: string) => (
-              <li class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 border border-slate-200/80 shadow-2xs">{ast}</li>
+              <li class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-white text-slate-700 border border-slate-200/80 shadow-2xs">{ast}</li>
             ))}
           </ul>
         </div>
