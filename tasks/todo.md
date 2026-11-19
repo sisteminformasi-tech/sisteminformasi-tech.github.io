@@ -75,3 +75,12 @@
 - [x] 17.1 Buat dokumen panduan komprehensif di Obsidian Vault: `Projects/website_prodi/Panduan Upload GitHub dan Deployment Website Prodi.md`.
 - [x] 17.2 Perbarui nomor WhatsApp resmi prodi menjadi `0851-7158-8808` (`https://wa.me/6285171588808`) pada `navigation.json`, Footer, halaman Kontak ID, dan halaman Kontak EN.
 - [x] 17.3 Kompilasi SSG (`npm run build` lulus 100%, 0 error) dan commit git lokal: `[main 0cc1f07]`.
+
+---
+
+### Fase 18: Deployment Produksi GitHub Pages & Verifikasi Live
+- [x] 18.1 Konfigurasi remote origin ke repositori resmi organisasi: `https://github.com/sisteminformasi-tech/sisteminformasi-tech.github.io.git`.
+- [x] 18.2 Eksekusi push perdana branch `main` ke GitHub atas persetujuan eksplisit user.
+- [x] 18.3 Pengaktifan hosting otomatis GitHub Pages berbasis GitHub Actions.
+- [x] 18.4 Migrasi nama repositori menjadi `sisteminformasi-tech.github.io` agar situs di-host langsung pada root domain `https://sisteminformasi-tech.github.io/`.
+- [x] 18.5 Verifikasi live produksi via browser CDP (HTTP 200, styling Tailwind CSS, aset logo Dikti & UNDA, Pagefind search modal, dan switcher dwibahasa ID/EN).
