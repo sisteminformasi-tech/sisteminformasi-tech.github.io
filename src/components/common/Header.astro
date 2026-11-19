@@ -124,9 +124,7 @@ const spmbPortal = navigation.portals.find(p => p.featured) || navigation.portal
 
         {/* Featured SPMB Admission CTA */}
         <a
-          href={spmbPortal.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={isEn ? "/en/admissions/" : "/pmb/"}
           class="inline-flex items-center justify-center px-4 py-2 rounded-md bg-gold-500 hover:bg-gold-600 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition-all duration-150 transform hover:-translate-y-0.5"
         >
           {isEn ? 'Apply Now' : 'Daftar SPMB'}
@@ -230,9 +228,7 @@ const spmbPortal = navigation.portals.find(p => p.featured) || navigation.portal
 
       <div class="pt-6 border-t border-navy-800 mt-6 space-y-3">
         <a
-          href={spmbPortal.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={isEn ? "/en/admissions/" : "/pmb/"}
           class="w-full inline-flex items-center justify-center px-4 py-3 rounded-md bg-gold-500 hover:bg-gold-600 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition-colors"
         >
           {isEn ? 'Apply for Admission' : 'Pendaftaran SPMB Online'}
