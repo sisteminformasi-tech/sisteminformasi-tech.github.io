@@ -56,15 +56,15 @@
 ---
 
 ### Fase 16: Eksekusi Opsi 1 (CTA SPMB ke /pmb/), Audit Orphan Pages, Eliminasi Penomoran Dua Digit & Kalibrasi Foto Aziz/Dody
-- [ ] 16.1 Eksekusi Opsi 1 (Integrasi Halaman PMB):
+- [x] 16.1 Eksekusi Opsi 1 (Integrasi Halaman PMB):
   - Hubungkan tombol utama Header `DAFTAR SPMB →` (Desktop & Mobile Drawer) langsung ke `/pmb/` (ID) dan `/en/admissions/` (EN).
   - Hubungkan tautan SPMB di Footer ke `/pmb/` dan `/en/admissions/`.
-- [ ] 16.2 Hasil Audit Orphan Pages:
+- [x] 16.2 Hasil Audit Orphan Pages:
   - Terverifikasi 100% dari 33 berkas rute halaman di `src/pages/` telah terhubung ke navigasi global dan footer (zero orphan pages).
-- [ ] 16.3 Eliminasi Penomoran Dua Digit:
+- [x] 16.3 Eliminasi Penomoran Dua Digit:
   - Hapus `01`, `02`, `03`, `04` dari kartu 4 Pilar Akademik di Beranda (`AcademicPillars.astro`).
   - Hapus `01`, `02`, `03`, `04` dari sticky sub-navigasi dan judul bab seksi di Halaman Profil (`profil/index.astro` dan `en/about/index.astro`).
-- [ ] 16.4 Kalibrasi Foto Pak Aziz & Kak Dody:
+- [x] 16.4 Kalibrasi Foto Pak Aziz & Kak Dody:
   - `aziz.jpg`: geser x1=95 (Pak Aziz bergeser ke kanan simetris di tengah bingkai).
   - `dody.jpg`: potong headroom berlebih (mulai y=880) agar wajah Kak Dody naik proporsional sejajar dengan dosen lainnya.
-- [ ] 16.5 Kompilasi SSG (`npm run build`), verifikasi visual via browser CDP, dan commit git lokal.
+- [x] 16.5 Kompilasi SSG (`npm run build`), verifikasi visual via browser CDP, dan commit git lokal: `[main 5cb514f]`.
