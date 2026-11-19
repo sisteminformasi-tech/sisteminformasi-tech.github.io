@@ -84,3 +84,9 @@
 - [x] 18.3 Pengaktifan hosting otomatis GitHub Pages berbasis GitHub Actions.
 - [x] 18.4 Migrasi nama repositori menjadi `sisteminformasi-tech.github.io` agar situs di-host langsung pada root domain `https://sisteminformasi-tech.github.io/`.
 - [x] 18.5 Verifikasi live produksi via browser CDP (HTTP 200, styling Tailwind CSS, aset logo Dikti & UNDA, Pagefind search modal, dan switcher dwibahasa ID/EN).
+
+---
+
+### Fase 19: Standarisasi Istilah Penerimaan Mahasiswa Baru (SPMB -> PMB)
+- [x] 19.1 Ganti seluruh istilah `SPMB` menjadi `PMB` pada komponen Header (desktop & mobile drawer CTA), Footer, Hero Beranda, Halaman PMB (`/pmb/`), UI i18n dictionary, dan `navigation.json`.
+- [x] 19.2 Kompilasi SSG (`npm run build` lulus 100%, 0 error) dan verifikasi lokal.

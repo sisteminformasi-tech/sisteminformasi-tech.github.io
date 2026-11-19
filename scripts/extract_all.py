@@ -672,7 +672,7 @@ def process_navigation():
         },
         "portals": [
             {
-                "name": "Pendaftaran Mahasiswa Baru (SPMB)",
+                "name": "Pendaftaran Mahasiswa Baru (PMB)",
                 "url": "https://univdarwanali.siakadcloud.com/spmbfront/program-studi-detail/detail/57201",
                 "badge": "PMB 2026",
                 "icon": "user-plus",

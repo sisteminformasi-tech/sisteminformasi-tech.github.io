@@ -19,7 +19,7 @@ export const ui = {
     'nav.students': 'Layanan Mahasiswa',
     'nav.alumni': 'Alumni',
     'nav.tracer': 'Tracer Study',
-    'nav.pmb': 'SPMB',
+    'nav.pmb': 'PMB',
     'nav.news': 'Berita',
     'nav.downloads': 'Unduhan',
     'nav.contact': 'Kontak',
@@ -27,7 +27,7 @@ export const ui = {
     'nav.search': 'Pencarian',
 
     // Common CTA
-    'cta.apply': 'Daftar SPMB Online',
+    'cta.apply': 'Daftar PMB Online',
     'cta.curriculum': 'Lihat Kurikulum 144 SKS',
     'cta.rps': 'Unduh Master RPS PDF',
     'cta.faculty': 'Lihat Profil Dosen',
@@ -78,7 +78,7 @@ export const ui = {
     'nav.search': 'Search',
 
     // Common CTA
-    'cta.apply': 'Apply Now (SPMB)',
+    'cta.apply': 'Apply Now (PMB)',
     'cta.curriculum': 'View 144-Credit Curriculum',
     'cta.rps': 'Download Syllabus PDF',
     'cta.faculty': 'Meet Our Faculty',
