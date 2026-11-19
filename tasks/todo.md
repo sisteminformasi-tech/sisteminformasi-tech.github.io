@@ -90,3 +90,17 @@
 ### Fase 19: Standarisasi Istilah Penerimaan Mahasiswa Baru (SPMB -> PMB)
 - [x] 19.1 Ganti seluruh istilah `SPMB` menjadi `PMB` pada komponen Header (desktop & mobile drawer CTA), Footer, Hero Beranda, Halaman PMB (`/pmb/`), UI i18n dictionary, dan `navigation.json`.
 - [x] 19.2 Kompilasi SSG (`npm run build` lulus 100%, 0 error) dan verifikasi lokal.
+
+---
+
+### Fase 20: Pembaruan & Standardisasi Foto Dosen Ibu Deny dan Ibu Selviana
+- [x] 20.1 Ekstraksi & kalibrasi simetri foto studio resmi berseragam PDH UNDA untuk Ibu Deny Sundari, S.Kom., A.Md., M.M.S.I. (`public/images/dosen/deny.jpg`):
+  - Resolusi 800x800 px Lanczos.
+  - Sumbu simetri wajah terpusat presisi pada $X = 400$ px (50%).
+  - Headroom proporsional $12.5\%$ (~100 px), garis mata $Y \approx 297$ px, dagu $Y \approx 475$ px.
+- [x] 20.2 Ekstraksi & kalibrasi simetri foto studio resmi berseragam PDH untuk Ibu Selviana Yunita, S.Kom., M.Kom. (`public/images/dosen/selviana.jpg`):
+  - Resolusi 800x800 px Lanczos.
+  - Koreksi kemiringan kepala (rotasi $3.5^\circ$ searah jarum jam) sehingga ketinggian kedua bola mata level horizontal sempurna ($\Delta Y < 1$ px).
+  - Sumbu simetri wajah terpusat presisi pada $X = 400$ px (50%).
+  - Headroom proporsional $12.5\%$ (~100 px), garis mata $Y \approx 291$ px, dagu $Y \approx 474$ px.
+- [x] 20.3 Kompilasi SSG (`npm run build` 57 halaman lulus 100%, 0 error), audit visual via browser CDP pada halaman direktori `/civitas/` dan halaman profil dosen masing-masing.
