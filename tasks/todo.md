@@ -68,3 +68,10 @@
   - `aziz.jpg`: geser x1=95 (Pak Aziz bergeser ke kanan simetris di tengah bingkai).
   - `dody.jpg`: potong headroom berlebih (mulai y=880) agar wajah Kak Dody naik proporsional sejajar dengan dosen lainnya.
 - [x] 16.5 Kompilasi SSG (`npm run build`), verifikasi visual via browser CDP, dan commit git lokal: `[main 5cb514f]`.
+
+---
+
+### Fase 17: Dokumentasi Vault & Pembaruan Nomor WhatsApp Resmi
+- [x] 17.1 Buat dokumen panduan komprehensif di Obsidian Vault: `Projects/website_prodi/Panduan Upload GitHub dan Deployment Website Prodi.md`.
+- [x] 17.2 Perbarui nomor WhatsApp resmi prodi menjadi `0851-7158-8808` (`https://wa.me/6285171588808`) pada `navigation.json`, Footer, halaman Kontak ID, dan halaman Kontak EN.
+- [x] 17.3 Kompilasi SSG (`npm run build` lulus 100%, 0 error) dan commit git lokal: `[main 0cc1f07]`.
