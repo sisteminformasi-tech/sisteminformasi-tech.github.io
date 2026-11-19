@@ -21,13 +21,13 @@
 ---
 
 ### Fase 14: Simetri Foto Lanjutan, Integrasi PkM, Struktur Organisasi & Rebranding "Sistem Informasi"
-- [ ] 14.1 Penyesuaian Foto Dr. Dwi (Geser ke Kanan) & Foto Pak Aziz (Naikkan Sumbu Wajah):
-  - `bowo.jpg`: geser crop window agar subjek bergeser ke kanan simetris di tengah bingkai.
+- [x] 14.1 Penyesuaian Foto Dr. Dwi (Geser ke Kanan) & Foto Pak Aziz (Naikkan Sumbu Wajah):
+  - `bowo.jpg`: geser crop window ke x1=195, x2=735 agar subjek bergeser ke kanan simetris di tengah bingkai.
   - `aziz.jpg`: potong headroom berlebih (mulai y=170) dan pusatkan sumbu kepala di x=390 agar wajah naik proporsional.
-- [ ] 14.2 Integrasi Foto Asdos Prio Jaka Arsyad (`prio.jpg`):
+- [x] 14.2 Integrasi Foto Asdos Prio Jaka Arsyad (`prio.jpg`):
   - Ambil dari `/Works - UNDA/Web-Sisfo-UNDA/public/prio.jpg`, crop 1:1 persegi (800x800 Lanczos), simpan ke `public/images/dosen/prio.jpg`.
   - Hubungkan ke `src/data/civitas.json` pada properti `image` Prio.
-- [ ] 14.3 Pembaruan Struktur Organisasi Prodi (`profil/index.astro` & `en/about/index.astro`):
+- [x] 14.3 Pembaruan Struktur Organisasi Prodi (`profil/index.astro` & `en/about/index.astro`):
   - Dekan & Ketua Program Studi: Dr. Dwi Wahyu Prabowo, S.Si., M.Eng.
   - Sekretaris Program Studi: Eka Prasetyaningrum, S.Kom., M.M.
   - Pengelola MBKM: Elika Thea Kirana, S.T., M.Kom.
@@ -35,10 +35,10 @@
   - Koordinator Kemahasiswaan & Alumni: Abdul Aziz, S.Pd., M.Pd.
   - Kepala Laboratorium: Agung Purwanto, S.Kom., M.Kom.
   - Koordinator Sarana & Prasarana: Prio Jaka Arsyad, S.Kom.
-- [ ] 14.4 Integrasi Halaman Pengabdian kepada Masyarakat (PkM):
+- [x] 14.4 Integrasi Halaman Pengabdian kepada Masyarakat (PkM):
   - Buat halaman `src/pages/riset/pengabdian/index.astro` dan `src/pages/en/research/community-service/index.astro`.
   - Masukkan ke menu dropdown Riset di `navigation.json` dan Footer.
   - Sajikan 5 pilar program PkM dosen berbasis riset terapan bagi UMKM, sekolah, desa cerdas, dan ASN daerah.
-- [ ] 14.5 Rebranding Frasa Nama Prodi:
+- [x] 14.5 Rebranding Frasa Nama Prodi:
   - Ubah seluruh frasa "S1 Sistem Informasi" menjadi "Sistem Informasi" saja (Header, Drawer, Footer, BaseLayout, judul halaman, dan metadata).
-- [ ] 14.6 Kompilasi SSG (`npm run build`), verifikasi visual via browser CDP, dan commit git lokal.
+- [x] 14.6 Kompilasi SSG (`npm run build`), verifikasi visual via browser CDP, dan commit git lokal: `[main 8c9570b]`.
