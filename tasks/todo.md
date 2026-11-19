@@ -104,3 +104,13 @@
   - Sumbu simetri wajah terpusat presisi pada $X = 400$ px (50%).
   - Headroom proporsional $12.5\%$ (~100 px), garis mata $Y \approx 291$ px, dagu $Y \approx 474$ px.
 - [x] 20.3 Kompilasi SSG (`npm run build` 57 halaman lulus 100%, 0 error), audit visual via browser CDP pada halaman direktori `/civitas/` dan halaman profil dosen masing-masing.
+
+---
+
+### Fase 21: Perbaikan Keterbacaan & Specificity Kartu Riset Mahasiswa & Skripsi
+- [x] 21.1 Restrukturisasi CSS `src/styles/global.css`: Bungkus kelas komponen (`.card-academic`, `.badge-*`, `.table-academic`, `.bloom-*`) ke dalam direktif `@layer components` Tailwind CSS agar kelas utilitas penimpa latar belakang (`bg-navy-900`, `bg-slate-50`, `bg-navy-950`) dapat bekerja dan tidak tertimpa oleh `background: #FFFFFF`.
+- [x] 21.2 Optimasi kartu Riset Mahasiswa & Skripsi di `src/components/home/ResearchHighlights.astro`:
+  - Latar belakang navy gelap (`bg-navy-900`) dan border (`border-navy-800`) kini aktif sempurna.
+  - Teks judul `text-white` ("Topik Skripsi Terbuka & Kolaborasi Riset") kini tampak kontras dan terbaca jelas di atas latar navy.
+  - Tingkatkan kontras teks deskripsi menjadi `text-slate-200` dan tambahkan `hover:border-gold-500/50 transition-colors`.
+- [x] 21.3 Verifikasi SSG (`npm run build` 57 halaman lulus 100%, 0 error) dan audit visual via browser CDP (background navy `#0A192F`, computed text `#FFFFFF`).
