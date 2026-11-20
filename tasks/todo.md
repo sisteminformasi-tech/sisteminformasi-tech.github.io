@@ -114,3 +114,12 @@
   - Teks judul `text-white` ("Topik Skripsi Terbuka & Kolaborasi Riset") kini tampak kontras dan terbaca jelas di atas latar navy.
   - Tingkatkan kontras teks deskripsi menjadi `text-slate-200` dan tambahkan `hover:border-gold-500/50 transition-colors`.
 - [x] 21.3 Verifikasi SSG (`npm run build` 57 halaman lulus 100%, 0 error) dan audit visual via browser CDP (background navy `#0A192F`, computed text `#FFFFFF`).
+
+---
+
+### Fase 22: Konfigurasi Custom Domain Resmi (sisfo.unda.ac.id)
+- [x] 22.1 Injeksi berkas `public/CNAME` dengan nilai domain `sisfo.unda.ac.id`.
+- [x] 22.2 Pembaruan konfigurasi `astro.config.mjs`: perbarui `site` ke `https://sisfo.unda.ac.id`.
+- [x] 22.3 Penyelarasan meta SEO Schema.org di `BaseLayout.astro` dan sitemap URL di `public/robots.txt`.
+- [x] 22.4 Kompilasi SSG (`npm run build` lulus 100%, 57 halaman terindeks sempurna, 0 error).
+- [x] 22.5 Commit git lokal.
