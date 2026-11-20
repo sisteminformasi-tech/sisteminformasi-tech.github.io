@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sisteminformasi-tech.github.io/website-prodi-si/sitemap-index.xml
+Sitemap: https://sisfo.unda.ac.id/sitemap-index.xml

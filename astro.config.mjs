@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 const base = process.env.ASTRO_BASE || '/';
 
 export default defineConfig({
-  site: 'https://sisteminformasi-tech.github.io',
+  site: 'https://sisfo.unda.ac.id',
   base: base,
   output: 'static',
   integrations: [
