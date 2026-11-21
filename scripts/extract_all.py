@@ -278,7 +278,7 @@ def process_civitas():
         "Abdul Aziz, S.Pd., M.Pd.": "1953765666130272",
         "Agung Purwanto, S.Kom., M.Kom.": "1146760661130213",
         "Elika Thea Kirana, S.T., M.Kom.": "2835773674230242",
-        "Dwika Lovitasari Yonia, S.Kom., M.Kom.": "0814059401", # SINTA 6977741
+        "Dwika Lovitasari Yonia, S.Kom., M.Kom.": "6548773674230283", # SINTA 6977741
         "Lukman Bachtiar, S.Kom., M.M., M.Kom.": "6348760661130163",
         "Serika Zai, S.Pd., M.Pd.": "0945773674230152",
         "Selviana Yunita, S.Kom., M.Kom.": "5945771672230282",
