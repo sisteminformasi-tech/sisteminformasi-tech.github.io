@@ -295,7 +295,7 @@
       "name": "Dwika Lovitasari Yonia, S.Kom., M.Kom.",
       "raw_title": "7. Dwika Lovitasari Yonia, S.Kom., M.Kom.",
       "position": "Dosen Tetap Sistem Informasi",
-      "functional_rank": "Tenaga Pendidik / Peneliti",
+      "functional_rank": "Tenaga Pengajar",
       "employment_status": "Dosen Tetap",
       "nuptk": "6548773674230283",
       "sinta_id": "6977741",
@@ -306,32 +306,36 @@
       "scopus_docs": "7",
       "scopus_cits": "31",
       "scopus_hindex": "3",
-      "gs_url": "",
+      "gs_url": "https://scholar.google.com/citations?user=xUoCzQoAAAAJ&hl=en&oi=ao",
       "gs_docs": "14",
       "gs_cits": "46",
       "gs_hindex": "4",
       "email": "dwika.lovitasari.yonia@gmail.com",
       "education": [
         "S1: Sarjana Komputer (S.Kom.), Teknik Informatika, Universitas 17 Agustus 1945 Surabaya (2018)",
-        "S2: Magister Komputer (M.Kom.), Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS Surabaya) (2025)"
+        "S2: Magister Komputer (M.Kom.), Teknik Informatika, Institut Teknologi Sepuluh Nopember (ITS), Surabaya (2025)"
       ],
       "expertise": [
-        "Artificial Intelligence",
+        "Artificial Intelligence (AI)",
         "Computer Vision",
-        "Natural Language Processing",
+        "Natural Language Processing (NLP)",
         "Multimedia",
-        "Augmented Reality & Digital Content Development."
+        "Augmented Reality (AR) dan Digital Content Development"
       ],
       "selected_publications": [
-        "Deep Learning Approach for Legal Decision Prediction in Divorce Cases Using CNN-LSTM Model — JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika), 2025.",
-        "Penerapan Adaptive Smoothing Regularization untuk Otomatisasi Penilaian Estetika Citra, 2024.",
-        "Benchmarking Machine Learning Models for Corporate Bankruptcy Prediction using Financial Ratios, 2025."
+        "Assessing Food Photo Aesthetics through Dominant Color and Color Harmony with Adaptive Smoothing Regularization — Proceedings of the 2024 FORTEI-ICEE, IEEE, 2024 (DOI: 10.1109/FORTEI-ICEE64706.2024.10824632)",
+        "Enhancing Image Captioning Performance with VGG16 Feature Extraction and LSTM Sequence Processing — Proceedings of the 2024 ICECOS, IEEE, 2024 (DOI: 10.1109/ICECOS63900.2024.10791213)",
+        "Systematic Review of Arbitrary Neural Style Transfer: Eight Deep Learning Approaches Compared — MALCOM: Indonesian Journal of Machine Learning and Computer Science, Vol. 6 No. 4, 2026 (DOI: 10.57152/malcom.v6i4.2863)",
+        "Learning Models for Software Feature Extraction from Disaster Tweets: A Comparative Study — Proceedings of the 2024 ICECOS, IEEE, 2024 (DOI: 10.1109/ICECOS63900.2024.10791279)",
+        "Deep Learning Approach for Legal Decision Prediction in Divorce Cases Using CNN-LSTM Model — JIPI (Jurnal Ilmiah Penelitian dan Pembelajaran Informatika), Vol. 10 No. 4, 2025 (DOI: 10.29100/jipi.v10i4.9389)",
+        "DNA Pattern Matching Algorithms within Sorghum bicolor Genome: A Comparative Study — Proceedings of the 2024 ICICoS, IEEE, 2024 (DOI: 10.1109/ICICoS62600.2024.10636821)"
       ],
       "courses_taught": [
+        "Artificial Intelligence",
         "Visi Komputer",
         "Multimedia",
         "Multimedia Lanjut",
-        "Etika Profesi dan Isu Sosial."
+        "Etika Profesi dan Isu Sosial"
       ],
       "bio": "",
       "slug": "dwika-lovitasari-yonia-s-kom-m-kom",
