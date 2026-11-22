@@ -1,45 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-
-const programs = [
-  { id: 'mhui-rg', group: 'MHUI-RG', title: 'Digital Branding & Adopsi E-Commerce untuk UMKM Lokal Kotawaringin Timur', summary: 'Pendampingan pelaku UMKM dalam membangun identitas merek digital, katalog produk daring, dan adopsi kanal e-commerce, dengan rancangan antarmuka berbasis riset interaksi manusia-komputer.' },
-  { id: 'edutech-rg', group: 'EDUTECH-RG', title: 'Pemberdayaan Pendidik melalui Literasi Media Digital & Manajemen Sekolah', summary: 'Pelatihan bagi guru dan pengelola sekolah untuk memanfaatkan media digital dalam pembelajaran serta sistem pendukung manajemen administrasi sekolah.' },
-  { id: 'setk-rg', group: 'SETK-RG', title: 'Pendampingan Smart Village & Tata Kelola Administrasi Digital Desa', summary: 'Pendampingan pemerintah desa dalam menata layanan administrasi digital dan tata kelola data desa menuju konsep smart village.' },
-  { id: 'dsdss-rg', group: 'DSDSS-RG', title: 'Literasi Keamanan Informasi & Privasi Data Digital bagi Pelajar', summary: 'Edukasi pelajar tentang keamanan akun, perlindungan data pribadi, dan perilaku aman di ruang digital melalui materi berbasis analisis data.' },
-  { id: 'aiml-rg', group: 'AIML-RG', title: 'Pelatihan Otomasi Dokumen & Kecerdasan Buatan Terapan untuk ASN Daerah', summary: 'Pelatihan penggunaan otomasi dokumen dan alat kecerdasan buatan terapan untuk meningkatkan efisiensi kerja aparatur sipil negara di tingkat daerah.' },
-];
+import CommunityServiceList from '../../../components/research/CommunityServiceList.astro';
 ---
 
 <BaseLayout
   title="Pengabdian kepada Masyarakat (PkM) — Program Studi Sistem Informasi"
-  description="Lima program unggulan Pengabdian kepada Masyarakat dosen Program Studi Sistem Informasi Universitas Darwan Ali berbasis riset terapan."
+  description="Program Pengabdian kepada Masyarakat terverifikasi SINTA/BIMA dosen Program Studi Sistem Informasi Universitas Darwan Ali di Kotawaringin Timur."
   lang="id"
 >
-  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-wider text-gold-300 block mb-3">Riset Terapan untuk Masyarakat</span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">Pengabdian kepada Masyarakat (PkM)</h1>
-        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">Lima program unggulan PkM dosen yang bertumpu pada hasil riset terapan kelompok riset program studi, dari UMKM, sekolah, dan desa hingga aparatur daerah.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-    <ol class="divide-y divide-slate-200 border-y border-slate-200">
-      {programs.map((p, i) => (
-        <li class="grid md:grid-cols-12 gap-x-8 gap-y-3 py-8">
-          <div class="md:col-span-1 font-editorial text-3xl font-semibold text-gold-600">{String(i + 1).padStart(2, '0')}</div>
-          <div class="md:col-span-8">
-            <h2 class="font-editorial text-xl sm:text-2xl font-semibold text-navy-900 leading-snug">{p.title}</h2>
-            <p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed">{p.summary}</p>
-          </div>
-          <div class="md:col-span-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">Kelompok Riset</span>
-            <a href={`/riset/kelompok-riset/#${p.id}`} class="mt-1 inline-block text-sm font-semibold text-navy-900 underline underline-offset-4 hover:text-gold-600">{p.group}</a>
-          </div>
-        </li>
-      ))}
-    </ol>
-  </div>
+  <CommunityServiceList lang="id" />
 </BaseLayout>

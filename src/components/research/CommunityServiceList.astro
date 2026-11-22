@@ -1,0 +1,176 @@
+---
+import programs from '../../data/community_service.json';
+import civitas from '../../data/civitas.json';
+
+interface Props { lang: 'id' | 'en' }
+const { lang } = Astro.props;
+const en = lang === 'en';
+
+const L = en ? {
+  eyebrow: 'Applied Research for Society',
+  h1: 'Community Service (PkM)',
+  lead: 'Verified community service programs by Information Systems faculty, grounded in the applied research of our research groups and delivered to communities across East Kotawaringin.',
+  stats: ['Verified Programs', 'National Competitive BIMA Grants', 'Research Groups', 'Real Impact in Kotim'],
+  filterLabel: 'Filter by scheme',
+  filters: ['All', 'BIMA Grants', 'SINTA/Garuda Service Journals', 'Vocational Partnerships'],
+  showing: 'Showing', of: 'of', programs: 'programs',
+  partner: 'Community Partner / Location', team: 'Community Service Team', output: 'Summary & Tangible Output',
+  student: 'Undergraduate Information Systems students', lead_tag: 'Lead',
+  sinta: 'View on SINTA', garuda: 'View on Garuda', scholar: 'View on SINTA (Scholar)',
+  groupHref: '/en/research/groups/', profile: (s: string) => `/en/faculty/${s}/`,
+} : {
+  eyebrow: 'Riset Terapan untuk Masyarakat',
+  h1: 'Pengabdian kepada Masyarakat (PkM)',
+  lead: 'Program PkM terverifikasi dosen Sistem Informasi yang bertumpu pada riset terapan kelompok riset dan menjangkau masyarakat di seluruh Kotawaringin Timur.',
+  stats: ['Program Terverifikasi', 'Hibah Kompetitif Nasional BIMA', 'Kelompok Riset', 'Berdampak Nyata Kotim'],
+  filterLabel: 'Filter skema',
+  filters: ['Semua', 'Hibah BIMA', 'Jurnal Pengabdian SINTA/Garuda', 'Kemitraan Vokasi'],
+  showing: 'Menampilkan', of: 'dari', programs: 'program',
+  partner: 'Mitra Komunitas / Lokus Kegiatan', team: 'Tim Dosen Pengabdi', output: 'Ringkasan & Luaran Nyata',
+  student: 'Mahasiswa S1 Sistem Informasi', lead_tag: 'Ketua',
+  sinta: 'Lihat di SINTA', garuda: 'Lihat di Garuda', scholar: 'Lihat di SINTA (Scholar)',
+  groupHref: '/riset/kelompok-riset/', profile: (s: string) => `/civitas/dosen/${s}/`,
+};
+
+// Strip the "(Ketua)" marker and degree-insensitive match on full name.
+const slugByName = new Map<string, string>(
+  (civitas.faculty as { name: string; slug: string }[]).map((f) => [f.name, f.slug]),
+);
+
+const category = (p: any) =>
+  /BIMA/i.test(p.scheme_id) ? 'bima'
+  : /Kemitraan|Vokasi/i.test(p.scheme_id) ? 'kemitraan'
+  : 'jurnal';
+
+const badgeClass: Record<string, string> = {
+  bima: 'badge-gold',
+  jurnal: 'bg-blue-50 text-blue-800 border border-blue-200',
+  kemitraan: 'bg-emerald-50 text-emerald-800 border border-emerald-200',
+};
+
+const sintaLabel = (url: string) =>
+  /view=garuda/.test(url) ? L.garuda : /view=googlescholar/.test(url) ? L.scholar : L.sinta;
+
+const items = (programs as any[]).map((p) => {
+  const members = (p.team as string[]).map((raw) => {
+    const isLead = /\(Ketua\)/.test(raw);
+    const name = raw.replace(/\s*\(Ketua\)/, '').trim();
+    return { name, isLead, slug: slugByName.get(name) };
+  });
+  return { p, cat: category(p), members };
+});
+
+const count = (c: string) => items.filter((i) => i.cat === c).length;
+const groups = new Set(items.map((i) => i.p.group_code)).size;
+const filterKeys = ['all', 'bima', 'jurnal', 'kemitraan'];
+const statValues = [`${items.length}`, `${count('bima')}`, `${groups}`, '100%'];
+// Display order: number first for the first three, "100%" for the last
+---
+
+<section class="bg-navy-950 text-white border-b border-navy-800 py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <span class="text-xs font-bold uppercase tracking-wider text-gold-300 block mb-3">{L.eyebrow}</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">{L.h1}</h1>
+      <p class="text-sm sm:text-base text-slate-300 leading-relaxed">{L.lead}</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-navy-900 border-b border-navy-800" aria-label="Statistik">
+  <dl class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5">
+    {statValues.map((v, i) => (
+      <div class="border-l-2 border-gold-400 pl-4">
+        <dt class="sr-only">{L.stats[i]}</dt>
+        <dd class="font-editorial text-3xl font-semibold text-white">{v}</dd>
+        <dd class="text-xs uppercase tracking-wider text-slate-300 mt-1" aria-hidden="true">{L.stats[i]}</dd>
+      </div>
+    ))}
+  </dl>
+</section>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+    <div role="group" aria-label={L.filterLabel} class="flex flex-wrap gap-2" id="pkm-filters">
+      {L.filters.map((label, i) => (
+        <button
+          type="button"
+          data-filter={filterKeys[i]}
+          aria-pressed={i === 0 ? 'true' : 'false'}
+          class="pkm-filter px-3.5 py-2 rounded text-xs font-semibold border border-slate-300 text-slate-700 bg-white hover:border-navy-900 transition-colors aria-pressed:bg-navy-900 aria-pressed:text-white aria-pressed:border-navy-900"
+        >{label}</button>
+      ))}
+    </div>
+    <p class="text-xs text-slate-600" aria-live="polite">
+      {L.showing} <span id="pkm-visible">{items.length}</span> {L.of} {items.length} {L.programs}
+    </p>
+  </div>
+
+  <ul class="grid md:grid-cols-2 gap-6" id="pkm-grid">
+    {items.map(({ p, cat, members }) => (
+      <li data-category={cat} class="pkm-card">
+        <article class="card-academic h-full p-6 flex flex-col" id={p.id}>
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <a href={`${L.groupHref}#${p.group_id}`} title={en ? p.group_name_en : p.group_name_id}
+               class="px-2 py-1 rounded bg-navy-900 text-white font-bold hover:bg-navy-700 transition-colors">{p.group_code}</a>
+            <span class={`px-2 py-1 rounded font-semibold ${badgeClass[cat]}`}>{en ? p.scheme_en : p.scheme_id}</span>
+            <span class="ml-auto font-semibold text-slate-600">{p.year}</span>
+          </div>
+
+          <h2 class="mt-4 font-editorial text-lg sm:text-xl font-semibold text-navy-900 leading-snug">{en ? p.title_en : p.title_id}</h2>
+
+          <div class="mt-4">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">{L.partner}</h3>
+            <p class="mt-1 text-sm text-slate-800">{p.partner}</p>
+          </div>
+
+          <div class="mt-4">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">{L.team}</h3>
+            <ul class="mt-1 text-sm text-slate-800 space-y-0.5">
+              {members.map((m) => (
+                <li>
+                  {m.slug
+                    ? <a href={L.profile(m.slug)} class="font-semibold text-navy-900 underline underline-offset-4 decoration-slate-300 hover:decoration-gold-600">{m.name}</a>
+                    : <span>{m.name === 'Mahasiswa S1 Sistem Informasi' ? L.student : m.name}</span>}
+                  {m.isLead && <span class="ml-1.5 text-xs text-slate-500">({L.lead_tag})</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mt-4 flex-1">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500">{L.output}</h3>
+            <p class="mt-1 text-sm text-slate-700 leading-relaxed">{en ? p.summary_en : p.summary_id}</p>
+            <p class="mt-2 text-sm text-slate-900 leading-relaxed border-l-2 border-gold-400 pl-3">{en ? p.output_en : p.output_id}</p>
+          </div>
+
+          {p.sinta_url && (
+            <a href={p.sinta_url} target="_blank" rel="noopener noreferrer"
+               class="mt-5 self-start inline-flex items-center gap-1.5 px-3.5 py-2 rounded border border-navy-900 text-navy-900 text-xs font-bold hover:bg-navy-900 hover:text-white transition-colors">
+              {sintaLabel(p.sinta_url)}<span aria-hidden="true">↗</span>
+            </a>
+          )}
+        </article>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.pkm-filter');
+  const cards = document.querySelectorAll<HTMLElement>('.pkm-card');
+  const counter = document.getElementById('pkm-visible');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const f = btn.dataset.filter;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      let n = 0;
+      cards.forEach((c) => {
+        const show = f === 'all' || c.dataset.category === f;
+        c.hidden = !show;
+        if (show) n++;
+      });
+      if (counter) counter.textContent = String(n);
+    });
+  });
+</script>

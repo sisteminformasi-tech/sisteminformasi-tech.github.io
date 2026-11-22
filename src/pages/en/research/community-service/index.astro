@@ -1,45 +1,12 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-
-const programs = [
-  { id: 'mhui-rg', group: 'MHUI-RG', title: 'Digital Branding & E-Commerce Adoption for Local MSMEs in East Kotawaringin', summary: 'Supporting MSMEs in building a digital brand identity, online product catalogs, and e-commerce channels, with interfaces designed from human-computer interaction research.' },
-  { id: 'edutech-rg', group: 'EDUTECH-RG', title: 'Empowering Educators through Digital Media Literacy & School Management', summary: 'Training for teachers and school administrators on using digital media in teaching and on systems that support school administration.' },
-  { id: 'setk-rg', group: 'SETK-RG', title: 'Smart Village Mentoring & Digital Village Administration Governance', summary: 'Helping village governments organize digital administrative services and village data governance toward the smart village concept.' },
-  { id: 'dsdss-rg', group: 'DSDSS-RG', title: 'Information Security & Digital Data Privacy Literacy for Students', summary: 'Educating students on account security, personal data protection, and safe behavior online through data-driven materials.' },
-  { id: 'aiml-rg', group: 'AIML-RG', title: 'Document Automation & Applied AI Training for Regional Civil Servants', summary: 'Training in document automation and applied AI tools to improve the efficiency of civil servants at the regional level.' },
-];
+import CommunityServiceList from '../../../../components/research/CommunityServiceList.astro';
 ---
 
 <BaseLayout
-  title="Community Service (PkM) — Information Systems Program"
-  description="Five flagship faculty community service programs of the Information Systems Program, Universitas Darwan Ali, grounded in applied research."
+  title="Community Service (PkM) — Information Systems Study Program"
+  description="SINTA/BIMA-verified community service programs by Information Systems faculty at Universitas Darwan Ali in East Kotawaringin."
   lang="en"
 >
-  <section class="bg-navy-900 text-white border-b border-navy-800 py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-wider text-gold-300 block mb-3">Applied Research for the Community</span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-editorial tracking-tight text-white mb-4">Community Service (PkM)</h1>
-        <p class="text-sm sm:text-base text-slate-300 leading-relaxed">Five flagship faculty community service programs built on the applied research of the program research groups, serving MSMEs, schools, villages, and regional government.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-    <ol class="divide-y divide-slate-200 border-y border-slate-200">
-      {programs.map((p, i) => (
-        <li class="grid md:grid-cols-12 gap-x-8 gap-y-3 py-8">
-          <div class="md:col-span-1 font-editorial text-3xl font-semibold text-gold-600">{String(i + 1).padStart(2, '0')}</div>
-          <div class="md:col-span-8">
-            <h2 class="font-editorial text-xl sm:text-2xl font-semibold text-navy-900 leading-snug">{p.title}</h2>
-            <p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed">{p.summary}</p>
-          </div>
-          <div class="md:col-span-3">
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block">Research Group</span>
-            <a href={`/en/research/groups/#${p.id}`} class="mt-1 inline-block text-sm font-semibold text-navy-900 underline underline-offset-4 hover:text-gold-600">{p.group}</a>
-          </div>
-        </li>
-      ))}
-    </ol>
-  </div>
+  <CommunityServiceList lang="en" />
 </BaseLayout>
