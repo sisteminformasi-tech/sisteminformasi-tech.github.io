@@ -91,6 +91,10 @@
           "href": "/akademik/kurikulum/#cpl"
         },
         {
+          "label": "Skema MBKM 20 SKS",
+          "href": "/akademik/kurikulum/#skema-mbkm"
+        },
+        {
           "label": "Repositori RPS Berbasis OBE",
           "href": "/akademik/rps/"
         }
@@ -197,6 +201,10 @@
         {
           "label": "Graduate Profiles & CPL",
           "href": "/en/academics/curriculum/#cpl"
+        },
+        {
+          "label": "MBKM 20-Credit Schemes",
+          "href": "/en/academics/curriculum/#skema-mbkm"
         },
         {
           "label": "Syllabus (RPS) Repository",

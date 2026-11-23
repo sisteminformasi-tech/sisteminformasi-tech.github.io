@@ -43,6 +43,7 @@ const docs = [
     ]
   },
   {
+    id: 'kp-mbkm',
     category: 'Internships & MBKM Program Guidelines',
     items: [
       {
@@ -105,7 +106,7 @@ const docs = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
     
     {docs.map((grp) => (
-      <section class="card-academic p-6 sm:p-8 border-slate-200">
+      <section id={grp.id} class="scroll-mt-24 card-academic p-6 sm:p-8 border-slate-200">
         <h2 class="text-lg sm:text-xl font-bold text-navy-900 font-editorial border-b border-slate-200 pb-3 mb-6">
           {grp.category}
         </h2>

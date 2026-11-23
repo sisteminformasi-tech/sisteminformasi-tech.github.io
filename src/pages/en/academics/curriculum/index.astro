@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import curriculum from '../../../../data/curriculum.json';
+import MbkmSchemes from '../../../../components/academic/MbkmSchemes.astro';
+import { buildMatrixRows } from '../../../../lib/mbkm';
 
-const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, total_sks_lulus } = curriculum;
+const { profil_lulusan, cpl, bahan_kajian, semester_sks_distribution, total_sks_lulus } = curriculum;
+const matrixRows = buildMatrixRows('en');
 ---
 
 <BaseLayout
@@ -40,6 +43,9 @@ const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, t
         </a>
         <a href="#sebaran-mk" class="px-3 py-1.5 rounded bg-gold-500 hover:bg-gold-600 text-white font-bold transition-colors">
           ↓ Course Matrix (Sem 1-8)
+        </a>
+        <a href="#skema-mbkm" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200 transition-colors">
+          ↓ MBKM 20-Credit Schemes
         </a>
         <a href="/en/academics/rps/" class="px-3 py-1.5 rounded border border-gold-500/50 text-gold-400 hover:bg-navy-800 transition-colors">
           Syllabus Repository ↗
@@ -229,7 +235,45 @@ const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, t
             </tr>
           </thead>
           <tbody>
-            {courses.map((c) => (
+            {matrixRows.map((r) => {
+              if (r.kind === 'note') {
+                return (
+                  <tr class="course-row-en" data-semester={r.semester}>
+                    <td colspan="8" class="!bg-navy-900 !text-white text-xs font-semibold py-2.5">
+                      <span class="font-code text-gold-300 mr-2">SEMESTER {r.semester} · MBKM</span>
+                      {r.text}
+                      <a href="#skema-mbkm" class="ml-2 underline text-white hover:text-gold-300">Scheme details ↓</a>
+                    </td>
+                  </tr>
+                );
+              }
+              if (r.kind === 'scheme') {
+                return (
+                  <tr class="course-row-en" data-semester={r.semester}>
+                    <td colspan="8" class="!bg-canvas-subtle border-l-4 border-l-gold-600 py-2.5">
+                      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                        <span class="text-[13px] font-bold text-navy-900">
+                          <span class="font-code text-gold-700 mr-1.5">Option {r.scheme.option}</span>
+                          {r.scheme.name_en}
+                        </span>
+                        <span class="text-[11px] text-slate-600">{r.scheme.rule_en}</span>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              }
+              if (r.kind === 'track') {
+                return (
+                  <tr class="course-row-en" data-semester={r.semester}>
+                    <td colspan="8" class="!bg-slate-50 pl-8 py-2 text-xs font-bold text-navy-900">
+                      {r.label}
+                      <span class="font-code text-[10px] text-slate-500 font-semibold ml-2">{r.track.courses.length} courses · {r.track.courses.length * 4} credits</span>
+                    </td>
+                  </tr>
+                );
+              }
+              const c = r.course;
+              return (
               <tr class="course-row-en" data-semester={c.semester}>
                 <td class="text-center font-code font-bold text-slate-600 bg-slate-50">
                   {c.semester}
@@ -274,11 +318,15 @@ const { profil_lulusan, cpl, bahan_kajian, courses, semester_sks_distribution, t
                   </a>
                 </td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>
     </section>
+
+    {/* Section 5: MBKM Schemes */}
+    <MbkmSchemes lang="en" />
 
   </div>
 </BaseLayout>

@@ -1,0 +1,196 @@
+---
+import curriculum from '../../data/curriculum.json';
+import MbkmCourseList from './MbkmCourseList.astro';
+import { formatPl, type Lang } from '../../lib/mbkm';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const en = lang === 'en';
+const m = curriculum.mbkm_structure;
+const sem6 = m.schemes.filter((s) => s.semester === 6);
+const [studiIndependen, ...fieldPackages] = sem6;
+const research = m.schemes.find((s) => s.semester === 7)!;
+const coreTrack = research.tracks.find((t) => t.type === 'core')!;
+const clusters = research.tracks.filter((t) => t.type === 'cluster');
+
+const unit = en ? 'credits' : 'SKS';
+const t = en
+  ? {
+      kicker: 'Section 5',
+      title: 'MBKM Programme Schemes (20-Credit Conversion Packages)',
+      lead: 'Semesters 6 and 7 are delivered through Merdeka Belajar Kampus Merdeka (MBKM). In each semester the student completes exactly one package of five 4-credit courses, converted from off-campus or research activity into 20 credits.',
+      facts: [
+        { label: 'Package weight', value: `${m.total_sks_package} credits`, sub: 'per MBKM semester' },
+        { label: 'Composition', value: `${m.courses_per_package} × ${m.sks_per_course} credits`, sub: 'five courses per package' },
+        { label: 'MBKM courses', value: `${m.total_courses}`, sub: `${m.semester_6.course_count} in Sem 6 · ${m.semester_7.course_count} in Sem 7` },
+        { label: 'Eligibility', value: `≥ ${m.eligibility.min_sks} credits`, sub: `GPA ≥ ${m.eligibility.min_ipk.toFixed(2)} · advisor approval` },
+      ],
+      sem6Title: 'Choose 1 of 4 Field Schemes',
+      sem7Title: 'Thesis-Integrated MBKM Research',
+      option: 'Option',
+      exclusive: 'Mutually exclusive',
+      chooseTrack: 'Choose one track',
+      core: 'Compulsory',
+      cluster: 'Choose one cluster',
+      formulaCore: 'Core research course',
+      formulaCluster: '1 research cluster (4 courses)',
+      matrixLink: 'View these courses in the course matrix',
+      courses: 'courses',
+    }
+  : {
+      kicker: 'Bagian 5',
+      title: 'Skema Program MBKM (Paket Konversi 20 SKS)',
+      lead: 'Semester 6 dan 7 diselenggarakan melalui Merdeka Belajar Kampus Merdeka (MBKM). Pada setiap semester mahasiswa menempuh tepat satu paket berisi lima mata kuliah @ 4 SKS, yang dikonversi dari kegiatan luar kampus atau riset menjadi 20 SKS.',
+      facts: [
+        { label: 'Bobot paket', value: `${m.total_sks_package} SKS`, sub: 'per semester MBKM' },
+        { label: 'Komposisi', value: `${m.courses_per_package} × ${m.sks_per_course} SKS`, sub: 'lima MK per paket' },
+        { label: 'MK MBKM', value: `${m.total_courses}`, sub: `${m.semester_6.course_count} di Smt 6 · ${m.semester_7.course_count} di Smt 7` },
+        { label: 'Syarat', value: `≥ ${m.eligibility.min_sks} SKS`, sub: `IPK ≥ ${m.eligibility.min_ipk.toFixed(2).replace('.', ',')} · rekomendasi DPA` },
+      ],
+      sem6Title: 'Pilih 1 dari 4 Skema Lapangan',
+      sem7Title: 'MBKM Penelitian Terintegrasi Skripsi',
+      option: 'Opsi',
+      exclusive: 'Saling eksklusif',
+      chooseTrack: 'Pilih satu track',
+      core: 'Wajib',
+      cluster: 'Pilih satu kluster',
+      formulaCore: 'MK Inti Riset',
+      formulaCluster: '1 kluster peminatan (4 MK)',
+      matrixLink: 'Lihat MK ini pada matriks sebaran',
+      courses: 'MK',
+    };
+
+const name = (s: (typeof m.schemes)[number]) => (en ? s.name_en : s.name_id);
+const rule = (s: (typeof m.schemes)[number]) => (en ? s.rule_en : s.rule_id);
+const desc = (s: (typeof m.schemes)[number]) => (en ? s.desc_en : s.desc_id);
+const trackLabel = (tr: { label: string; label_en: string }) => (en ? tr.label_en : tr.label);
+---
+
+<section id="skema-mbkm" class="scroll-mt-24">
+  <div class="border-b border-slate-200 pb-4 mb-6">
+    <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">{t.kicker}</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">{t.title}</h2>
+    <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-4xl">{t.lead}</p>
+  </div>
+
+  {/* Key figures */}
+  <dl class="grid grid-cols-2 lg:grid-cols-4 card-academic divide-x divide-y lg:divide-y-0 divide-slate-200 mb-10">
+    {t.facts.map((f) => (
+      <div class="p-4 sm:p-5">
+        <dt class="text-[11px] font-bold uppercase tracking-wider text-slate-500">{f.label}</dt>
+        <dd class="font-code text-xl sm:text-2xl font-bold text-navy-900 mt-1">{f.value}</dd>
+        <dd class="text-[11px] text-slate-600 mt-0.5">{f.sub}</dd>
+      </div>
+    ))}
+  </dl>
+
+  {/* Semester 6 */}
+  <div class="mb-12">
+    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+      <span class="font-code text-xs font-bold bg-navy-900 text-white px-2 py-0.5 rounded">SEMESTER 6</span>
+      <h3 class="text-lg sm:text-xl font-bold text-navy-900 font-editorial">
+        {t.sem6Title} · <span class="font-code text-gold-700">{m.total_sks_package} {unit}</span>
+      </h3>
+    </div>
+    <p class="text-xs sm:text-sm text-slate-600 mb-5">{en ? m.semester_6.rule_en : m.semester_6.rule_id}</p>
+
+    {/* Option A: Studi Independen (3 tracks) */}
+    <article class="card-academic border-t-2 border-t-navy-900 mb-5" aria-labelledby={`mbkm-${studiIndependen.id}`}>
+      <header class="flex flex-col md:flex-row md:items-start justify-between gap-3 p-5 border-b border-slate-200">
+        <div>
+          <span class="font-code text-[11px] font-bold text-gold-600">{t.option} {studiIndependen.option} · {studiIndependen.code_range}</span>
+          <h4 id={`mbkm-${studiIndependen.id}`} class="text-base sm:text-lg font-bold text-navy-900 font-editorial">{name(studiIndependen)}</h4>
+          <p class="text-xs text-slate-600 mt-1 max-w-3xl">{desc(studiIndependen)}</p>
+        </div>
+        <p class="text-xs font-semibold text-navy-900 md:text-right md:max-w-xs shrink-0">{rule(studiIndependen)}</p>
+      </header>
+      <div class="grid grid-cols-1 lg:grid-cols-3 lg:divide-x divide-y lg:divide-y-0 divide-slate-200">
+        {studiIndependen.tracks.map((tr) => (
+          <div>
+            <div class="flex items-start justify-between gap-2 px-4 py-3 bg-slate-50 border-b border-slate-200">
+              <span class="text-[13px] font-bold text-navy-900 leading-snug">{trackLabel(tr)}</span>
+              <span class="font-code text-[10px] font-bold bg-navy-900 text-gold-400 px-1.5 py-0.5 rounded shrink-0">{formatPl(tr.pl)}</span>
+            </div>
+            <MbkmCourseList codes={tr.courses} lang={lang} />
+          </div>
+        ))}
+      </div>
+      <p class="px-5 py-2.5 border-t border-slate-200 text-[11px] text-slate-500">{t.chooseTrack} · 5 × {m.sks_per_course} = {m.total_sks_package} {unit}</p>
+    </article>
+
+    {/* Options B–D: fixed packages */}
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      {fieldPackages.map((s) => (
+        <article class="card-academic border-t-2 border-t-navy-900 flex flex-col" aria-labelledby={`mbkm-${s.id}`}>
+          <header class="p-5 border-b border-slate-200">
+            <span class="font-code text-[11px] font-bold text-gold-600">{t.option} {s.option} · {s.code_range}</span>
+            <h4 id={`mbkm-${s.id}`} class="text-base font-bold text-navy-900 font-editorial">{name(s)}</h4>
+            <p class="text-xs text-slate-600 mt-1">{desc(s)}</p>
+          </header>
+          <div class="flex-1">
+            <MbkmCourseList codes={s.tracks[0].courses} lang={lang} showPl />
+          </div>
+          <p class="px-5 py-2.5 border-t border-slate-200 text-[11px] font-semibold text-navy-900">{rule(s)}</p>
+        </article>
+      ))}
+    </div>
+    <p class="mt-3 text-[11px] text-slate-500">
+      {t.exclusive}: {sem6.map((s) => `${t.option} ${s.option}`).join(' / ')}.
+      <a href="#sebaran-mk" class="font-semibold text-navy-900 underline hover:text-gold-700">{t.matrixLink} ↑</a>
+    </p>
+  </div>
+
+  {/* Semester 7 */}
+  <div>
+    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+      <span class="font-code text-xs font-bold bg-navy-900 text-white px-2 py-0.5 rounded">SEMESTER 7</span>
+      <h3 class="text-lg sm:text-xl font-bold text-navy-900 font-editorial">
+        {t.sem7Title} · <span class="font-code text-gold-700">{m.total_sks_package} {unit}</span>
+      </h3>
+    </div>
+    <p class="text-xs sm:text-sm text-slate-600 mb-5">{desc(research)}</p>
+
+    {/* Composition formula */}
+    <div class="flex flex-wrap items-stretch gap-2 mb-5 font-code text-xs" aria-label={rule(research)}>
+      <span class="px-3 py-2 rounded border border-navy-900 bg-white text-navy-900 font-bold">{t.formulaCore} · {m.sks_per_course} {unit}</span>
+      <span class="px-1 py-2 text-slate-500 font-bold" aria-hidden="true">+</span>
+      <span class="px-3 py-2 rounded border border-slate-300 bg-white text-navy-900 font-bold">{t.formulaCluster} · {m.sks_per_course * 4} {unit}</span>
+      <span class="px-1 py-2 text-slate-500 font-bold" aria-hidden="true">=</span>
+      <span class="px-3 py-2 rounded bg-navy-900 text-white font-bold">{m.courses_per_package} {t.courses} · {m.total_sks_package} {unit}</span>
+    </div>
+
+    <article class="card-academic border-t-2 border-t-navy-900" aria-labelledby={`mbkm-${research.id}`}>
+      <header class="flex flex-col md:flex-row md:items-start justify-between gap-3 p-5 border-b border-slate-200">
+        <div>
+          <span class="font-code text-[11px] font-bold text-gold-600">{t.option} {research.option} · {research.code_range}</span>
+          <h4 id={`mbkm-${research.id}`} class="text-base sm:text-lg font-bold text-navy-900 font-editorial">{name(research)}</h4>
+        </div>
+        <p class="text-xs font-semibold text-navy-900 md:text-right md:max-w-sm shrink-0">{rule(research)}</p>
+      </header>
+
+      <div class="border-b border-slate-200">
+        <div class="flex items-center justify-between gap-2 px-4 py-3 bg-gold-50 border-b border-slate-200">
+          <span class="text-[13px] font-bold text-navy-900">{trackLabel(coreTrack)}</span>
+          <span class="font-code text-[10px] font-bold uppercase tracking-wider text-gold-700">{t.core}</span>
+        </div>
+        <MbkmCourseList codes={coreTrack.courses} lang={lang} showPl />
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 lg:divide-x divide-y lg:divide-y-0 divide-slate-200">
+        {clusters.map((tr) => (
+          <div>
+            <div class="flex items-start justify-between gap-2 px-4 py-3 bg-slate-50 border-b border-slate-200">
+              <span class="text-[13px] font-bold text-navy-900 leading-snug">{trackLabel(tr)}</span>
+              <span class="font-code text-[10px] font-bold bg-navy-900 text-gold-400 px-1.5 py-0.5 rounded shrink-0">{formatPl(tr.pl)}</span>
+            </div>
+            <MbkmCourseList codes={tr.courses} lang={lang} />
+          </div>
+        ))}
+      </div>
+      <p class="px-5 py-2.5 border-t border-slate-200 text-[11px] text-slate-500">{t.cluster} · 4 × {m.sks_per_course} = {m.sks_per_course * 4} {unit}</p>
+    </article>
+  </div>
+</section>

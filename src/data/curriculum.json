@@ -803,7 +803,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 1: Sains Data (PL1)"
     },
     {
       "code": "SIM16G02",
@@ -821,7 +824,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 1: Sains Data (PL1)"
     },
     {
       "code": "SIM16G03",
@@ -839,7 +845,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 1: Sains Data (PL1)"
     },
     {
       "code": "SIM16G04",
@@ -857,7 +866,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 1: Sains Data (PL1)"
     },
     {
       "code": "SIM16G05",
@@ -875,7 +887,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 1: Sains Data (PL1)"
     },
     {
       "code": "SIM16G06",
@@ -893,7 +908,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 2: Media Digital & Kreatif (PL2)"
     },
     {
       "code": "SIM16G07",
@@ -911,7 +929,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 2: Media Digital & Kreatif (PL2)"
     },
     {
       "code": "SIM16G08",
@@ -929,7 +950,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 2: Media Digital & Kreatif (PL2)"
     },
     {
       "code": "SIM16G09",
@@ -946,7 +970,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 2: Media Digital & Kreatif (PL2)"
     },
     {
       "code": "SIM16G10",
@@ -964,7 +991,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 2: Media Digital & Kreatif (PL2)"
     },
     {
       "code": "SIM16G11",
@@ -982,7 +1012,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)"
     },
     {
       "code": "SIM16G12",
@@ -1000,11 +1033,14 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)"
     },
     {
       "code": "SIM16G13",
-      "name": "Administrasi & Operasional Proyek TI",
+      "name": "Administrasi & Operasional Proyek IT",
       "semester": 6,
       "sks": 4,
       "pl": "PL03",
@@ -1018,7 +1054,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)"
     },
     {
       "code": "SIM16G14",
@@ -1036,7 +1075,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)"
     },
     {
       "code": "SIM16G15",
@@ -1054,7 +1096,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Studi Independen",
+      "mbkm_track": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)"
     },
     {
       "code": "SIM26G01",
@@ -1072,7 +1117,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Kewirausahaan",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM26G02",
@@ -1090,7 +1138,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Kewirausahaan",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM26G03",
@@ -1108,7 +1159,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Kewirausahaan",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM26G04",
@@ -1126,7 +1180,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Kewirausahaan",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM26G05",
@@ -1144,7 +1201,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Kewirausahaan",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM36G01",
@@ -1162,7 +1222,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Magang / Praktik Kerja",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM36G02",
@@ -1180,7 +1243,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Magang / Praktik Kerja",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM36G03",
@@ -1197,7 +1263,10 @@
         "C4"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Magang / Praktik Kerja",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM36G04",
@@ -1215,7 +1284,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Magang / Praktik Kerja",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM36G05",
@@ -1233,7 +1305,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Magang / Praktik Kerja",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM46G01",
@@ -1251,7 +1326,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 9
+      "sub_cpmk_count": 9,
+      "is_mbkm": true,
+      "mbkm_category": "KKN",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM46G02",
@@ -1269,7 +1347,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "KKN",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM46G03",
@@ -1287,7 +1368,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "KKN",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM46G04",
@@ -1305,7 +1389,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "KKN",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM46G05",
@@ -1323,7 +1410,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 9
+      "sub_cpmk_count": 9,
+      "is_mbkm": true,
+      "mbkm_category": "KKN",
+      "mbkm_track": "Paket Terintegrasi"
     },
     {
       "code": "SIM57J01",
@@ -1341,7 +1431,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "MK Inti Riset"
     },
     {
       "code": "SIM57J02",
@@ -1359,11 +1452,14 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL1 (Sains Data)"
     },
     {
       "code": "SIM57J03",
-      "name": "Rekayasa Analisis Data Tingkat Lanjut",
+      "name": "Advanced Analytics Engineering",
       "semester": 7,
       "sks": 4,
       "pl": "PL01",
@@ -1377,7 +1473,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL1 (Sains Data)"
     },
     {
       "code": "SIM57J04",
@@ -1395,7 +1494,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL1 (Sains Data)"
     },
     {
       "code": "SIM57J05",
@@ -1413,11 +1515,14 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL1 (Sains Data)"
     },
     {
       "code": "SIM57J06",
-      "name": "Riset Pengalaman Pengguna",
+      "name": "Desain Pengalaman Pengguna (UX)",
       "semester": 7,
       "sks": 4,
       "pl": "PL02",
@@ -1431,7 +1536,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL2 (Media & UX)"
     },
     {
       "code": "SIM57J07",
@@ -1449,7 +1557,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL2 (Media & UX)"
     },
     {
       "code": "SIM57J08",
@@ -1467,7 +1578,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL2 (Media & UX)"
     },
     {
       "code": "SIM57J09",
@@ -1485,7 +1599,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL2 (Media & UX)"
     },
     {
       "code": "SIM57J10",
@@ -1503,7 +1620,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL3 (Sistem & Enterprise)"
     },
     {
       "code": "SIM57J11",
@@ -1521,7 +1641,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL3 (Sistem & Enterprise)"
     },
     {
       "code": "SIM57J12",
@@ -1539,11 +1662,14 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 10
+      "sub_cpmk_count": 10,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL3 (Sistem & Enterprise)"
     },
     {
       "code": "SIM57J13",
-      "name": "Pemodelan Solusi Bisnis & TI",
+      "name": "Pemodelan Solusi Bisnis & IT",
       "semester": 7,
       "sks": 4,
       "pl": "PL03",
@@ -1557,7 +1683,10 @@
         "C6"
       ],
       "cpmk_count": 4,
-      "sub_cpmk_count": 11
+      "sub_cpmk_count": 11,
+      "is_mbkm": true,
+      "mbkm_category": "Penelitian",
+      "mbkm_track": "Kluster Riset PL3 (Sistem & Enterprise)"
     }
   ],
   "step3_matrix": {
@@ -3152,6 +3281,292 @@
         ],
         "C"
       ]
+    ]
+  },
+  "mbkm_structure": {
+    "total_sks_package": 20,
+    "sks_per_course": 4,
+    "courses_per_package": 5,
+    "total_courses": 43,
+    "semester_6": {
+      "course_count": 30,
+      "rule_id": "Pilih tepat 1 dari 4 skema lapangan (20 SKS). Keempat skema bersifat saling eksklusif.",
+      "rule_en": "Select exactly 1 of 4 field schemes (20 credits). The four schemes are mutually exclusive."
+    },
+    "semester_7": {
+      "course_count": 13,
+      "rule_id": "MBKM Penelitian terintegrasi skripsi: 1 MK Inti Riset + 1 kluster peminatan (4 MK) = 5 MK / 20 SKS.",
+      "rule_en": "Thesis-integrated MBKM Research: 1 core research course + 1 research cluster (4 courses) = 5 courses / 20 credits."
+    },
+    "eligibility": {
+      "min_sks": 90,
+      "min_ipk": 2.75,
+      "items_id": [
+        {
+          "label": "Beban studi lulus",
+          "value": "≥ 90 SKS",
+          "note": "Tuntas perkuliahan semester 1–5 (total beban 95 SKS) atau minimal 90 SKS lulus."
+        },
+        {
+          "label": "Indeks Prestasi Kumulatif",
+          "value": "IPK ≥ 2,75",
+          "note": "Dihitung secara kumulatif sampai semester berjalan."
+        },
+        {
+          "label": "Rekomendasi akademik",
+          "value": "Persetujuan DPA",
+          "note": "Surat rekomendasi Dosen Pembimbing Akademik atas skema yang dipilih."
+        }
+      ],
+      "items_en": [
+        {
+          "label": "Credits completed",
+          "value": "≥ 90 credits",
+          "note": "Completed semester 1–5 curriculum (95 credits) or at least 90 passed credits."
+        },
+        {
+          "label": "Cumulative GPA",
+          "value": "GPA ≥ 2.75",
+          "note": "Calculated cumulatively up to the current semester."
+        },
+        {
+          "label": "Academic endorsement",
+          "value": "Advisor approval",
+          "note": "Written recommendation from the Academic Advisor (DPA) for the chosen scheme."
+        }
+      ]
+    },
+    "process": [
+      {
+        "step_id": "Pendaftaran Mitra",
+        "desc_id": "Pengajuan skema dan mitra (industri, platform Kampus Merdeka, desa, atau kelompok riset) kepada Pengelola MBKM prodi.",
+        "step_en": "Partner Registration",
+        "desc_en": "Submit the chosen scheme and partner (industry, Kampus Merdeka platform, village, or research group) to the programme MBKM coordinator."
+      },
+      {
+        "step_id": "Registrasi KRS SIAKAD",
+        "desc_id": "Pengisian paket 5 MK (20 SKS) sesuai skema pada KRS SIAKAD setelah disetujui DPA.",
+        "step_en": "SIAKAD Course Registration",
+        "desc_en": "Enrol the 5-course (20-credit) package for the scheme in SIAKAD after advisor approval."
+      },
+      {
+        "step_id": "Pelaksanaan & Bimbingan",
+        "desc_id": "Kegiatan satu semester dengan logbook mingguan, dibimbing DPA/dosen pendamping dan mentor mitra.",
+        "step_en": "Implementation & Supervision",
+        "desc_en": "One semester of activity with a weekly logbook, supervised by the advisor or faculty supervisor and the partner mentor."
+      },
+      {
+        "step_id": "Evaluasi & Laporan Akhir",
+        "desc_id": "Penyerahan laporan akhir, penilaian mitra, dan presentasi capaian di hadapan dosen pendamping.",
+        "step_en": "Evaluation & Final Report",
+        "desc_en": "Submit the final report and partner assessment, and present outcomes to the faculty supervisor."
+      },
+      {
+        "step_id": "Konversi Nilai 20 SKS",
+        "desc_id": "Pemetaan capaian ke CPMK kelima MK paket dan input nilai 20 SKS ke SIAKAD oleh prodi.",
+        "step_en": "20-Credit Grade Conversion",
+        "desc_en": "Outcomes are mapped to the CPMK of the five package courses and 20 credits of grades are entered in SIAKAD."
+      }
+    ],
+    "schemes": [
+      {
+        "id": "studi-independen",
+        "option": "A",
+        "semester": 6,
+        "category": "Studi Independen",
+        "name_id": "MBKM Studi Independen",
+        "name_en": "MBKM Independent Study",
+        "code_range": "SIM16G01–SIM16G15",
+        "rule_id": "Pilih 1 dari 3 track konsentrasi; 1 track = 5 MK × 4 SKS = 20 SKS.",
+        "rule_en": "Choose 1 of 3 concentration tracks; 1 track = 5 courses × 4 credits = 20 credits.",
+        "desc_id": "Program pembelajaran terstruktur bersama mitra pelatihan tersertifikasi yang dikonversi ke mata kuliah konsentrasi sesuai profil lulusan.",
+        "desc_en": "Structured learning with certified training partners, converted into concentration courses aligned with a graduate profile.",
+        "tracks": [
+          {
+            "label": "Track 1: Sains Data (PL1)",
+            "label_en": "Track 1: Data Science & AI (PL1)",
+            "pl": "PL01",
+            "type": "track",
+            "courses": [
+              "SIM16G01",
+              "SIM16G02",
+              "SIM16G03",
+              "SIM16G04",
+              "SIM16G05"
+            ]
+          },
+          {
+            "label": "Track 2: Media Digital & Kreatif (PL2)",
+            "label_en": "Track 2: Creative Digital Media & UI/UX (PL2)",
+            "pl": "PL02",
+            "type": "track",
+            "courses": [
+              "SIM16G06",
+              "SIM16G07",
+              "SIM16G08",
+              "SIM16G09",
+              "SIM16G10"
+            ]
+          },
+          {
+            "label": "Track 3: Rekayasa Perangkat Lunak & Sistem Enterprise (PL3)",
+            "label_en": "Track 3: Software Engineering & Enterprise Systems (PL3)",
+            "pl": "PL03",
+            "type": "track",
+            "courses": [
+              "SIM16G11",
+              "SIM16G12",
+              "SIM16G13",
+              "SIM16G14",
+              "SIM16G15"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kewirausahaan",
+        "option": "B",
+        "semester": 6,
+        "category": "Kewirausahaan",
+        "name_id": "MBKM Kewirausahaan",
+        "name_en": "MBKM Entrepreneurship",
+        "code_range": "SIM26G01–SIM26G05",
+        "rule_id": "Paket utuh 5 MK × 4 SKS = 20 SKS.",
+        "rule_en": "Fixed package of 5 courses × 4 credits = 20 credits.",
+        "desc_id": "Perintisan usaha rintisan digital: validasi masalah, pengembangan produk, hingga pengelolaan tim dan operasional bisnis.",
+        "desc_en": "Digital start-up venture: problem validation, product development, and team and business operations management.",
+        "tracks": [
+          {
+            "label": "Paket Terintegrasi",
+            "label_en": "Integrated Package",
+            "pl": "PL01–PL03",
+            "type": "package",
+            "courses": [
+              "SIM26G01",
+              "SIM26G02",
+              "SIM26G03",
+              "SIM26G04",
+              "SIM26G05"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "magang",
+        "option": "C",
+        "semester": 6,
+        "category": "Magang / Praktik Kerja",
+        "name_id": "MBKM Magang / Praktik Kerja",
+        "name_en": "MBKM Industry Internship",
+        "code_range": "SIM36G01–SIM36G05",
+        "rule_id": "Paket utuh 5 MK × 4 SKS = 20 SKS.",
+        "rule_en": "Fixed package of 5 courses × 4 credits = 20 credits.",
+        "desc_id": "Praktik kerja satu semester penuh di industri, instansi pemerintah, atau BUMN/BUMD di bawah supervisi mentor lapangan.",
+        "desc_en": "A full-semester placement in industry, government agencies, or state-owned enterprises under a field mentor's supervision.",
+        "tracks": [
+          {
+            "label": "Paket Terintegrasi",
+            "label_en": "Integrated Package",
+            "pl": "PL01–PL03",
+            "type": "package",
+            "courses": [
+              "SIM36G01",
+              "SIM36G02",
+              "SIM36G03",
+              "SIM36G04",
+              "SIM36G05"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kkn",
+        "option": "D",
+        "semester": 6,
+        "category": "KKN",
+        "name_id": "MBKM KKN Tematik",
+        "name_en": "MBKM Thematic Community Service (KKN)",
+        "code_range": "SIM46G01–SIM46G05",
+        "rule_id": "Paket utuh 5 MK × 4 SKS = 20 SKS.",
+        "rule_en": "Fixed package of 5 courses × 4 credits = 20 credits.",
+        "desc_id": "Pengabdian berbasis desa/komunitas untuk analisis kebutuhan digital dan penerapan teknologi tepat guna bagi masyarakat.",
+        "desc_en": "Village- or community-based service: assessing digital needs and deploying appropriate technology for local communities.",
+        "tracks": [
+          {
+            "label": "Paket Terintegrasi",
+            "label_en": "Integrated Package",
+            "pl": "PL01–PL03",
+            "type": "package",
+            "courses": [
+              "SIM46G01",
+              "SIM46G02",
+              "SIM46G03",
+              "SIM46G04",
+              "SIM46G05"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "penelitian",
+        "option": "E",
+        "semester": 7,
+        "category": "Penelitian",
+        "name_id": "MBKM Penelitian / Riset",
+        "name_en": "MBKM Research",
+        "code_range": "SIM57J01–SIM57J13",
+        "rule_id": "Wajib 1 MK Inti Riset (4 SKS) + 4 MK dari 1 kluster peminatan (16 SKS) = 20 SKS.",
+        "rule_en": "Compulsory core research course (4 credits) + 4 courses from 1 research cluster (16 credits) = 20 credits.",
+        "desc_id": "Riset terintegrasi skripsi: kluster dipilih sesuai topik tugas akhir dan kelompok riset dosen pembimbing.",
+        "desc_en": "Thesis-integrated research: the cluster is chosen to match the thesis topic and the supervisor's research group.",
+        "tracks": [
+          {
+            "label": "MK Inti Riset",
+            "label_en": "Core Research Course",
+            "pl": "PL01–PL03",
+            "type": "core",
+            "courses": [
+              "SIM57J01"
+            ]
+          },
+          {
+            "label": "Kluster Riset PL1 (Sains Data)",
+            "label_en": "Research Cluster PL1 (Data Science)",
+            "pl": "PL01",
+            "type": "cluster",
+            "courses": [
+              "SIM57J02",
+              "SIM57J03",
+              "SIM57J04",
+              "SIM57J05"
+            ]
+          },
+          {
+            "label": "Kluster Riset PL2 (Media & UX)",
+            "label_en": "Research Cluster PL2 (Media & UX)",
+            "pl": "PL02",
+            "type": "cluster",
+            "courses": [
+              "SIM57J06",
+              "SIM57J07",
+              "SIM57J08",
+              "SIM57J09"
+            ]
+          },
+          {
+            "label": "Kluster Riset PL3 (Sistem & Enterprise)",
+            "label_en": "Research Cluster PL3 (Systems & Enterprise)",
+            "pl": "PL03",
+            "type": "cluster",
+            "courses": [
+              "SIM57J10",
+              "SIM57J11",
+              "SIM57J12",
+              "SIM57J13"
+            ]
+          }
+        ]
+      }
     ]
   }
 }

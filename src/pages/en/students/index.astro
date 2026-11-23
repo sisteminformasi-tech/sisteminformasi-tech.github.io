@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MbkmStudentGuide from '../../../components/academic/MbkmStudentGuide.astro';
 ---
 
 <BaseLayout
@@ -26,7 +27,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
       <div class="mt-8 pt-6 border-t border-navy-800/80 flex flex-wrap gap-2 text-xs">
         <a href="#sop" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ Academic SOP</a>
         <a href="#thesis" class="px-3 py-1.5 rounded bg-gold-500 text-white font-bold hover:bg-gold-600">↓ Capstone Thesis</a>
-        <a href="#internships" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ Internships</a>
+        <a href="#mbkm" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ MBKM & Internships</a>
         <a href="#himasi" class="px-3 py-1.5 rounded bg-navy-800 hover:bg-navy-700 text-slate-200">↓ HIMASI Association</a>
       </div>
     </div>
@@ -141,6 +142,9 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
         </a>
       </div>
     </section>
+
+    {/* MBKM & 20-Credit Conversion */}
+    <MbkmStudentGuide lang="en" />
 
     {/* HIMASI */}
     <section id="himasi" class="scroll-mt-24 card-academic p-8 sm:p-10 border-slate-200">

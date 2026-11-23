@@ -1,0 +1,136 @@
+---
+import curriculum from '../../data/curriculum.json';
+import type { Lang } from '../../lib/mbkm';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const en = lang === 'en';
+const m = curriculum.mbkm_structure;
+const eligibility = en ? m.eligibility.items_en : m.eligibility.items_id;
+const unit = en ? 'credits' : 'SKS';
+
+const t = en
+  ? {
+      kicker: 'Merdeka Belajar Kampus Merdeka',
+      title: 'MBKM Programme & 20-Credit Conversion',
+      lead: 'In semesters 6 and 7, students complete one 20-credit MBKM package per semester: one of four field schemes in semester 6, and thesis-integrated research in semester 7. Activities are converted into five 4-credit courses in the OBE curriculum.',
+      reqTitle: 'Eligibility Requirements',
+      flowTitle: 'Operational Workflow',
+      step: 'Step',
+      summaryTitle: 'The Five MBKM Schemes',
+      cols: ['Option', 'Scheme', 'Semester', 'Composition', 'Course codes'],
+      schemesLink: 'View all scheme courses in the curriculum',
+      schemesHref: '/en/academics/curriculum/#skema-mbkm',
+      guideLink: 'Download the 20-Credit MBKM Conversion Guide',
+      guideHref: '/en/downloads/#kp-mbkm',
+    }
+  : {
+      kicker: 'Merdeka Belajar Kampus Merdeka',
+      title: 'Program MBKM & Konversi 20 SKS',
+      lead: 'Pada semester 6 dan 7 mahasiswa menempuh satu paket MBKM bernilai 20 SKS per semester: salah satu dari empat skema lapangan di semester 6, dan riset terintegrasi skripsi di semester 7. Kegiatan dikonversi ke lima mata kuliah @ 4 SKS dalam kurikulum OBE.',
+      reqTitle: 'Persyaratan Pendaftaran',
+      flowTitle: 'Alur Proses Operasional',
+      step: 'Tahap',
+      summaryTitle: 'Ringkasan 5 Skema MBKM',
+      cols: ['Opsi', 'Skema', 'Semester', 'Komposisi', 'Kode MK'],
+      schemesLink: 'Lihat rincian MK seluruh skema di Kurikulum',
+      schemesHref: '/akademik/kurikulum/#skema-mbkm',
+      guideLink: 'Unduh Panduan Operasional Konversi 20 SKS MBKM',
+      guideHref: '/unduhan/#kp-mbkm',
+    };
+
+const composition = (s: (typeof m.schemes)[number]) => {
+  if (s.tracks.length === 1) return en ? `5 courses × 4 ${unit}` : `5 MK × 4 ${unit}`;
+  if (s.semester === 7) return en ? `1 core + 1 cluster of 4` : `1 MK inti + 1 kluster (4 MK)`;
+  return en ? `1 of ${s.tracks.length} tracks × 5 courses` : `1 dari ${s.tracks.length} track × 5 MK`;
+};
+---
+
+<section id="mbkm" class="scroll-mt-24 card-academic p-8 sm:p-10 border-slate-200">
+  <div class="border-b border-slate-200 pb-4 mb-6">
+    <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">{t.kicker}</span>
+    <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 font-editorial">{t.title}</h2>
+    <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-4xl">{t.lead}</p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
+    {/* Eligibility */}
+    <div class="lg:col-span-4">
+      <h3 class="text-sm font-bold text-navy-900 font-editorial mb-3">{t.reqTitle}</h3>
+      <dl class="rounded border border-slate-200 divide-y divide-slate-200">
+        {eligibility.map((e) => (
+          <div class="p-4">
+            <dt class="text-[11px] font-bold uppercase tracking-wider text-slate-500">{e.label}</dt>
+            <dd class="font-code text-base font-bold text-navy-900 mt-0.5">{e.value}</dd>
+            <dd class="text-[11px] text-slate-600 mt-0.5">{e.note}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    {/* Workflow */}
+    <div class="lg:col-span-8">
+      <h3 class="text-sm font-bold text-navy-900 font-editorial mb-3">{t.flowTitle}</h3>
+      <ol class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-3">
+        {m.process.map((p, i) => (
+          <li class="p-4 rounded bg-slate-50 border border-slate-200 border-t-2 border-t-navy-900">
+            <span class="font-code text-xs font-bold text-gold-600 block mb-1">{t.step} {i + 1}</span>
+            <h4 class="text-xs font-bold text-navy-900 mb-1">{en ? p.step_en : p.step_id}</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed">{en ? p.desc_en : p.desc_id}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+
+  {/* Scheme summary */}
+  <h3 class="text-sm font-bold text-navy-900 font-editorial mb-3">{t.summaryTitle}</h3>
+  <div class="overflow-x-auto rounded border border-slate-200 mb-8">
+    <table class="table-academic">
+      <thead>
+        <tr>
+          <th class="w-16 text-center">{t.cols[0]}</th>
+          <th>{t.cols[1]}</th>
+          <th class="w-24 text-center">{t.cols[2]}</th>
+          <th>{t.cols[3]}</th>
+          <th class="w-48">{t.cols[4]}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {m.schemes.map((s) => (
+          <tr>
+            <td class="text-center font-code font-bold text-gold-700">{s.option}</td>
+            <td>
+              <span class="font-semibold text-navy-900 block">{en ? s.name_en : s.name_id}</span>
+              <span class="text-[11px] text-slate-600">{en ? s.desc_en : s.desc_id}</span>
+            </td>
+            <td class="text-center font-code font-bold text-slate-700">{s.semester}</td>
+            <td class="text-xs text-slate-700">
+              {composition(s)}
+              <span class="block font-code font-bold text-gold-700">= {m.total_sks_package} {unit}</span>
+            </td>
+            <td class="font-code text-[11px] text-slate-700">{s.code_range}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flex flex-wrap gap-4 items-center">
+    <a
+      href={t.schemesHref}
+      class="inline-flex items-center px-4 py-2.5 rounded bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs uppercase tracking-wider transition-colors"
+    >
+      {t.schemesLink} →
+    </a>
+    <a
+      href={t.guideHref}
+      class="inline-flex items-center px-4 py-2.5 rounded bg-slate-100 hover:bg-slate-200 text-navy-900 font-semibold text-xs transition-colors"
+    >
+      {t.guideLink} →
+    </a>
+  </div>
+</section>
