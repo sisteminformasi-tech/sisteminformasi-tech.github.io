@@ -177,7 +177,7 @@ const matrixRows = buildMatrixRows('en');
     </section>
 
     {/* Section 4: Course Matrix */}
-    <section id="sebaran-mk" class="scroll-mt-24">
+    <section id="sebaran-mk" class="scroll-mt-28">
       <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-4 mb-6 gap-4">
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-gold-600 block">Section 4</span>
@@ -200,19 +200,21 @@ const matrixRows = buildMatrixRows('en');
       </div>
 
       {/* Filter Tabs by Semester */}
-      <div class="flex flex-wrap gap-2 mb-6" id="semester-filters-en">
+      <div class="flex items-center gap-2 mb-6 overflow-x-auto pb-2 sm:flex-wrap sm:overflow-visible sm:pb-0 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden" id="semester-filters-en" role="group" aria-label="Filter courses by semester">
         <button
           type="button"
-          class="sem-filter-btn-en px-3 py-1.5 rounded text-xs font-bold bg-navy-900 text-white transition-colors"
+          class="sem-filter-btn-en shrink-0 sm:shrink px-3.5 py-2 rounded text-xs font-bold bg-navy-900 text-white border border-navy-900 transition-colors"
           data-filter="all"
+          aria-pressed="true"
         >
           All Semesters
         </button>
         {[1, 2, 3, 4, 5, 6, 7, 8].map((s) => (
           <button
             type="button"
-            class="sem-filter-btn-en px-3 py-1.5 rounded text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:border-gold-500 hover:text-navy-900 transition-colors"
+            class="sem-filter-btn-en shrink-0 sm:shrink px-3.5 py-2 rounded text-xs font-semibold bg-white border border-slate-200 text-slate-700 hover:border-gold-500 hover:text-navy-900 transition-colors"
             data-filter={s.toString()}
+            aria-pressed="false"
           >
             Semester {s} ({semester_sks_distribution[s.toString() as keyof typeof semester_sks_distribution]} Credits)
           </button>
@@ -220,18 +222,23 @@ const matrixRows = buildMatrixRows('en');
       </div>
 
       {/* Courses Table */}
-      <div class="overflow-x-auto card-academic">
-        <table class="table-academic">
+      <div class="sm:hidden flex items-center justify-between text-[11px] text-slate-500 mb-2 px-1" aria-hidden="true">
+        <span>← Swipe table for all columns</span>
+        <span class="font-code">8 Columns →</span>
+      </div>
+      <div class="overflow-x-auto card-academic focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500" tabindex="0" role="region" aria-label="Course distribution matrix">
+        <table class="table-academic" id="courses-table">
+          <caption class="sr-only">Course Distribution Matrix of the Information Systems Study Program, UNDA</caption>
           <thead>
             <tr>
-              <th class="w-12 text-center">Sem</th>
-              <th class="w-28">Course Code</th>
-              <th>Course Name</th>
-              <th class="w-16 text-center">Credits</th>
-              <th class="w-24">Knowledge Area</th>
-              <th class="w-24">Profile (PL)</th>
-              <th class="w-24 text-center">Taxonomy</th>
-              <th class="w-24 text-center">Syllabus</th>
+              <th scope="col" class="w-12 text-center">Sem</th>
+              <th scope="col" class="w-28">Course Code</th>
+              <th scope="col">Course Name</th>
+              <th scope="col" class="w-16 text-center">Credits</th>
+              <th scope="col" class="w-24">Knowledge Area</th>
+              <th scope="col" class="w-24">Profile (PL)</th>
+              <th scope="col" class="w-24 text-center">Taxonomy</th>
+              <th scope="col" class="w-24 text-center">Syllabus</th>
             </tr>
           </thead>
           <tbody>
@@ -305,7 +312,7 @@ const matrixRows = buildMatrixRows('en');
                       </span>
                     ))
                   ) : (
-                    <span class="text-slate-400 text-xs">-</span>
+                    <span class="text-slate-500 text-xs">-</span>
                   )}
                 </td>
                 <td class="text-center">
@@ -313,6 +320,7 @@ const matrixRows = buildMatrixRows('en');
                     href={`/en/academics/rps/?q=${encodeURIComponent(c.code)}`}
                     class="inline-flex items-center text-xs font-bold text-navy-900 hover:text-gold-700 underline"
                     title={`View Syllabus for ${c.name}`}
+                    aria-label={`PDF Syllabus for ${c.name} (${c.code})`}
                   >
                     PDF ↗
                   </a>
@@ -336,14 +344,19 @@ const matrixRows = buildMatrixRows('en');
   const filterBtns = document.querySelectorAll<HTMLButtonElement>('.sem-filter-btn-en');
   const rows = document.querySelectorAll<HTMLTableRowElement>('.course-row-en');
 
+  const ACTIVE = ['bg-navy-900', 'text-white', 'font-bold', 'border-navy-900'];
+  const INACTIVE = ['bg-white', 'text-slate-700', 'font-semibold', 'border-slate-200', 'hover:border-gold-500', 'hover:text-navy-900'];
+
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
       filterBtns.forEach((b) => {
-        b.classList.remove('bg-navy-900', 'text-white', 'font-bold');
-        b.classList.add('bg-white', 'text-slate-700', 'font-semibold');
+        b.classList.remove(...ACTIVE);
+        b.classList.add(...INACTIVE);
+        b.setAttribute('aria-pressed', 'false');
       });
-      btn.classList.add('bg-navy-900', 'text-white', 'font-bold');
-      btn.classList.remove('bg-white', 'text-slate-700', 'font-semibold');
+      btn.classList.remove(...INACTIVE);
+      btn.classList.add(...ACTIVE);
+      btn.setAttribute('aria-pressed', 'true');
 
       const filter = btn.dataset.filter;
       rows.forEach((row) => {
