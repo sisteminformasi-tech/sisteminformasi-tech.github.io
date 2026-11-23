@@ -23,86 +23,125 @@
     {
       "no": 1,
       "code": "CPL01",
-      "desc": "Mampu menunjukkanA5sikap profesional, bertanggung jawab, dan menjunjung etika akademik serta etika profesi dalam pemanfaatan teknologi informasi dan data.",
+      "desc": "Mampu menunjukkan sikap profesional, bertanggung jawab, dan menjunjung etika akademik serta etika profesi dalam pemanfaatan teknologi informasi dan data.",
       "bloom_tags": [
         "A5"
+      ],
+      "pls": [
+        "PL01",
+        "PL02",
+        "PL03"
       ]
     },
     {
       "no": 2,
       "code": "CPL02",
-      "desc": "Mampu memadukanC6kemampuan komunikasi dan kerja sama dalam tim multidisiplin untuk menghasilkan solusi kolaboratif di lingkungan organisasi.",
+      "desc": "Mampu memadukan kemampuan komunikasi dan kerja sama dalam tim multidisiplin untuk menghasilkan solusi kolaboratif di lingkungan organisasi.",
       "bloom_tags": [
         "C6"
+      ],
+      "pls": [
+        "PL01",
+        "PL02",
+        "PL03"
       ]
     },
     {
       "no": 3,
       "code": "CPL03",
-      "desc": "Mampu menganalisisC4kebutuhan data organisasi dan merekomendasikanC5pendekatan algoritma Kecerdasan Buatan yang tepat untuk pemecahan masalah berbasis data.",
+      "desc": "Mampu menganalisis kebutuhan data organisasi dan merekomendasikan pendekatan algoritma Kecerdasan Buatan yang tepat untuk pemecahan masalah berbasis data.",
       "bloom_tags": [
         "C5",
         "C4"
+      ],
+      "pls": [
+        "PL01"
       ]
     },
     {
       "no": 4,
       "code": "CPL04",
-      "desc": "Mampu memvalidasiC5hasil analisis data dan merekomendasikanC5keputusan organisasi yang akurat serta mengkomunikasikannya secara efektif kepada pemangku kepentingan.",
+      "desc": "Mampu memvalidasi hasil analisis data dan merekomendasikan keputusan organisasi yang akurat serta mengkomunikasikannya secara efektif kepada pemangku kepentingan.",
       "bloom_tags": [
         "C5"
+      ],
+      "pls": [
+        "PL01"
       ]
     },
     {
       "no": 5,
       "code": "CPL05",
-      "desc": "Mampu mengelolaC4data organisasi secara bertanggung jawab dengan mempertahankanC5prinsip privasi, keamanan data, dan etika AI dalam setiap keputusan profesional.",
+      "desc": "Mampu mengelola data organisasi secara bertanggung jawab dengan mempertahankan prinsip privasi, keamanan data, dan etika AI dalam setiap keputusan profesional.",
       "bloom_tags": [
         "C5",
         "C4"
+      ],
+      "pls": [
+        "PL01",
+        "PL02"
       ]
     },
     {
       "no": 6,
       "code": "CPL06",
-      "desc": "Mampu merancangC6dan mengembangkanC6solusi media digital yang inovatif dengan mengintegrasikan estetika, fungsionalitas, dan teknologi terkini untuk memecahkan masalah organisasi.",
+      "desc": "Mampu merancang dan mengembangkan solusi media digital yang inovatif dengan mengintegrasikan estetika, fungsionalitas, dan teknologi terkini untuk memecahkan masalah organisasi.",
       "bloom_tags": [
         "C6"
+      ],
+      "pls": [
+        "PL02"
       ]
     },
     {
       "no": 7,
       "code": "CPL07",
-      "desc": "Mampu mengelolaC4siklus hidup proyek media digital secara adaptif terhadap perubahan teknologi dan kebutuhan organisasi, mulai dari perencanaan hingga evaluasi dampak.",
+      "desc": "Mampu mengelola siklus hidup proyek media digital secara adaptif terhadap perubahan teknologi dan kebutuhan organisasi, mulai dari perencanaan hingga evaluasi dampak.",
       "bloom_tags": [
         "C4"
+      ],
+      "pls": [
+        "PL02",
+        "PL03"
       ]
     },
     {
       "no": 8,
       "code": "CPL08",
-      "desc": "Mampu membangunC6kolaborasi tim lintas disiplin untuk menghasilkan produk media digital yang mendukung tujuan strategis organisasi dengan menjunjung tinggi etika profesi.",
+      "desc": "Mampu membangun kolaborasi tim lintas disiplin untuk menghasilkan produk media digital yang mendukung tujuan strategis organisasi dengan menjunjung tinggi etika profesi.",
       "bloom_tags": [
         "C6"
+      ],
+      "pls": [
+        "PL02",
+        "PL03"
       ]
     },
     {
       "no": 9,
       "code": "CPL09",
-      "desc": "Mampu menganalisisC4kebutuhan sistem informasi dan menilaiC5risiko proyek secara sistematis sebagai dasar pengambilan keputusan dalam pengelolaan proyek teknologi informasi.",
+      "desc": "Mampu menganalisis kebutuhan sistem informasi dan menilai risiko proyek secara sistematis sebagai dasar pengambilan keputusan dalam pengelolaan proyek teknologi informasi.",
       "bloom_tags": [
         "C5",
         "C4"
+      ],
+      "pls": [
+        "PL02",
+        "PL03"
       ]
     },
     {
       "no": 10,
       "code": "CPL10",
-      "desc": "Mampu menganalisisC4kebutuhan dan risiko proyek sistem informasi, memvalidasiC5kesesuaiannya dengan standar manajemen proyek, serta merancangC6solusi pengelolaan proyek yang bertanggung jawab dan sesuai kebutuhan organisasi.",
+      "desc": "Mampu menganalisis kebutuhan dan risiko proyek sistem informasi, memvalidasi kesesuaiannya dengan standar manajemen proyek, serta merancang solusi pengelolaan proyek yang bertanggung jawab dan sesuai kebutuhan organisasi.",
       "bloom_tags": [
         "C5",
         "C4",
         "C6"
+      ],
+      "pls": [
+        "PL01",
+        "PL03"
       ]
     }
   ],
@@ -117,51 +156,51 @@
     },
     {
       "code": "BK03",
-      "name": "Enterprise Architecture & Business Process (Arsitektur Enterprise & Proses Bisnis)"
+      "name": "Systems Analysis and Design (Analisis & Perancangan Sistem)"
     },
     {
       "code": "BK04",
-      "name": "Algorithms, Programming & Software Development (Algoritma, Pemrograman & Rekayasa PL)"
+      "name": "Application Development (Pengembangan Aplikasi)"
     },
     {
       "code": "BK05",
-      "name": "Infrastructure, Networks & Cloud Technologies (Infrastruktur, Jaringan & Komputasi Awan)"
+      "name": "Information Systems Infrastructure (Infrastruktur Sistem Informasi)"
     },
     {
       "code": "BK06",
-      "name": "Information Security, Privacy & Risk (Keamanan Informasi, Privasi & Manajemen Risiko)"
+      "name": "IS Management and Strategy (Manajemen & Strategi Sistem Informasi)"
     },
     {
       "code": "BK07",
-      "name": "Artificial Intelligence & Machine Learning (Kecerdasan Buatan & Pembelajaran Mesin)"
+      "name": "Project Management for IS (Manajemen Proyek Sistem Informasi)"
     },
     {
       "code": "BK08",
-      "name": "Data Science & Predictive Analytics (Sains Data & Analitika Prediktif)"
+      "name": "Information Security and Risk Management (Keamanan Informasi & Manajemen Risiko)"
     },
     {
       "code": "BK09",
-      "name": "Human-Computer Interaction & User Experience (Interaksi Manusia-Komputer & UI/UX)"
+      "name": "Business Process Management (Manajemen Proses Bisnis)"
     },
     {
       "code": "BK10",
-      "name": "Digital Media, Multimedia & Content Creation (Media Digital, Multimedia & Kreativitas Konten)"
+      "name": "AI and Data Analytics for IS (Kecerdasan Buatan & Analitika Data)"
     },
     {
       "code": "BK11",
-      "name": "IT Project Management & Capstone (Manajemen Proyek TI & Proyek Terpadu)"
+      "name": "User Interface and UX Design (Desain Antarmuka & Pengalaman Pengguna)"
     },
     {
       "code": "BK12",
-      "name": "Digital Leadership, Strategy & Technopreneurship (Kepemimpinan Digital & Teknopreneur)"
+      "name": "Digital Innovation and Technopreneurship (Inovasi Digital & Teknopreneur)"
     },
     {
       "code": "BK13",
-      "name": "Ethics, Religion, Social & National Identity (Etika, Agama, Sosial & Karakter Bangsa)"
+      "name": "Ethics and Social Implications of IS (Etika & Implikasi Sosial Sistem Informasi)"
     },
     {
       "code": "BK14",
-      "name": "Mathematics, Statistics & Research Methods (Matematika, Statistika & Metode Penelitian)"
+      "name": "Quantitative Methods and Research Methodology (Metode Kuantitatif & Metodologi Penelitian)"
     }
   ],
   "total_sks_lulus": 144,
@@ -1040,7 +1079,7 @@
     },
     {
       "code": "SIM16G13",
-      "name": "Administrasi & Operasional Proyek IT",
+      "name": "Administrasi & Operasional Proyek TI",
       "semester": 6,
       "sks": 4,
       "pl": "PL03",
@@ -1459,7 +1498,7 @@
     },
     {
       "code": "SIM57J03",
-      "name": "Advanced Analytics Engineering",
+      "name": "Rekayasa Analisis Data Tingkat Lanjut",
       "semester": 7,
       "sks": 4,
       "pl": "PL01",
@@ -1522,7 +1561,7 @@
     },
     {
       "code": "SIM57J06",
-      "name": "Desain Pengalaman Pengguna (UX)",
+      "name": "Riset Pengalaman Pengguna",
       "semester": 7,
       "sks": 4,
       "pl": "PL02",
@@ -1669,7 +1708,7 @@
     },
     {
       "code": "SIM57J13",
-      "name": "Pemodelan Solusi Bisnis & IT",
+      "name": "Pemodelan Solusi Bisnis & TI",
       "semester": 7,
       "sks": 4,
       "pl": "PL03",
